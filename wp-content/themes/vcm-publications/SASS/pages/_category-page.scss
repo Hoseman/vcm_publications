@@ -1,0 +1,268 @@
+.archive {
+    & .woocommerce-products-header {
+        display:none !important;
+    }
+}
+.category {
+    padding:8rem 0.4rem 0rem 0.4rem;
+    @include mediaquery("tablet-575"){
+        padding:2.5rem 0.4rem 0rem 0.4rem;
+    }
+    &__heading {
+        text-align:center;
+        font-weight:400;
+        font-size:3.2rem;
+    }
+    @include mediaquery("phone-400"){
+        &__heading {
+            font-size:2.2rem;
+        }
+    }
+    &__heading-underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+}
+.woocommerce-loop-product {
+    &__title {
+        margin-top:1rem;
+        text-transform:uppercase;
+        font-size: 1.58rem;
+        line-height:2.05rem;
+        min-height: 3.9rem;
+        color:$black;
+        text-align:center;
+        &:hover {
+            text-decoration:none;
+        }
+    }
+}
+.products {
+    & .product {
+        & img {
+            width:100%;
+            border:1.5px solid $light-grey;
+            width:100%;
+            height:auto;
+        }
+        & .sales-flash {
+            border:0;
+            width: 24%;
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+        & .price {
+            & .woocommerce-Price-amount {
+                font-size: 2.6rem;
+                color: $white;
+                text-decoration:none;
+                &:hover {
+                    text-decoration:none;
+                }
+            }
+            & del {
+                & .woocommerce-Price-amount {
+                    color: $yellow;
+                    font-size: 1.6rem;
+                    &:hover {
+                        text-decoration:none;
+                    }
+                }
+            }
+            & ins {
+                background:transparent;
+                & .woocommerce-Price-amount {
+                    color: $white;
+                    font-size: 2.6rem;
+                    &:hover {
+                        text-decoration:none;
+                    }
+                }
+            }
+            text-decoration:none;
+            &:hover {
+                text-decoration:none;
+            }
+        }
+        & .added_to_cart {
+            display:none !important;
+        }
+        & .button {
+            background:$white;
+            padding:0.6rem 2rem;
+            font-size:1.5rem;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            display:block;
+            // box-shadow: inset 0 0 0 0 $yellow;
+            transition: background ease-out 0.15s;
+            margin-bottom:0.8rem;
+            border-radius:0;
+            text-transform:uppercase;
+            color:$black;
+            &:hover {
+                background: $yellow;
+                text-decoration:none;
+            }
+        }
+        & .star-rating {
+            overflow: hidden;
+            position: relative;
+            height: 1.618em;
+            line-height: 1.618;
+            margin-left: auto;
+            margin-right: auto;
+            color: $mid-grey;
+            font-size: 1.5rem;
+            text-align: center;
+            &::before {
+                width: 100%;
+                content: "\53 \53 \53 \53 \53";
+            }
+            // & span {
+            //     width: 100% !important;
+            // }
+            & span::before {
+                top: 0;
+                position: absolute;
+                left: 0;
+                color: $yellow;
+                width: 100%;
+                content: "\53 \53 \53 \53 \53";
+            }
+        }
+    }
+}
+
+
+.category-results {
+    padding:2rem 0 5rem 0;
+    &__img {
+        border:2px solid $light-grey;
+        width:100%;
+        height:auto;
+    }
+    &__title {
+        margin-top:1rem;
+        text-transform:uppercase;
+        font-size: 1.65rem;
+        line-height:2.05rem;
+        min-height: 3.9rem;
+    }
+    & .ratings {
+        margin-bottom:2.5rem;
+        & i {
+            color:$yellow;
+            font-size:1.5rem;
+            &:last-child {
+                color:$light-grey;
+            }
+        }
+    }
+    &__heading-underline {
+        background: $blue;
+        width: 60px;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 1.6rem;
+        margin-bottom: 2.2rem;
+    }
+    &__sale {
+        right: 0;
+        top: 0;
+        position: absolute;
+    }
+    &__price {
+        color:$white;
+        font-size:2.6rem;
+        & span {
+            font-size:1.75rem;
+            color:$yellow;
+            padding-right:1rem;
+            text-decoration: line-through;
+        }
+    }
+    &__over {
+        background:$blue;
+        padding:8.5rem 3rem 1rem 3rem;
+        @include mediaquery("desktop-1440"){
+            padding:7rem 3rem 1rem 3rem;
+        }
+        @include mediaquery("desktop-1100"){
+            padding:6rem 3rem 1rem 3rem;
+        }
+        @include mediaquery("tablet-992"){
+            padding:7.7rem 3rem 1rem 3rem;
+        }
+        @include mediaquery("tablet-575"){
+            padding:18rem 3rem 1rem 3rem;
+        }
+        @include mediaquery("phone-480"){
+            padding:14rem 3rem 1rem 3rem;
+        }
+        @include mediaquery("phone-400"){
+            padding:10rem 3rem 1rem 3rem;
+        }
+        @include mediaquery("phone-320"){
+            padding:7rem 3rem 1rem 3rem;
+        }
+        display:block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity:0;
+        margin-top:40px;
+        cursor:pointer;
+        text-align:center;
+        transition:all 0.2s ease-in;
+        &:hover {
+            opacity:0.95;
+            bottom:0;
+            margin-top:0;
+        }
+    }
+    &__btn-vcm {
+        background:$white;
+        padding:0.6rem 2rem;
+        font-size:1.5rem;
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        // box-shadow: inset 0 0 0 0 $yellow;
+        transition: background ease-out 0.15s;
+        margin-bottom:0.8rem;
+        border-radius:0;
+        &:hover {
+            background: $yellow;
+        }
+    }
+    &__container {
+        position:relative;
+        overflow:hidden;
+    }
+}
+.category-sorting {
+    &__orderby {
+        border-radius: 0;
+        border: 1px solid #666;
+        padding: 0.6rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.75rem;
+        &:focus {
+            outline: 0;
+        }
+    }
+}

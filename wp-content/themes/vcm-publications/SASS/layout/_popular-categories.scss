@@ -1,0 +1,94 @@
+.popular-categories {
+    padding:1rem 0 9rem 0;
+    & h1 {
+        text-transform:uppercase;
+        text-align:center;
+        font-weight:600;
+    }
+    &__img {
+        width:100%;
+        height:auto;
+        cursor:pointer;
+        opacity:1;
+        transition:opacity 0.15s ease-in;
+        &:hover {
+            opacity:0.6;
+        }
+    }
+    &__imgbg {
+        background:$blue;
+        display:block;
+    }
+    &__heading-underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+    &__heading-underline-sml {
+        background:$blue;
+        width: 60px;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: -1rem;
+        margin-bottom: 2.2rem;
+    }
+    &__title {
+        font-size: 1.85rem;
+        text-align: center;
+        font-weight: 600;
+        padding:2.2rem 0;
+    }
+    @include mediaquery("tablet-768"){
+        .popular-categories__title {
+            font-size: 1.65rem;
+        }
+    }
+    @include mediaquery("tablet-575"){
+        .popular-categories__title {
+            font-size: 1.85rem;
+        }
+    }
+    &__btn-vcm {
+        border:2px solid $light-grey;
+        padding:0.6rem 2rem;
+        font-size:1.5rem;
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+        display:inline-block;
+        box-shadow: inset 0 0 0 0 $yellow;
+        transition: ease-out 0.4s;
+        @include mediaquery("tablet-992"){
+            margin-bottom:2.5rem;
+        }
+        &:hover {
+            box-shadow: inset 400px 0 0 0 $yellow;
+        }
+        &:hover .popular-categories__img {
+            opacity:0.8;
+        }
+        &:visited {
+            color:$black;
+        }
+        &:focus {
+            color:$black;
+        }
+        &::before {
+            content:"";
+            background:$yellow;
+            width:100%;
+            height:100%;
+        }
+    }
+}
+
+.btn-vcm-trigger {
+    opacity:0.6 !important;
+}

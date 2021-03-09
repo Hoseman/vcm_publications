@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $black;
+}
+a {
+    text-decoration:none !important;
+}
+p {
+    font-size: 1.8rem;
+    line-height:2.4rem;
+}
+ul {
+    & li {
+        font-size: 1.8rem;
+        line-height:2.4rem;
+    }
+}
+h1 {
+    font-size: 4.1rem;
+}
+@include mediaquery("tablet-575"){
+    h1 {
+        font-size: 3.2rem;
+    } 
+}
+h2 {
+    font-size: 5rem;
+}
+.container {
+    max-width:1300px;
+}
+@include mediaquery("desktop-1440"){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+// @include mediaquery("desktop-1700"){
+//     .container {
+//         max-width: 1200px;
+//     }
+// }

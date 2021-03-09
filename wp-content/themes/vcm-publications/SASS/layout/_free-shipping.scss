@@ -1,0 +1,51 @@
+.free-shipping {
+    background:$pale-grey;
+    padding:3rem 1rem;
+    &__container {
+        display:inline;
+        margin-left:1rem;
+    }
+    & i {
+        color:$white;
+        background:$yellow;
+        padding: 1.6rem 1.3rem 1.5rem 1.3rem;
+        font-size: 3rem;
+        border-radius: 6rem;
+        width: 65px;
+        height: 63px;
+        line-height: 3.5rem;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    & h5 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 0.6rem;
+        margin-top: 1rem;
+    }
+    & p {
+        font-size:1.4rem;
+        line-height: 1.7rem;
+    }
+    @include mediaquery("tablet-768"){
+        &__column {
+            text-align:center;
+        }
+    }
+}
+@include mediaquery("tablet-575"){
+    .free-shipping {
+        display:none;
+    }
+}
+
+@include mediaquery("tablet-992"){
+    .free-shipping i {
+        padding: 0.85rem 1.3rem 1.5rem 1.3rem;
+        font-size: 2.4rem;
+        width: 53px;
+        height: 51px;
+        line-height: 3.5rem;
+    }
+}

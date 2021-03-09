@@ -1,0 +1,59 @@
+.mainmenu {
+    background:rgba(0, 0, 0, 0.89);
+    width:100%;
+    text-align:center;
+    font-size:1.82rem;
+    position:absolute;
+    z-index:9;
+    & ul li {
+        display:inline-block;
+    }
+    & ul li a {
+        display:inline-block;
+        color:$mid-grey;
+        transition:color 0.15s ease-in;
+        &:hover {
+            text-decoration:none;
+            color:$pale-grey;
+        }
+    }
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding:1rem 2.67rem;
+}
+@include mediaquery("desktop-1440"){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding:1rem 2rem;
+    }
+    .mainmenu {
+        font-size: 1.72rem;
+    }
+}
+@include mediaquery("desktop-1240"){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding:1rem 1.6rem;
+    }
+    .mainmenu {
+        font-size: 1.6rem;
+    }
+}
+@include mediaquery("desktop-1100"){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding:1rem 1.4rem;
+    }
+    .mainmenu {
+        font-size: 1.45rem;
+    }
+}
+@include mediaquery("tablet-992"){
+    .navbar {
+        padding:0;
+    }
+    .mainmenu {
+        font-size: 1.6rem;
+    }
+}

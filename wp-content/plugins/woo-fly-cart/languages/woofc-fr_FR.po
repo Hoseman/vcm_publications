@@ -1,0 +1,429 @@
+# Copyright (C) 2020 WPClever.net
+# This file is distributed under the same license as the WPC Fly Cart for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPC Fly Cart for WooCommerce 2.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-fly-cart\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-03-26T16:58:53+00:00\n"
+"PO-Revision-Date: 2020-04-02 10:43+0200\n"
+"X-Generator: Poedit 2.3\n"
+"X-Domain: woofc\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+
+#. Plugin Name of the plugin
+msgid "WPC Fly Cart for WooCommerce"
+msgstr "WPC Fly Cart for WooCommerce"
+
+#. Plugin URI of the plugin
+msgid "https://wpclever.net/"
+msgstr "https://wpclever.net/"
+
+#. Description of the plugin
+msgid "WooCommerce interaction mini cart with many styles and effects."
+msgstr "WooCommerce interaction mini cart with many styles and effects."
+
+#. Author of the plugin
+msgid "WPClever.net"
+msgstr "WPClever.net"
+
+#. Author URI of the plugin
+msgid "https://wpclever.net"
+msgstr "https://wpclever.net"
+
+#: index.php:109
+msgid "Undo?"
+msgstr "Annuler?"
+
+#: index.php:110
+msgid "%s was removed."
+msgstr "% a été supprimé."
+
+#: index.php:140 index.php:195
+msgid "Settings"
+msgstr "Options"
+
+#: index.php:141 index.php:199
+msgid "Premium Version"
+msgstr "Version Premium"
+
+#: index.php:157
+msgid "Premium support"
+msgstr "Support premium"
+
+#: index.php:167 index.php:178
+msgid "WPC Fly Cart"
+msgstr "WPC Fly Cart"
+
+#: index.php:167
+msgid "Fly Cart"
+msgstr "Fly Cart"
+
+#: index.php:181
+msgid ""
+"Thank you for using our plugin! If you are satisfied, please reward it a "
+"full five-star %s rating."
+msgstr ""
+"Merci d'utiliser notre plugin ! Si vous êtes satisfait, merci de nous noter "
+"cinq étoiles %s."
+
+#: index.php:184
+msgid "Reviews"
+msgstr "Commentaires"
+
+#: index.php:186
+msgid "Changelog"
+msgstr "Notes de version"
+
+#: index.php:188
+msgid "Discussion"
+msgstr "Discussion"
+
+#: index.php:209
+msgid "General"
+msgstr "Général"
+
+#: index.php:210
+msgid "General settings for the fly cart."
+msgstr "Options générales pour le Fly Cart."
+
+#: index.php:213
+msgid "Open on AJAX add to cart"
+msgstr "Ouvrir après un ajout au panier AJAX"
+
+#: index.php:218 index.php:236 index.php:550 index.php:568 index.php:586
+#: index.php:608 index.php:664
+msgid "Yes"
+msgstr "Oui"
+
+#: index.php:222 index.php:240 index.php:401 index.php:554 index.php:572
+#: index.php:590 index.php:612 index.php:668
+msgid "No"
+msgstr "Non"
+
+#: index.php:226
+msgid ""
+"The fly cart will be opened immediately after whenever click to AJAX Add to "
+"cart buttons? See %s \"Add to cart behaviour\" setting %s"
+msgstr ""
+"Le Fly Cart sera ouvert immédiatement après un clic sur un bouton Ajouter au "
+"panier AJAX ? Voir %s l'option \"Comportement de l'ajout au panier\" %s"
+
+#: index.php:231
+msgid "Open on normal add to cart"
+msgstr "Ouvrir après un ajout au panier classique"
+
+#: index.php:244
+msgid ""
+"The fly cart will be opened immediately after whenever click to normal Add "
+"to cart buttons (AJAX is not enable) or Add to cart button in single product "
+"page?"
+msgstr ""
+"Le Fly Cart sera ouvert immédiatement après un clic sur un bouton Ajouter au "
+"panier classique (AJAX désactivé) ou un bouton Ajouter au panier sur une "
+"page produit ?"
+
+#: index.php:249
+msgid "Manual show up button"
+msgstr "Affichage manuel du bouton"
+
+#: index.php:253
+msgid "button class or id"
+msgstr "classe ou Id du bouton"
+
+#: index.php:255
+msgid ""
+"The class or id of the button, when click to this button the fly cart will "
+"be show up. Example %s or %s"
+msgstr ""
+"La classe ou l'Id du bouton pour lequel le panier du bouton s'affichera. "
+"Exemple : %s ou %s"
+
+#: index.php:260
+msgid "Overlay layer"
+msgstr "Calque de superposition"
+
+#: index.php:265 index.php:373 index.php:414 index.php:432 index.php:447
+#: index.php:466 index.php:500 index.php:522
+msgid "Show"
+msgstr "Afficher"
+
+#: index.php:269 index.php:377 index.php:418 index.php:436 index.php:451
+#: index.php:470 index.php:504 index.php:526
+msgid "Hide"
+msgstr "Cacher"
+
+#: index.php:273
+msgid ""
+"If you hide the overlay layer, the buyer still can work on your site when "
+"the fly cart is opening."
+msgstr ""
+"Si la couche de superposition est cachée, l'acheteur peut toujours naviguer "
+"sur le site lorsque le Fly Cart s'affiche."
+
+#: index.php:278 index.php:618
+msgid "Position"
+msgstr "Position"
+
+#: index.php:283
+msgid "Right"
+msgstr "Droite"
+
+#: index.php:287
+msgid "Left"
+msgstr "Gauche"
+
+#: index.php:291
+msgid "Top"
+msgstr "Haut"
+
+#: index.php:295
+msgid "Bottom"
+msgstr "Bas"
+
+#: index.php:299
+msgid "Center"
+msgstr "Centre"
+
+#: index.php:305
+msgid "Style"
+msgstr "Style"
+
+#: index.php:310
+msgid "Color background"
+msgstr "Arrière-plan avec une couleur unie"
+
+#: index.php:314
+msgid "White background"
+msgstr "Arrière-plan blanc"
+
+#: index.php:318
+msgid "Color background, no thumbnail"
+msgstr "Arrière-plan avec une couleur unie, sans miniature d'image"
+
+#: index.php:322
+msgid "White background, no thumbnail"
+msgstr "Arrière-plan blanc, sans miniature d'image"
+
+#: index.php:326 index.php:343
+msgid "Background image"
+msgstr "Image d'arrière-plan"
+
+#: index.php:332
+msgid "Color"
+msgstr "Couleur"
+
+#: index.php:338
+msgid "Background & text color, default %s"
+msgstr "Couleur de l'arrière-plan et du texte, par défaut %s"
+
+#: index.php:359
+msgid "Cart heading"
+msgstr "En-tête du panier"
+
+#: index.php:363 index.php:766
+msgid "Shopping Cart"
+msgstr "Panier"
+
+#: index.php:364
+msgid "Leave blank to use the default text and can be translated."
+msgstr "Laisser vide pour utiliser le texte par défaut."
+
+#: index.php:368
+msgid "Close button"
+msgstr "Bouton de fermeture"
+
+#: index.php:380
+msgid "Show the close button on the fly cart?"
+msgstr "Afficher le bouton de fermeture sur le Fly Cart ?"
+
+#: index.php:384
+msgid "Link to individual product"
+msgstr "Lien vers le produit"
+
+#: index.php:389
+msgid "Yes, open in the same tab"
+msgstr "Oui, ouvrir dans le même onglet"
+
+#: index.php:393
+msgid "Yes, open in the new tab"
+msgstr "Oui, ouvrir dans un nouvel onglet"
+
+#: index.php:397
+msgid "Yes, open quick view popup"
+msgstr "Oui, ouvrir la popup \"Vue rapide\""
+
+#: index.php:409
+msgid "Product data"
+msgstr "Informations du produit"
+
+#: index.php:422
+msgid "Show the product data under product title on the list?"
+msgstr ""
+"Afficher les informations du produit sous le titre du produit dans la liste ?"
+
+#: index.php:427 index.php:856
+msgid "Subtotal"
+msgstr "Sous-total"
+
+#: index.php:442
+msgid "Coupon"
+msgstr "Code promo"
+
+#: index.php:461 index.php:861
+msgid "Total"
+msgstr "Total"
+
+#: index.php:476
+msgid "Action buttons"
+msgstr "Boutons d'action"
+
+#: index.php:481
+msgid "Cart & Checkout"
+msgstr "Panier & Validation de commande"
+
+#: index.php:485
+msgid "Cart only"
+msgstr "Panier seulement"
+
+#: index.php:489
+msgid "Checkout only"
+msgstr "Validation de commande seulement"
+
+#: index.php:495
+msgid "Cross sells"
+msgstr "Ventes croisées"
+
+#: index.php:507
+msgid "Show the cross sells products?"
+msgstr "Afficher les produits de ventes croisées ?"
+
+#: index.php:517
+msgid "Continue shopping"
+msgstr "Continuer les achats"
+
+#: index.php:530
+msgid "Show the continue shopping button at the end of fly cart?"
+msgstr "Afficher le bouton pour continuer les achats à la fin du Fly Cart ?"
+
+#: index.php:535
+msgid "Continue shopping URL"
+msgstr "URL du bouton pour continuer les achats"
+
+#: index.php:540
+msgid ""
+"Custom URL for \"continue shopping\" button. By default, only close the fly "
+"cart when clicking on this button."
+msgstr ""
+"URL personnalisée pour le bouton \"Continuer les achats\". Par défaut, un "
+"clic sur le bouton ferme simplement le Fly Cart."
+
+#: index.php:545
+msgid "Undo remove"
+msgstr "Annuler la suppression"
+
+#: index.php:558
+msgid "Enable undo after removing a product?"
+msgstr "Activer l'annulation après la suppression d'un produit ?"
+
+#: index.php:563
+msgid "Reload the cart"
+msgstr "Actualiser le panier"
+
+#: index.php:576
+msgid ""
+"The cart will be reloaded when opening the page? If you use the cache for "
+"your site, please turn on this option."
+msgstr ""
+"Actualiser le panier à l'ouverture de la page ? Si vous utilisez un cache "
+"pour le site, merci d'activer cette option."
+
+#: index.php:581
+msgid "Hide on Cart & Checkout"
+msgstr "Cacher sur Panier et Validation de commande"
+
+#: index.php:594
+msgid "Hide the fly cart on the Cart and Checkout page."
+msgstr ""
+"Cacher le Fly Cart sur les pages de Panier et de Validation de commande."
+
+#: index.php:599
+msgid "Bubble"
+msgstr "Bulle"
+
+#: index.php:600
+msgid "Settings for the bubble."
+msgstr "Options pour la bulle."
+
+#: index.php:603
+msgid "Enable"
+msgstr "Activer"
+
+#: index.php:623
+msgid "Top Left"
+msgstr "En haut à gauche"
+
+#: index.php:627
+msgid "Top Right"
+msgstr "En haut à droite"
+
+#: index.php:631
+msgid "Bottom Left"
+msgstr "En bas à gauche"
+
+#: index.php:635
+msgid "Bottom Right"
+msgstr "En bas à droite"
+
+#: index.php:641
+msgid "Icon"
+msgstr "Icône"
+
+#: index.php:659
+msgid "Hide if empty"
+msgstr "Cacher si vide"
+
+#: index.php:672
+msgid "Hide the bubble if the cart is empty?"
+msgstr "Cacher la bulle si le panier est vide ?"
+
+#: index.php:677 index.php:681
+msgid "Menu"
+msgstr "Menu"
+
+#: index.php:678
+msgid "Settings for cart menu item."
+msgstr "Options pour l'icône du panier dans le menu."
+
+#: index.php:696
+msgid "Choose the menu(s) you want to add the cart at the end."
+msgstr "Choisir sur quel(s) menu(s) afficher l'icône du panier à la fin."
+
+#: index.php:703
+msgid "Update Options"
+msgstr "Mettre à jour les réglages"
+
+#: index.php:837
+msgid "Remove"
+msgstr "Supprimer"
+
+#: index.php:844
+msgid "There are no products in the cart!"
+msgstr "Il n'y a pas d'articles dans le panier !"
+
+#: index.php:866 index.php:869
+msgid "Cart"
+msgstr "Panier"
+
+#: index.php:866 index.php:873
+msgid "Checkout"
+msgstr "Valider la commande"
+
+#: index.php:878
+msgid "Continue Shopping"
+msgstr "Continuer les achats"

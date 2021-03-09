@@ -1,0 +1,437 @@
+# Copyright (C) 2020 WPClever.net
+# This file is distributed under the same license as the WPC Fly Cart for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPC Fly Cart for WooCommerce 2.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-fly-cart\n"
+"Last-Translator: Fotini Kokkinaki\n"
+"Language-Team: Ελληνικά\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-03-26T16:58:53+00:00\n"
+"PO-Revision-Date: 2020-04-05 23:23+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: woofc\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.3.2; wp-5.4"
+
+#. Plugin Name of the plugin
+msgid "WPC Fly Cart for WooCommerce"
+msgstr "WPC Αιωρούμενο Καλάθι για το WooCommerce"
+
+#. Plugin URI of the plugin
+msgid "https://wpclever.net/"
+msgstr "https://wpclever.net"
+
+#. Description of the plugin
+msgid "WooCommerce interaction mini cart with many styles and effects."
+msgstr ""
+"Καλάθι αλληλεπίδρασης αγορών για το WooCommerce, με πολλές επιλογές και εφέ"
+
+#. Author of the plugin
+msgid "WPClever.net"
+msgstr "WPClever.net"
+
+#. Author URI of the plugin
+msgid "https://wpclever.net"
+msgstr "https://wpclever.net"
+
+#: index.php:109
+msgid "Undo?"
+msgstr "Ακύρωση;"
+
+#: index.php:110
+msgid "%s was removed."
+msgstr "%s αφαιρέθηκε."
+
+#: index.php:140 index.php:195
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: index.php:141 index.php:199
+msgid "Premium Version"
+msgstr "Πληρωτέα Έκδοση"
+
+#: index.php:157
+msgid "Premium support"
+msgstr "Πληρωτέα Εξυπηρέτηση"
+
+#: index.php:167 index.php:178
+msgid "WPC Fly Cart"
+msgstr "WPC Αιωρούμενο Καλάθι"
+
+#: index.php:167
+msgid "Fly Cart"
+msgstr "Αιωρούμενο Καλάθι"
+
+#: index.php:181
+msgid ""
+"Thank you for using our plugin! If you are satisfied, please reward it a "
+"full five-star %s rating."
+msgstr ""
+"Ευχαριστούμε που χρησιμοποιήσατε την εφαρμογή μας! Εάν είστε ικανοποιημένοι, "
+"παρακαλούμε επιβραβεύστε μας με μία κριτική 5 αστέριών %s."
+
+#: index.php:184
+msgid "Reviews"
+msgstr "Κριτικές"
+
+#: index.php:186
+msgid "Changelog"
+msgstr "Αρχείο ενημερώσεων"
+
+#: index.php:188
+msgid "Discussion"
+msgstr "Συζήτηση"
+
+#: index.php:209
+msgid "General"
+msgstr "Γενικά"
+
+#: index.php:210
+msgid "General settings for the fly cart."
+msgstr "Γενικές ρυθμίσεις για το Αιωρούμενο Καλάθι"
+
+#: index.php:213
+msgid "Open on AJAX add to cart"
+msgstr "Άνοιγμα Καλαθιού Αγορών σε AJAX μορφή"
+
+#: index.php:218 index.php:236 index.php:550 index.php:568 index.php:586
+#: index.php:608 index.php:664
+msgid "Yes"
+msgstr "Ναί"
+
+#: index.php:222 index.php:240 index.php:401 index.php:554 index.php:572
+#: index.php:590 index.php:612 index.php:668
+msgid "No"
+msgstr "Όχι"
+
+#: index.php:226
+msgid ""
+"The fly cart will be opened immediately after whenever click to AJAX Add to "
+"cart buttons? See %s \"Add to cart behaviour\" setting %s"
+msgstr ""
+"Το αιωρούμενο καλάθι θα ανοίξει αμέσως μετά από κάθε κλικ που θα κάνουμε "
+"στην AJAX επιλογή \"Προσθήκη στο Καλάθι\"; Δείτε %s τη συμπεριφορά των "
+"ρυθμίσεων για την \"Προσθήκη στο Καλάθι\" %s"
+
+#: index.php:231
+msgid "Open on normal add to cart"
+msgstr "Άνοιγμα στο κανονικό Καλάθι Αγορών"
+
+#: index.php:244
+msgid ""
+"The fly cart will be opened immediately after whenever click to normal Add "
+"to cart buttons (AJAX is not enable) or Add to cart button in single product "
+"page?"
+msgstr ""
+"Το αιωρούμενο καλάθι θα ανοίξει αμέσως μετά από κάθε κλικ που θα κάνουμε στο "
+"κανονικό κουμπί \"Προσθήκη στο Καλάθι\" (όταν η AJAX επιλογή ανοίγματος "
+"καλαθιού δεν είναι ενεργή) ή σε κάθε κουμπί \"Προσθήκη στο Καλάθι\" που "
+"υπάρχει σε σελίδα μεμονωμένου προϊόντος;"
+
+#: index.php:249
+msgid "Manual show up button"
+msgstr "Χειροκίνητη επισκόπηση κουμπιού"
+
+#: index.php:253
+msgid "button class or id"
+msgstr "class η id για το κουμπί"
+
+#: index.php:255
+msgid ""
+"The class or id of the button, when click to this button the fly cart will "
+"be show up. Example %s or %s"
+msgstr ""
+"Η class ή id του κουμπιού, όταν θα πατήσετε σε αυτό το κουμπί το αιωρούμενο "
+"καλάθι θα εμφανιστεί. Παράδειγμα %s ή %s"
+
+#: index.php:260
+msgid "Overlay layer"
+msgstr "Κάλυμμα φόντου"
+
+#: index.php:265 index.php:373 index.php:414 index.php:432 index.php:447
+#: index.php:466 index.php:500 index.php:522
+msgid "Show"
+msgstr "Εμφάνιση"
+
+#: index.php:269 index.php:377 index.php:418 index.php:436 index.php:451
+#: index.php:470 index.php:504 index.php:526
+msgid "Hide"
+msgstr "Απόκρυψη"
+
+#: index.php:273
+msgid ""
+"If you hide the overlay layer, the buyer still can work on your site when "
+"the fly cart is opening."
+msgstr ""
+"Εάν κρύψετε το φόντο κάλυψης, το πελάτης θα εξακολουθεί να μπορεί να "
+"περιηγηθεί στον ιστότοπο όσο το αιωρούμενο καλάθι παραμένει ανοιχτό"
+
+#: index.php:278 index.php:618
+msgid "Position"
+msgstr "Τοποθεσία"
+
+#: index.php:283
+msgid "Right"
+msgstr "Δεξιά"
+
+#: index.php:287
+msgid "Left"
+msgstr "Αριστερά"
+
+#: index.php:291
+msgid "Top"
+msgstr "Πάνω"
+
+#: index.php:295
+msgid "Bottom"
+msgstr "Κάτω "
+
+#: index.php:299
+msgid "Center"
+msgstr "Κέντρο"
+
+#: index.php:305
+msgid "Style"
+msgstr "Στιλ"
+
+#: index.php:310
+msgid "Color background"
+msgstr "Χρώμα στο Φόντο"
+
+#: index.php:314
+msgid "White background"
+msgstr "Λευκό φόντο"
+
+#: index.php:318
+msgid "Color background, no thumbnail"
+msgstr "Χρώμα στο Φόντο, Χωρίς εικόνα προϊόντος"
+
+#: index.php:322
+msgid "White background, no thumbnail"
+msgstr "Λευκό φόντο, Χωρίς εικόνα προϊόντος"
+
+#: index.php:326 index.php:343
+msgid "Background image"
+msgstr "Εικόνα φόντου"
+
+#: index.php:332
+msgid "Color"
+msgstr "Χρώμα"
+
+#: index.php:338
+msgid "Background & text color, default %s"
+msgstr "Χρώμα φόντου και κειμένου, προεπιλογή %s"
+
+#: index.php:359
+msgid "Cart heading"
+msgstr "Τιτλος Καλαθιού"
+
+#: index.php:363 index.php:766
+msgid "Shopping Cart"
+msgstr "Καλάθι Αγορών"
+
+#: index.php:364
+msgid "Leave blank to use the default text and can be translated."
+msgstr ""
+"Αφήστε κενό το πεδίο αυτό για να γίνει χρήση του προεπιλεγμένου κειμένου που "
+"μπορεί να μεταφραστεί"
+
+#: index.php:368
+msgid "Close button"
+msgstr "Κουμπί κλεισίματος"
+
+#: index.php:380
+msgid "Show the close button on the fly cart?"
+msgstr "Εμφάνιση του κουμπιού κλεισίματος στο αιωρούμενο καλάθι;"
+
+#: index.php:384
+msgid "Link to individual product"
+msgstr "Σύνδεση με μεμονωμένο προϊόν"
+
+#: index.php:389
+msgid "Yes, open in the same tab"
+msgstr "Ναί, ανοίξτε στην ίδια σελίδα "
+
+#: index.php:393
+msgid "Yes, open in the new tab"
+msgstr "Ναί, ανοίξτε σε νέα σελίδα "
+
+#: index.php:397
+msgid "Yes, open quick view popup"
+msgstr "Ναί, ανοίξτε το παράθυρο γρήγορης επισκόπησης"
+
+#: index.php:409
+msgid "Product data"
+msgstr "Στοιχεία προϊόντος"
+
+#: index.php:422
+msgid "Show the product data under product title on the list?"
+msgstr ""
+"Εμφάνιση των στοιχείων προϊόντος κάτω από τον τίτλο προϊόντος στη λίστα του "
+"αιωρούμενου καλαθιού;"
+
+#: index.php:427 index.php:856
+msgid "Subtotal"
+msgstr "Μερικό Σύνολο"
+
+#: index.php:442
+msgid "Coupon"
+msgstr "Κουπόνι"
+
+#: index.php:461 index.php:861
+msgid "Total"
+msgstr "Σύνολο"
+
+#: index.php:476
+msgid "Action buttons"
+msgstr "Κουμπιά ενεργειών"
+
+#: index.php:481
+msgid "Cart & Checkout"
+msgstr "Καλάθι & Ταμείο"
+
+#: index.php:485
+msgid "Cart only"
+msgstr "Μόνο το Καλάθι"
+
+#: index.php:489
+msgid "Checkout only"
+msgstr "Μόνο Ταμείο"
+
+#: index.php:495
+msgid "Cross sells"
+msgstr "Σχετικές πωλήσεις"
+
+#: index.php:507
+msgid "Show the cross sells products?"
+msgstr "Εμφάνιση των σχετικών προϊόντων;"
+
+#: index.php:517
+msgid "Continue shopping"
+msgstr "Συνέχεια Αγορών"
+
+#: index.php:530
+msgid "Show the continue shopping button at the end of fly cart?"
+msgstr "Εμφάνιση του κουμπιού \"Συνέχεια Αγορών\" στο αιωρούμενο καλάθι;"
+
+#: index.php:535
+msgid "Continue shopping URL"
+msgstr "Διεύθυνση διασύνδεσης για την Συνέχεια Αγορών"
+
+#: index.php:540
+msgid ""
+"Custom URL for \"continue shopping\" button. By default, only close the fly "
+"cart when clicking on this button."
+msgstr ""
+"Καθορισμός διεύθυνσης διασύνδεσης για το κουμπί \"Συνέχεια Αγορών\". Ως "
+"προεπιλογή θα κλείσει το αιωρούμενο καλάθι όταν θα πατάει κάποιος αυτό το "
+"κουμπί."
+
+#: index.php:545
+msgid "Undo remove"
+msgstr "Ακύρωση Αφαίρεσης"
+
+#: index.php:558
+msgid "Enable undo after removing a product?"
+msgstr "Ενεργοποίηση της ακύρωσης (undo) μετά την αφαίρεση ενός προϊόντος?"
+
+#: index.php:563
+msgid "Reload the cart"
+msgstr "Επαναφόρτωση Καλαθιού"
+
+#: index.php:576
+msgid ""
+"The cart will be reloaded when opening the page? If you use the cache for "
+"your site, please turn on this option."
+msgstr ""
+"Το καλάθι θα επεναφορτώνει όταν θα είναι ανοίγει η σελίδα; Εάν "
+"χρησιμοποιείτε ρυθμίσεις κρυφής μνήμης (cache) στον ιστότοπό σας, "
+"παρακαλούμε ενεργοποιήστε αυτή την επιλογή."
+
+#: index.php:581
+msgid "Hide on Cart & Checkout"
+msgstr "Απόκρυψη Καλαθιού & Ταμείου"
+
+#: index.php:594
+msgid "Hide the fly cart on the Cart and Checkout page."
+msgstr "Απόκρυψη Αιωρούμενου Καλαθιού στις Σελίδες Καλαθιού  & Ταμείου"
+
+#: index.php:599
+msgid "Bubble"
+msgstr "Κουμπί-Φυσαλίδα"
+
+#: index.php:600
+msgid "Settings for the bubble."
+msgstr "Ρυθμίσεις για το κουμπί-φυσαλίδα"
+
+#: index.php:603
+msgid "Enable"
+msgstr "Ενεργοποίηση"
+
+#: index.php:623
+msgid "Top Left"
+msgstr "Πάνω Αριστερά"
+
+#: index.php:627
+msgid "Top Right"
+msgstr "Πάνω Δεξιά"
+
+#: index.php:631
+msgid "Bottom Left"
+msgstr "Κάτω Αριστερά"
+
+#: index.php:635
+msgid "Bottom Right"
+msgstr "Κάτω Δεξιά"
+
+#: index.php:641
+msgid "Icon"
+msgstr "Εικονίδιο"
+
+#: index.php:659
+msgid "Hide if empty"
+msgstr "Απόκρυψη εάν είναι κενό"
+
+#: index.php:672
+msgid "Hide the bubble if the cart is empty?"
+msgstr "Απόκρυψη κουμπιού-φυσαλίδα όταν το καλάθι είναι άδειο?"
+
+#: index.php:677 index.php:681
+msgid "Menu"
+msgstr "Μενού"
+
+#: index.php:678
+msgid "Settings for cart menu item."
+msgstr "Ρυθμίσεις για το στοιχείο καλαθιού του μενού"
+
+#: index.php:696
+msgid "Choose the menu(s) you want to add the cart at the end."
+msgstr "Επιλέξτε το/τα μενού όπου επιθυμείτε να προστεθεί το καλάθι στο τέλος"
+
+#: index.php:703
+msgid "Update Options"
+msgstr "Ανανέωση Ρυθμίσεων"
+
+#: index.php:837
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: index.php:844
+msgid "There are no products in the cart!"
+msgstr "Δεν υπάρχουν προϊόντα στο καλάθι!"
+
+#: index.php:866 index.php:869
+msgid "Cart"
+msgstr "Καλάθι"
+
+#: index.php:866 index.php:873
+msgid "Checkout"
+msgstr "Ταμείο"
+
+#: index.php:878
+msgid "Continue Shopping"
+msgstr "Συνέχεια Αγορών"

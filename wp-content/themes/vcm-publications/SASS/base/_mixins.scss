@@ -1,0 +1,43 @@
+//Position Absolute Centered
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+//Position Absolute Centered
+
+//Media Queries
+$breakpoints: (
+    "phone-320":        320px,
+    "phone-400":        400px,
+    "phone-480":        480px,
+    "tablet-575":       575px,
+    "tablet-640":       640px,
+    "tablet-767":       767px,
+    "tablet-768":       768px,
+    "tablet-992":       992px,
+    "tablet-1024":      1024px,
+    "desktop-1100":     1100px,
+    "desktop-1240":     1248px,
+    "desktop-1440":     1440px,
+    "desktop-1700":     1700px
+);
+@mixin mediaquery($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 0px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+//Media Queries
+
+// Gradient
+@mixin gradient($angle, $color-1, $color-2) {
+    background: linear-gradient($angle, $color-1 0%, $color-2 100%);
+}
+// Gradient

@@ -1,0 +1,79 @@
+.footer {
+    background:$pale-grey;
+    padding:4.8rem 0;
+    & .footer__wrapper {
+        display:flex;
+        margin-bottom: 3.5rem;
+        @include mediaquery("tablet-640"){
+            display:block;
+        }
+        & .footer__links {
+            width:33.333%;
+            @include mediaquery("tablet-640"){
+                width:100%;
+            }
+            & p {
+                font-weight:500;
+                color:$dark-grey;
+                font-size:1.5rem;
+            }
+            & ul {
+                list-style-type:none;
+                margin-left:0;
+                & li {
+                    color:$dark-grey;
+                    font-size:1.43rem;
+                    margin-bottom: 0.35rem;
+                    color:$mid-grey;
+                    & a {
+                        color:$mid-grey;
+                        margin-bottom: 0rem;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    & .footer__signoff {
+        display:flex;
+        justify-content: space-between;
+        padding-top: 2.1rem;
+        @include mediaquery("tablet-640"){
+            display:block;
+        }
+        & p {
+            color:$mid-grey;
+            font-size:1.35rem;
+        }
+        & a {
+            color:$mid-grey;
+            transition:color 0.15s ease-in;
+            &:hover {
+                color:$dark-grey;
+                text-decoration:none;
+            }
+        }
+    }
+    & hr {
+        border-top:1px solid $light-grey;
+        border-bottom:0;
+    }
+    & .scroll-to-top {
+        background:$blue;
+        border-radius: 0.4rem;
+        position: relative;
+        top: 17rem;
+        cursor: pointer;
+        transition: background 0.15s ease-in;
+        float: right;
+        height: 33px;
+        &:hover {
+            background:$black;
+        }
+        & i {
+            color:$white;
+            padding: 1rem 1.2rem;
+            font-size: 1.3rem;
+        }
+    }
+}

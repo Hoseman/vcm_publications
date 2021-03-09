@@ -1,0 +1,94 @@
+.carousel-small {
+    & .carousel-item__image {
+        width:100%;
+    }
+    & h1 {
+        font-size:6.5rem;
+        font-weight:700;
+        color:lighten($blue, 7%);
+        text-transform:uppercase;
+    }
+    @include mediaquery("desktop-1700"){
+        & h1 {
+            font-size:5.5rem;
+        }
+    }
+    @include mediaquery("desktop-1440"){
+        & h1 {
+            font-size:5rem;
+        }
+    }
+    @include mediaquery("desktop-1240"){
+        & h1 {
+            font-size:4.5rem;
+        }
+    }
+    @include mediaquery("tablet-992"){
+        & h1 {
+            font-size:4.2rem;
+        }
+    }
+    @include mediaquery("tablet-768"){
+        & h1 {
+            font-size:3.5rem;
+        }
+    }
+    @include mediaquery("phone-400"){
+        & h1 {
+            font-size:2.8rem;
+        }
+    }
+    & .carousel-inner p {
+        font-size: 2.9rem;
+        margin-bottom:2.9rem;
+    }
+    & .btn-vcm {
+        background:transparent;
+        border:2px solid $white;
+        background: transparent;
+        padding: 1.1rem 4rem;
+        color: white;
+        font-size: 1.75rem;
+        box-shadow: inset 0 0 0 0 $black;
+        transition:all 0.15s ease-in;
+        &:hover {
+            box-shadow: inset 400px 0 0 0 $black;
+        }
+    }
+    & .carousel-caption {
+        top: 43%;
+        bottom: unset;
+        left:5%;
+        right:5%;
+    }    
+}
+
+@include mediaquery("tablet-992"){
+    .carousel-small .carousel-item__image {
+        height: 220px;
+        object-fit: cover;
+    }
+    .carousel-small .carousel-caption {
+        top: 30%;
+    }
+}
+
+@include mediaquery("tablet-640"){
+    .carousel-small .carousel-item__image {
+        height: 180px;
+        object-fit: cover;
+    }
+    .carousel-small .carousel-caption {
+        top: 27%;
+    }
+}
+
+@include mediaquery("phone-400"){
+    .carousel-small .carousel-item__image {
+        height: 140px;
+        object-fit: cover;
+    }
+    .carousel-small .carousel-caption {
+        top: 25%;
+    }
+}

@@ -1,0 +1,9 @@
+.woofc_image_preview img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.active[data-slug="woo-fly-cart"] .premium a {
+    color: #c9356e;
+}

@@ -1,0 +1,528 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPC Fly Cart for WooCommerce v1.7.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2020-01-08 17:15:08+0000\n"
+"Last-Translator: admin <admin@amaz-helper.online>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: index.php:0
+#@ woofc
+msgid "WPC Fly Cart for WooCommerce"
+msgstr "WPC Fly Cart for WooCommerce"
+
+#. translators: plugin header field 'PluginURI'
+#: index.php:0
+#@ woofc
+msgid "https://wpclever.net/"
+msgstr "https://wpclever.net/"
+
+#. translators: plugin header field 'Description'
+#: index.php:0
+#@ woofc
+msgid "WooCommerce interaction mini cart with many styles and effects."
+msgstr "WooCommerce interaction mini cart with many styles and effects."
+
+#. translators: plugin header field 'Author'
+#: index.php:0
+#@ woofc
+msgid "WPClever.net"
+msgstr "WPClever.net"
+
+#. translators: plugin header field 'AuthorURI'
+#: index.php:0
+#@ woofc
+msgid "https://wpclever.net"
+msgstr "https://wpclever.net"
+
+#. translators: plugin header field 'Version'
+#: index.php:0
+#@ woofc
+msgid "1.7.3"
+msgstr "1.7.3"
+
+#: index.php:131
+#: index.php:176
+#@ woofc
+msgid "WPC Fly Cart"
+msgstr "WPC Fly Cart"
+
+#: index.php:131
+#@ woofc
+msgid "Fly Cart"
+msgstr "Fly Cart"
+
+#: index.php:145
+#: index.php:193
+#@ woofc
+msgid "Settings"
+msgstr "Настроки"
+
+#: index.php:146
+#: index.php:197
+#@ woofc
+msgid "Premium Version"
+msgstr "Премиум версия"
+
+#: index.php:162
+#@ woofc
+msgid "Premium support"
+msgstr "Премиум поддержка"
+
+#: index.php:179
+#, php-format
+#@ woofc
+msgid "Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating."
+msgstr "Благодарим вас за использование нашего плагина! Если вы удовлетворены, пожалуйста, наградите его полным пятизвездочным рейтингом %s"
+
+#: index.php:182
+#@ woofc
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: index.php:184
+#@ woofc
+msgid "Changelog"
+msgstr "Список изменений"
+
+#: index.php:186
+#@ woofc
+msgid "Discussion"
+msgstr "Обсуждение"
+
+#: index.php:207
+#@ woofc
+msgid "General"
+msgstr "Общие"
+
+#: index.php:208
+#@ woofc
+msgid "General settings for the fly cart."
+msgstr "Общие настройки для fly cart."
+
+#: index.php:211
+#@ woofc
+msgid "Open on AJAX add to cart"
+msgstr "Открыть на AJAX добавить в корзину"
+
+#: index.php:216
+#: index.php:234
+#: index.php:548
+#: index.php:566
+#: index.php:588
+#: index.php:644
+#@ woofc
+msgid "Yes"
+msgstr "Да"
+
+#: index.php:220
+#: index.php:238
+#: index.php:399
+#: index.php:552
+#: index.php:570
+#: index.php:592
+#: index.php:648
+#@ woofc
+msgid "No"
+msgstr "Нет"
+
+#: index.php:224
+#, php-format
+#@ woofc
+msgid "The fly cart will be opened immediately after whenever click to AJAX Add to cart buttons? See %s \"Add to cart behaviour\" setting %s"
+msgstr "Корзина fly будет открыта сразу после каждого нажатия кнопки AJAX Add to cart? См. %S \"добавить в корзину поведения\" Примечание"
+
+#: index.php:229
+#@ woofc
+msgid "Open on normal add to cart"
+msgstr "Открыть на обычном добавить в корзину"
+
+#: index.php:242
+#@ woofc
+msgid "The fly cart will be opened immediately after whenever click to normal Add to cart buttons (AJAX is not enable) or Add to cart button in single product page?"
+msgstr "Fly cart будет открыт сразу после того, как вы нажмете на обычные кнопки Добавить в корзину (AJAX не включен) или кнопку Добавить в корзину на одной странице продукта?"
+
+#: index.php:247
+#@ woofc
+msgid "Manual show up button"
+msgstr "Ручная кнопка Показать "
+
+#: index.php:251
+#@ woofc
+msgid "button class or id"
+msgstr "класс или идентификатор кнопки"
+
+#: index.php:253
+#, php-format
+#@ woofc
+msgid "The class or id of the button, when click to this button the fly cart will be show up. Example %s or %s"
+msgstr "Класс или идентификатор кнопки, при нажатии на эту кнопку будет отображаться fly cart. Пример %s или %s"
+
+#: index.php:258
+#@ woofc
+msgid "Overlay layer"
+msgstr ""
+
+#: index.php:263
+#: index.php:371
+#: index.php:412
+#: index.php:430
+#: index.php:445
+#: index.php:464
+#: index.php:498
+#: index.php:520
+#@ woofc
+msgid "Show"
+msgstr "Показать"
+
+#: index.php:267
+#: index.php:375
+#: index.php:416
+#: index.php:434
+#: index.php:449
+#: index.php:468
+#: index.php:502
+#: index.php:524
+#@ woofc
+msgid "Hide"
+msgstr "Скрыть"
+
+#: index.php:271
+#@ woofc
+msgid "If you hide the overlay layer, the buyer still can work on your site when the fly cart is opening."
+msgstr "Если вы скроете слой наложения, покупатель все равно сможет работать на вашем сайте, когда откроется fly cart."
+
+#: index.php:276
+#: index.php:598
+#@ woofc
+msgid "Position"
+msgstr "Позиция"
+
+#: index.php:281
+#@ woofc
+msgid "Right"
+msgstr "Справа"
+
+#: index.php:285
+#@ woofc
+msgid "Left"
+msgstr "Слева"
+
+#: index.php:289
+#@ woofc
+msgid "Top"
+msgstr "Сверху"
+
+#: index.php:293
+#@ woofc
+msgid "Bottom"
+msgstr "Снизу"
+
+#: index.php:297
+#@ woofc
+msgid "Center"
+msgstr "По центру"
+
+#: index.php:303
+#@ woofc
+msgid "Style"
+msgstr "Стиль"
+
+#: index.php:308
+#@ woofc
+msgid "Color background"
+msgstr "Цвет фона"
+
+#: index.php:312
+#@ woofc
+msgid "White background"
+msgstr "Белый фон"
+
+#: index.php:316
+#@ woofc
+msgid "Color background, no thumbnail"
+msgstr "Цветной фон, без миниатюр"
+
+#: index.php:320
+#@ woofc
+msgid "White background, no thumbnail"
+msgstr "Белый фон, без миниатюр"
+
+#: index.php:324
+#: index.php:341
+#@ woofc
+msgid "Background image"
+msgstr "Фоновая картинка"
+
+#: index.php:330
+#@ woofc
+msgid "Color"
+msgstr "Цвет"
+
+#: index.php:336
+#, php-format
+#@ woofc
+msgid "Background & text color, default %s"
+msgstr "Цвет фона и текста, стандартный %s"
+
+#: index.php:350
+#@ default
+msgid "Upload image"
+msgstr ""
+
+#: index.php:357
+#@ woofc
+msgid "Cart heading"
+msgstr "Верх корзины"
+
+#: index.php:361
+#: index.php:746
+#@ woofc
+msgid "Shopping Cart"
+msgstr "Корзина"
+
+#: index.php:362
+#@ woofc
+msgid "Leave blank to use the default text and can be translated."
+msgstr "Оставьте поле пустым, чтобы использовать текст по умолчанию и его можно было перевести."
+
+#: index.php:366
+#@ woofc
+msgid "Close button"
+msgstr "Кнопка закрыть"
+
+#: index.php:378
+#@ woofc
+msgid "Show the close button on the fly cart?"
+msgstr "Показать кнопку Закрыть на fly cart?"
+
+#: index.php:382
+#@ woofc
+msgid "Link to individual product"
+msgstr "Ссылка на отдельный продукт"
+
+#: index.php:387
+#@ woofc
+msgid "Yes, open in the same tab"
+msgstr "Да, открыть в той же вкладке"
+
+#: index.php:391
+#@ woofc
+msgid "Yes, open in the new tab"
+msgstr "Да, открыть в новой вкладке"
+
+#: index.php:395
+#@ woofc
+msgid "Yes, open quick view popup"
+msgstr "Да, открыть в вплывающем окне"
+
+#: index.php:407
+#@ woofc
+msgid "Product data"
+msgstr "Информация о продукте"
+
+#: index.php:420
+#@ woofc
+msgid "Show the product data under product title on the list?"
+msgstr "Показать информацию о продукте под названием продукта в списке?"
+
+#: index.php:425
+#: index.php:829
+#@ woofc
+msgid "Subtotal"
+msgstr "Подытог"
+
+#: index.php:440
+#@ woofc
+msgid "Coupon"
+msgstr "Купон"
+
+#: index.php:459
+#: index.php:834
+#@ woofc
+msgid "Total"
+msgstr "Итого"
+
+#: index.php:474
+#@ woofc
+msgid "Action buttons"
+msgstr "Кнопки действия"
+
+#: index.php:479
+#@ woofc
+msgid "Cart & Checkout"
+msgstr "Корзина И Оформление Заказа"
+
+#: index.php:483
+#@ woofc
+msgid "Cart only"
+msgstr "Только Корзина"
+
+#: index.php:487
+#@ woofc
+msgid "Checkout only"
+msgstr "Только Оформление"
+
+#: index.php:493
+#@ woofc
+msgid "Cross sells"
+msgstr "Перекрестные продажи"
+
+#: index.php:505
+#@ woofc
+msgid "Show the cross sells products?"
+msgstr "Показать Перекрестные продажи?"
+
+#: index.php:515
+#@ woofc
+msgid "Continue shopping"
+msgstr "Продолжить покупки"
+
+#: index.php:528
+#@ woofc
+msgid "Show the continue shopping button at the end of fly cart?"
+msgstr "Показать кнопку Продолжить покупки в конце fly cart?"
+
+#: index.php:533
+#@ woofc
+msgid "Continue shopping URL"
+msgstr "Продолжить покупки URL"
+
+#: index.php:538
+#@ woofc
+msgid "Custom URL for \"continue shopping\" button. By default, only close the fly cart when clicking on this button."
+msgstr "Пользовательский URL для кнопки \"continue shopping\". По умолчанию, закрытие fly cart при нажатии на эту кнопку"
+
+#: index.php:543
+#@ woofc
+msgid "Undo remove"
+msgstr "Отменить удаление"
+
+#: index.php:556
+#@ woofc
+msgid "Enable undo after removing a product?"
+msgstr "Включить отмену после удаления продукта?"
+
+#: index.php:561
+#@ woofc
+msgid "Reload the cart"
+msgstr "Обновить корзину"
+
+#: index.php:574
+#@ woofc
+msgid "The cart will be reloaded when opening the page? If you use the cache for your site, please turn on this option."
+msgstr "Корзина будет перезагружена при открытии страницы? Если вы используете кэш для своего сайта, пожалуйста, включите эту опцию."
+
+#: index.php:579
+#@ woofc
+msgid "Bubble"
+msgstr "Пузырь"
+
+#: index.php:580
+#@ woofc
+msgid "Settings for the bubble."
+msgstr "Настройки для пузыря"
+
+#: index.php:583
+#@ woofc
+msgid "Enable"
+msgstr "Активно"
+
+#: index.php:603
+#@ woofc
+msgid "Top Left"
+msgstr "Сверху слева"
+
+#: index.php:607
+#@ woofc
+msgid "Top Right"
+msgstr "Сверху справа"
+
+#: index.php:611
+#@ woofc
+msgid "Bottom Left"
+msgstr "Снизу слева"
+
+#: index.php:615
+#@ woofc
+msgid "Bottom Right"
+msgstr "Снизу справа"
+
+#: index.php:621
+#@ woofc
+msgid "Icon"
+msgstr "Иконка"
+
+#: index.php:639
+#@ woofc
+msgid "Hide if empty"
+msgstr "Скрыть если пусто"
+
+#: index.php:652
+#@ woofc
+msgid "Hide the bubble if the cart is empty?"
+msgstr "Спрятать пузырь, если корзина пуста?"
+
+#: index.php:657
+#: index.php:661
+#@ woofc
+msgid "Menu"
+msgstr "Меню"
+
+#: index.php:658
+#@ woofc
+msgid "Settings for cart menu item."
+msgstr "Настройки для пункта меню корзина."
+
+#: index.php:676
+#@ woofc
+msgid "Choose the menu(s) you want to add the cart at the end."
+msgstr "Выберите меню в которые вы хотите добавить в корзину в конце."
+
+#: index.php:683
+#@ woofc
+msgid "Update Options"
+msgstr "Настройки обновления"
+
+#: index.php:814
+#@ woofc
+msgid "Remove"
+msgstr "Удалить"
+
+#: index.php:821
+#@ woofc
+msgid "There are no products in the cart!"
+msgstr "В корзине нет никаких продуктов!"
+
+#: index.php:839
+#: index.php:842
+#@ woofc
+msgid "Cart"
+msgstr "Корзина"
+
+#: index.php:839
+#: index.php:846
+#@ woofc
+msgid "Checkout"
+msgstr "Оформить"
+
+#: index.php:851
+#@ woofc
+msgid "Continue Shopping"
+msgstr "Продолжить покупки"
+

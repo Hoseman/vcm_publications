@@ -1,0 +1,304 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Fly Cart\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
+"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"POT-Creation-Date: 2018-01-23 01:59+0000\n"
+"PO-Revision-Date: 2018-01-23 02:00+0000\n"
+"Language-Team: Norwegian (Bokmål)\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"Last-Translator: WooClever <admin@local.woo>\n"
+"Language: nb-NO\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Report-Msgid-Bugs-To: "
+
+#: woo-fly-cart-premium/index.php:143
+msgid ""
+"The mini cart will be show up immediately after whenever click to AJAX Add "
+"to cart buttons? See %s \"Add to cart behaviour\" setting %s"
+msgstr ""
+"The mini cart will be show up immediately after whenever click to AJAX Add "
+"to cart buttons? See %s \"Add to cart behaviour\" setting %s"
+
+#: woo-fly-cart-premium/index.php:161
+msgid ""
+"The mini cart will be show up immediately after whenever click to normal Add "
+"to cart buttons (AJAX is not enable) or Add to cart button in single product "
+"page?"
+msgstr ""
+"The mini cart will be show up immediately after whenever click to normal Add "
+"to cart buttons (AJAX is not enable) or Add to cart button in single product "
+"page?"
+
+#: woo-fly-cart-premium/index.php:166
+msgid "Manual show up button"
+msgstr "Manuell Vis knapp"
+
+#: woo-fly-cart-premium/index.php:172
+msgid ""
+"The class or id of the button, when click to this button the mini cart will "
+"be show up. Example %s or %s"
+msgstr ""
+"The class or id of the button, when click to this button the mini cart will "
+"be show up. Example %s or %s"
+
+#: woo-fly-cart-premium/index.php:83, woo-fly-cart-premium/index.php:108
+msgid "Woo Fly Cart"
+msgstr "Woo Fly Cart"
+
+#: woo-fly-cart-premium/index.php:95, woo-fly-cart-premium/index.php:117
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: woo-fly-cart-premium/index.php:96, woo-fly-cart-premium/index.php:119
+msgid "Support"
+msgstr "Support"
+
+#: woo-fly-cart-premium/index.php:111
+msgid "WooCommerce interaction mini cart with many styles and effects."
+msgstr "WooCommerce minikuv med mange stiler og effekter."
+
+#: woo-fly-cart-premium/index.php:126
+msgid "Main Cart"
+msgstr "Hovedkurv"
+
+#: woo-fly-cart-premium/index.php:127
+msgid "Settings for main fly cart"
+msgstr "Innstillinger for hoved handlekurv"
+
+#: woo-fly-cart-premium/index.php:130
+msgid "Show on AJAX add to cart"
+msgstr "Vis på AJAX Legg i handlekurv"
+
+#: woo-fly-cart-premium/index.php:135, woo-fly-cart-premium/index.php:153,
+#: woo-fly-cart-premium/index.php:269, woo-fly-cart-premium/index.php:286,
+#: woo-fly-cart-premium/index.php:304, woo-fly-cart-premium/index.php:338,
+#: woo-fly-cart-premium/index.php:356, woo-fly-cart-premium/index.php:378,
+#: woo-fly-cart-premium/index.php:433, woo-fly-cart-premium/index.php:451
+msgid "Yes"
+msgstr "Ja"
+
+#: woo-fly-cart-premium/index.php:139, woo-fly-cart-premium/index.php:157,
+#: woo-fly-cart-premium/index.php:273, woo-fly-cart-premium/index.php:290,
+#: woo-fly-cart-premium/index.php:308, woo-fly-cart-premium/index.php:342,
+#: woo-fly-cart-premium/index.php:360, woo-fly-cart-premium/index.php:382,
+#: woo-fly-cart-premium/index.php:437, woo-fly-cart-premium/index.php:455
+msgid "No"
+msgstr "Nei"
+
+#: woo-fly-cart-premium/index.php:148
+msgid "Show on normal add to cart"
+msgstr "Vis på normal legg i handlekurv"
+
+#: woo-fly-cart-premium/index.php:170
+msgid "button class or id"
+msgstr "knapp-klasse eller -id"
+
+#: woo-fly-cart-premium/index.php:177
+msgid "Position"
+msgstr "Posisjon"
+
+#: woo-fly-cart-premium/index.php:182
+msgid "Right"
+msgstr "Høyre"
+
+#: woo-fly-cart-premium/index.php:186
+msgid "Left"
+msgstr "Venstre"
+
+#: woo-fly-cart-premium/index.php:190
+msgid "Top"
+msgstr "Topp"
+
+#: woo-fly-cart-premium/index.php:194
+msgid "Bottom"
+msgstr "Bunn"
+
+#: woo-fly-cart-premium/index.php:198
+msgid "Center"
+msgstr "Sentrert"
+
+#: woo-fly-cart-premium/index.php:204
+msgid "Style"
+msgstr "Stil"
+
+#: woo-fly-cart-premium/index.php:209
+msgid "Color background"
+msgstr "Bakgrunnsfarge"
+
+#: woo-fly-cart-premium/index.php:213
+msgid "White background"
+msgstr "Hvit bakgrunn"
+
+#: woo-fly-cart-premium/index.php:217
+msgid "Color background, no thumbnail"
+msgstr "Bakgrunnsfarge, ingen minibilde"
+
+#: woo-fly-cart-premium/index.php:221
+msgid "White background, no thumbnail"
+msgstr "Hvit bakgrunn, ingen minibilde"
+
+#: woo-fly-cart-premium/index.php:225, woo-fly-cart-premium/index.php:242
+msgid "Background image"
+msgstr "Bakgrunnsbilde"
+
+#: woo-fly-cart-premium/index.php:231
+msgid "Color"
+msgstr "Farge"
+
+#: woo-fly-cart-premium/index.php:237
+msgid "Background & text color, default %s"
+msgstr "Bakgrunn- og tekstfarge, standard %s"
+
+#: woo-fly-cart-premium/index.php:257
+msgid "The cart heading"
+msgstr "Overskrift i handlekurv"
+
+#: woo-fly-cart-premium/index.php:260, woo-fly-cart-premium/index.php:532
+msgid "Shopping Cart"
+msgstr "Handlekurv"
+
+#: woo-fly-cart-premium/index.php:264
+msgid "Show close button"
+msgstr "Vis lukk-knapp"
+
+#: woo-fly-cart-premium/index.php:277
+msgid "Show the close button on the mini-cart?"
+msgstr "Vis lukk-knapp i mini-handlekurv?"
+
+#: woo-fly-cart-premium/index.php:281
+msgid "Show attributes"
+msgstr "Vis attributter"
+
+#: woo-fly-cart-premium/index.php:294
+msgid "Show attributes of variation product under product title on the list?"
+msgstr "Vis attributter for produktvariasjon under produkt-tittel på listen?"
+
+#: woo-fly-cart-premium/index.php:299
+msgid "Show total price"
+msgstr "Vis totalpris"
+
+#: woo-fly-cart-premium/index.php:314
+msgid "Show action buttons"
+msgstr "Vis handlingsknapper"
+
+#: woo-fly-cart-premium/index.php:319
+msgid "Cart & Checkout"
+msgstr "Handlekurv og betaling"
+
+#: woo-fly-cart-premium/index.php:323
+msgid "Cart only"
+msgstr "Kun handlekurv"
+
+#: woo-fly-cart-premium/index.php:327
+msgid "Checkout only"
+msgstr "Kun betaling"
+
+#: woo-fly-cart-premium/index.php:333
+msgid "Show continue shopping"
+msgstr "Fortsett å handle"
+
+#: woo-fly-cart-premium/index.php:346
+msgid "Show the continue shopping button at the end of mini-cart?"
+msgstr "Vis \"fortsett å handle\"-knapp på bunnen av mini-handlekurven?"
+
+#: woo-fly-cart-premium/index.php:351
+msgid "Reload the cart"
+msgstr "Last kurven på nytt"
+
+#: woo-fly-cart-premium/index.php:364
+msgid ""
+"The cart will be reloaded when opening the page? If you use the cache for "
+"your site, please turn on this option."
+msgstr ""
+"Handlekurven blir lastet på nytt når du åpner siden? Slå av om du bruker "
+"cache på siden."
+
+#: woo-fly-cart-premium/index.php:369
+msgid "Cart Button"
+msgstr "Handlekurvknapp"
+
+#: woo-fly-cart-premium/index.php:370
+msgid "Settings for cart button with count"
+msgstr "Innstillinger for handlekurv-knapp med teller"
+
+#: woo-fly-cart-premium/index.php:373
+msgid "Show cart button"
+msgstr "Vis handlekurvknapp"
+
+#: woo-fly-cart-premium/index.php:388
+msgid "Cart button position"
+msgstr "Knappeposisjon"
+
+#: woo-fly-cart-premium/index.php:393
+msgid "Top Left"
+msgstr "Topp venstre"
+
+#: woo-fly-cart-premium/index.php:397
+msgid "Top Right"
+msgstr "Topp høyre"
+
+#: woo-fly-cart-premium/index.php:401
+msgid "Bottom Left"
+msgstr "Bunn venstre"
+
+#: woo-fly-cart-premium/index.php:405
+msgid "Bottom Right"
+msgstr "Bunn høyre"
+
+#: woo-fly-cart-premium/index.php:411
+msgid "Cart button icon"
+msgstr "Handlekurvknapp-ikon"
+
+#: woo-fly-cart-premium/index.php:428
+msgid "Hide if empty"
+msgstr "Skjul hvis tom"
+
+#: woo-fly-cart-premium/index.php:441
+msgid "Hide the cart button if the cart empty?"
+msgstr "Skjul handlekurv-knappen om kurven er tom?"
+
+#: woo-fly-cart-premium/index.php:446
+msgid "Hide in Cart & Checkout"
+msgstr "Skjul i handlekurven og i kassen?"
+
+#: woo-fly-cart-premium/index.php:459
+msgid "Hide the cart button in the Cart & Checkout page?"
+msgstr "Skjul handlekurv knappen i handlekurven og på betalingssiden?"
+
+#: woo-fly-cart-premium/index.php:466
+msgid "Update Options"
+msgstr "Oppdateringsalternativer"
+
+#: woo-fly-cart-premium/index.php:487, woo-fly-cart-premium/index.php:501,
+#: woo-fly-cart-premium/index.php:515
+msgid "Permissions check failed!"
+msgstr "Rettighets-sjekken feilet!"
+
+#: woo-fly-cart-premium/index.php:615
+msgid "Total"
+msgstr "Totalt"
+
+#: woo-fly-cart-premium/index.php:618, woo-fly-cart-premium/index.php:621
+msgid "Cart"
+msgstr "Handlekurv"
+
+#: woo-fly-cart-premium/index.php:618, woo-fly-cart-premium/index.php:624
+msgid "Checkout"
+msgstr "Betaling"
+
+#: woo-fly-cart-premium/index.php:628
+msgid "Continue Shopping"
+msgstr "Fortsett å handle"
+
+#: woo-fly-cart-premium/index.php:632
+msgid "There are no products in the cart!"
+msgstr "Du har ikke bestilt noe ennå!"

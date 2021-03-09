@@ -1,0 +1,449 @@
+# Copyright (C) 2020 WPClever.net
+# This file is distributed under the same license as the WPC Fly Cart for WooCommerce (Premium) plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPC Fly Cart for WooCommerce (Premium) 2.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-fly-cart-"
+"premium\n"
+"Last-Translator: Smartadeals\n"
+"Language-Team: Svenska\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-08-19T03:03:42+00:00\n"
+"PO-Revision-Date: 2020-08-20 18:14+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: woofc\n"
+"Language: sv-SE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.4.2; wp-5.5"
+
+#. Plugin Name of the plugin
+msgid "WPC Fly Cart for WooCommerce (Premium)"
+msgstr "WPC Fly Cart for WooCommerce (Premium)"
+
+#. Plugin URI of the plugin
+msgid "https://wpclever.net/"
+msgstr "https://wpclever.net/"
+
+#. Description of the plugin
+msgid "WooCommerce interaction mini cart with many styles and effects."
+msgstr "WooCommerce interaktions mini varukorg med många stilar och effekter."
+
+#. Author of the plugin
+msgid "WPClever.net"
+msgstr "WPClever.net"
+
+#. Author URI of the plugin
+msgid "https://wpclever.net"
+msgstr "https://wpclever.net"
+
+#: wpc-fly-cart.php:123
+msgid "Undo?"
+msgstr "Ångra?"
+
+#: wpc-fly-cart.php:124
+msgid "%s was removed."
+msgstr "%s Togs bort."
+
+#: wpc-fly-cart.php:154 wpc-fly-cart.php:209
+msgid "Settings"
+msgstr "Inställningar"
+
+#: wpc-fly-cart.php:171 wpc-fly-cart.php:218
+msgid "Support"
+msgstr "Support"
+
+#: wpc-fly-cart.php:181 wpc-fly-cart.php:192
+msgid "WPC Fly Cart"
+msgstr "WPC Fly Cart"
+
+#: wpc-fly-cart.php:181
+msgid "Fly Cart"
+msgstr "Fly Cart"
+
+#: wpc-fly-cart.php:195
+msgid ""
+"Thank you for using our plugin! If you are satisfied, please reward it a "
+"full five-star %s rating."
+msgstr ""
+"Tack för att du använder vår plugin! Om du är nöjd, ge det ett femstjärnigt "
+"%s betyg."
+
+#: wpc-fly-cart.php:198
+msgid "Reviews"
+msgstr "Recensioner"
+
+#: wpc-fly-cart.php:200
+msgid "Changelog"
+msgstr "Ändringslogg"
+
+#: wpc-fly-cart.php:202
+msgid "Discussion"
+msgstr "Diskussion"
+
+#: wpc-fly-cart.php:214
+msgid "Premium Version"
+msgstr "Premium Version"
+
+#: wpc-fly-cart.php:228
+msgid "General"
+msgstr "Allmän"
+
+#: wpc-fly-cart.php:229
+msgid "General settings for the fly cart."
+msgstr "Allmänna inställningar för varukorgen."
+
+#: wpc-fly-cart.php:232
+msgid "Open on AJAX add to cart"
+msgstr "Öppna i AJAX lägg till i varukorg"
+
+#: wpc-fly-cart.php:237 wpc-fly-cart.php:255 wpc-fly-cart.php:564 
+#: wpc-fly-cart.php:582 wpc-fly-cart.php:600 wpc-fly-cart.php:622 
+#: wpc-fly-cart.php:678
+msgid "Yes"
+msgstr "Ja"
+
+#: wpc-fly-cart.php:241 wpc-fly-cart.php:259 wpc-fly-cart.php:420 
+#: wpc-fly-cart.php:568 wpc-fly-cart.php:586 wpc-fly-cart.php:604 
+#: wpc-fly-cart.php:626 wpc-fly-cart.php:682
+msgid "No"
+msgstr "Nej"
+
+#: wpc-fly-cart.php:245
+msgid ""
+"The fly cart will be opened immediately after whenever click to AJAX Add to "
+"cart buttons? See %s \"Add to cart behaviour\" setting %s"
+msgstr ""
+"Varukorgen öppnas omedelbart efter varje klick i AJAX Lägg till i varukorg "
+"knappar? Se %s \"Lägg till i varukorg beteende\" inställning %s"
+
+#: wpc-fly-cart.php:250
+msgid "Open on normal add to cart"
+msgstr "Öppna i normal lägg till i varukorg"
+
+#: wpc-fly-cart.php:263
+msgid ""
+"The fly cart will be opened immediately after whenever click to normal Add "
+"to cart buttons (AJAX is not enable) or Add to cart button in single product "
+"page?"
+msgstr ""
+"Varukorgen öppnas omedelbart efter varje klick på normal Lägg till i "
+"varukorgsknappar (AJAX är inte aktiverad) eller Lägg till i varukorgsknappen "
+"på en enda produktsida?"
+
+#: wpc-fly-cart.php:268
+msgid "Manual show up button"
+msgstr "Manuell visa upp knapp"
+
+#: wpc-fly-cart.php:272
+msgid "button class or id"
+msgstr "knappklass eller id"
+
+#: wpc-fly-cart.php:274
+msgid ""
+"The class or id of the button, when click to this button the fly cart will "
+"be show up. Example %s or %s"
+msgstr ""
+"Klassen eller id för knappen, när du klickar på den här knappen visas "
+"varukorgen. Exempel %s eller %s"
+
+#: wpc-fly-cart.php:279
+msgid "Overlay layer"
+msgstr "Övre skikt"
+
+#: wpc-fly-cart.php:284 wpc-fly-cart.php:392 wpc-fly-cart.php:433 
+#: wpc-fly-cart.php:451 wpc-fly-cart.php:466 wpc-fly-cart.php:481 
+#: wpc-fly-cart.php:519 wpc-fly-cart.php:536
+msgid "Show"
+msgstr "Visa"
+
+#: wpc-fly-cart.php:288 wpc-fly-cart.php:396 wpc-fly-cart.php:437 
+#: wpc-fly-cart.php:455 wpc-fly-cart.php:470 wpc-fly-cart.php:485 
+#: wpc-fly-cart.php:508 wpc-fly-cart.php:523 wpc-fly-cart.php:540
+msgid "Hide"
+msgstr "Dölj"
+
+#: wpc-fly-cart.php:292
+msgid ""
+"If you hide the overlay layer, the buyer still can work on your site when "
+"the fly cart is opening."
+msgstr ""
+"Om du döljer det övre skiktet kan kunden fortfarande handla på din webbplats "
+"när varukorgen är öppen."
+
+#: wpc-fly-cart.php:297 wpc-fly-cart.php:632
+msgid "Position"
+msgstr "Position"
+
+#: wpc-fly-cart.php:302
+msgid "Right"
+msgstr "Höger"
+
+#: wpc-fly-cart.php:306
+msgid "Left"
+msgstr "Vänster"
+
+#: wpc-fly-cart.php:310
+msgid "Top"
+msgstr "Överst"
+
+#: wpc-fly-cart.php:314
+msgid "Bottom"
+msgstr "Botten"
+
+#: wpc-fly-cart.php:318
+msgid "Center"
+msgstr "Mitten"
+
+#: wpc-fly-cart.php:324
+msgid "Style"
+msgstr "Stil"
+
+#: wpc-fly-cart.php:329
+msgid "Color background"
+msgstr "Färg bakgrund"
+
+#: wpc-fly-cart.php:333
+msgid "White background"
+msgstr "Vit bakgrund"
+
+#: wpc-fly-cart.php:337
+msgid "Color background, no thumbnail"
+msgstr "Färg bakgrund, ingen miniatyr"
+
+#: wpc-fly-cart.php:341
+msgid "White background, no thumbnail"
+msgstr "Vit bakgrund, ingen miniatyr"
+
+#: wpc-fly-cart.php:345 wpc-fly-cart.php:362
+msgid "Background image"
+msgstr "Background image"
+
+#: wpc-fly-cart.php:351
+msgid "Color"
+msgstr "Färg"
+
+#: wpc-fly-cart.php:357
+msgid "Background & text color, default %s"
+msgstr "Bakgrund & textfärg, förvalt %s"
+
+#: wpc-fly-cart.php:378
+msgid "Cart heading"
+msgstr "Rubrik varukorg"
+
+#: wpc-fly-cart.php:382 wpc-fly-cart.php:808
+msgid "Shopping Cart"
+msgstr "Varukorg"
+
+#: wpc-fly-cart.php:383
+msgid "Leave blank to use the default text and can be translated."
+msgstr "Lämnas tom för att använda förinställd text och kan översättas"
+
+#: wpc-fly-cart.php:387
+msgid "Close button"
+msgstr "Stäng knappen"
+
+#: wpc-fly-cart.php:399
+msgid "Show the close button on the fly cart?"
+msgstr "Visa Stäng knappen i varukorgen?"
+
+#: wpc-fly-cart.php:403
+msgid "Link to individual product"
+msgstr "Länk till enskild produkt"
+
+#: wpc-fly-cart.php:408
+msgid "Yes, open in the same tab"
+msgstr "Ja, öppna i samma flik"
+
+#: wpc-fly-cart.php:412
+msgid "Yes, open in the new tab"
+msgstr "Ja, öppna i en ny flik"
+
+#: wpc-fly-cart.php:416
+msgid "Yes, open quick view popup"
+msgstr "Ja, öppna quick view popup"
+
+#: wpc-fly-cart.php:428
+msgid "Product data"
+msgstr "Produkt data"
+
+#: wpc-fly-cart.php:441
+msgid "Show the product data under product title on the list?"
+msgstr "Visa produktdata under produktens titel på listan?"
+
+#: wpc-fly-cart.php:446 wpc-fly-cart.php:899
+msgid "Subtotal"
+msgstr "Delsumma"
+
+#: wpc-fly-cart.php:461
+msgid "Coupon"
+msgstr "Rabattkod"
+
+#: wpc-fly-cart.php:476 wpc-fly-cart.php:930
+msgid "Total"
+msgstr "Totalt"
+
+#: wpc-fly-cart.php:491
+msgid "Action buttons"
+msgstr "Åtgärdsknappar"
+
+#: wpc-fly-cart.php:496
+msgid "Cart & Checkout"
+msgstr "Varukorg & Kassa"
+
+#: wpc-fly-cart.php:500
+msgid "Cart only"
+msgstr "Endast varukorg"
+
+#: wpc-fly-cart.php:504
+msgid "Checkout only"
+msgstr "Endast kassan"
+
+#: wpc-fly-cart.php:514
+msgid "Cross sells"
+msgstr "Korsförsäljning"
+
+#: wpc-fly-cart.php:526
+msgid "Show the cross sells products?"
+msgstr "Visa korsförsäljningsprodukter?"
+
+#: wpc-fly-cart.php:531
+msgid "Continue shopping"
+msgstr "Fortsätt handla"
+
+#: wpc-fly-cart.php:544
+msgid "Show the continue shopping button at the end of fly cart?"
+msgstr "Visa knappen fortsätt handla i slutet av varukorgen?"
+
+#: wpc-fly-cart.php:549
+msgid "Continue shopping URL"
+msgstr "Fortsätt handla URL"
+
+#: wpc-fly-cart.php:554
+msgid ""
+"Custom URL for \"continue shopping\" button. By default, only close the fly "
+"cart when clicking on this button."
+msgstr ""
+"Anpassad URL för knappen \"Fortsätt handla\". Som standard stänger du bara "
+"varukorgen när du klickar på den här knappen."
+
+#: wpc-fly-cart.php:559
+msgid "Undo remove"
+msgstr "Ångra ta bort"
+
+#: wpc-fly-cart.php:572
+msgid "Enable undo after removing a product?"
+msgstr "Aktivera ångra efter att du tagit bort en produkt?"
+
+#: wpc-fly-cart.php:577
+msgid "Reload the cart"
+msgstr "Uppdatera varukorgen"
+
+#: wpc-fly-cart.php:590
+msgid ""
+"The cart will be reloaded when opening the page? If you use the cache for "
+"your site, please turn on this option."
+msgstr ""
+"Varukorgen uppdateras när sidan öppnas? Om du använder cachen för din "
+"webbplats, aktivera det här alternativet."
+
+#: wpc-fly-cart.php:595
+msgid "Hide on Cart & Checkout"
+msgstr "Dölj i Varukorgen & Kassan"
+
+#: wpc-fly-cart.php:608
+msgid "Hide the fly cart on the Cart and Checkout page."
+msgstr "Dölj varukorgen på sidan Varukorg och Kassa."
+
+#: wpc-fly-cart.php:613
+msgid "Bubble"
+msgstr "Bubbla"
+
+#: wpc-fly-cart.php:614
+msgid "Settings for the bubble."
+msgstr "Inställningar för bubblan"
+
+#: wpc-fly-cart.php:617
+msgid "Enable"
+msgstr "Aktivera"
+
+#: wpc-fly-cart.php:637
+msgid "Top Left"
+msgstr "Övre vänster"
+
+#: wpc-fly-cart.php:641
+msgid "Top Right"
+msgstr "Övre höger"
+
+#: wpc-fly-cart.php:645
+msgid "Bottom Left"
+msgstr "Nedre vänster"
+
+#: wpc-fly-cart.php:649
+msgid "Bottom Right"
+msgstr "Nedre höger"
+
+#: wpc-fly-cart.php:655
+msgid "Icon"
+msgstr "Ikon"
+
+#: wpc-fly-cart.php:673
+msgid "Hide if empty"
+msgstr "Dölj om tom"
+
+#: wpc-fly-cart.php:686
+msgid "Hide the bubble if the cart is empty?"
+msgstr "Dölj bubblan om varukorgen är tom?"
+
+#: wpc-fly-cart.php:691 wpc-fly-cart.php:695
+msgid "Menu"
+msgstr "Meny"
+
+#: wpc-fly-cart.php:692
+msgid "Settings for cart menu item."
+msgstr "Inställningar för produkter i varukorgen."
+
+#: wpc-fly-cart.php:710
+msgid "Choose the menu(s) you want to add the cart at the end."
+msgstr "Välj den meny (er) du vill lägga varukorgen i slutet av. "
+
+#: wpc-fly-cart.php:717
+msgid "Update Options"
+msgstr "Uppdatera"
+
+#: wpc-fly-cart.php:881
+msgid "Remove"
+msgstr "Ta bort"
+
+#: wpc-fly-cart.php:889
+msgid "There are no products in the cart!"
+msgstr "Det finns inga produkter i varukorgen!"
+
+#: wpc-fly-cart.php:906
+msgid "Coupon code"
+msgstr "Rabattkod"
+
+#: wpc-fly-cart.php:906
+msgid "Apply"
+msgstr "Lägg till"
+
+#: wpc-fly-cart.php:917
+msgid "Free shipping coupon"
+msgstr "Fri frakt rabattkod"
+
+#: wpc-fly-cart.php:936 wpc-fly-cart.php:940
+msgid "Cart"
+msgstr "Visa Varukorg"
+
+#: wpc-fly-cart.php:936 wpc-fly-cart.php:945
+msgid "Checkout"
+msgstr "Till Kassan"
+
+#: wpc-fly-cart.php:969
+msgid "You may be interested in&hellip;"
+msgstr "Du kanske är intresserad av..."
+
+#: wpc-fly-cart.php:989
+msgid "Continue Shopping"
+msgstr "Fortsätt handla"

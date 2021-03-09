@@ -1,0 +1,160 @@
+.carousel {
+    & .carousel-item__image {
+        width:100%;
+        height: 750px;
+        object-fit: cover;
+    }
+    & h1 {
+        font-size:7.5rem;
+        font-weight:700;
+        color:lighten($blue, 7%);
+    }
+    & .carousel-inner p {
+        font-size: 2.9rem;
+        margin-bottom:2.9rem;
+        line-height: 3.1rem;
+    }
+    & .btn-vcm {
+        background:transparent;
+        border:2px solid $white;
+        background: transparent;
+        padding: 1.1rem 4rem;
+        color: white;
+        font-size: 1.75rem;
+        box-shadow: inset 0 0 0 0 $black;
+        transition:all 0.15s ease-in;
+        &:hover {
+            box-shadow: inset 400px 0 0 0 $black;
+        }
+    }
+}
+.carousel-control-prev, .carousel-control-next {
+    background: transparent;
+    border: 0;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image:unset;
+    margin-top: 3.8rem;
+    & i {
+        font-size:2rem;
+    }
+}
+.carousel-caption {
+    top: 33%;
+    bottom:unset;
+}
+.carousel-indicators {
+    z-index: 2;
+}
+@include mediaquery("desktop-1240"){
+    .carousel .carousel-item__image {
+        height: 580px;
+        object-fit: cover;
+    }
+}
+@include mediaquery("desktop-1440"){
+    .carousel-caption {
+        top: 19%;
+    }
+    .carousel h1 {
+        font-size: 8rem;
+    }
+}
+@include mediaquery("desktop-1240"){
+    .carousel-caption {
+        top: 28%;
+    }
+    .carousel h1 {
+        font-size: 7rem;
+    }
+    .carousel .carousel-inner p {
+        font-size: 2.6rem;
+    }
+}
+@include mediaquery("tablet-992"){
+    .carousel .carousel-item__image {
+        height: 430px;
+        object-fit: cover;
+    }
+    .carousel-caption {
+        top: 21%;
+    }
+    .carousel h1 {
+        font-size: 6rem;
+    }
+    .carousel .carousel-inner p {
+        font-size: 2.3rem;
+    }
+    .carousel .btn-vcm {
+        padding: 1rem 4rem;
+        font-size: 1.55rem;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 5%;
+    }
+}
+@include mediaquery("tablet-768"){
+    .carousel h1 {
+        font-size: 5.5rem;
+    }
+    .carousel .carousel-item__image {
+        height: 630px;
+        object-fit: cover;
+    }
+    .carousel-caption {
+        top: 30%;
+    }
+}
+@include mediaquery("tablet-575"){
+    .carousel h1 {
+        font-size: 5rem;
+    }
+    .carousel-caption {
+        right: 8%;
+        left: 8%;
+    }
+}
+@include mediaquery("phone-480"){
+    .carousel h1 {
+        font-size: 4.3rem;
+    }
+    .carousel .carousel-inner p {
+        font-size: 1.9rem;
+    }
+    .carousel .carousel-item__image {
+        height: 490px;
+        object-fit: cover;
+    }
+}
+
+@include mediaquery("phone-400"){
+    .carousel h1 {
+        font-size: 3.3rem;
+    }
+    .carousel .carousel-inner p {
+        font-size: 1.6rem;
+    }
+}
+.welcome {
+    padding:8rem 0.4rem 5rem 0.4rem;
+    & h1 {
+        text-transform:uppercase;
+        text-align:center;
+        font-weight:600;
+    }
+    &__heading-underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+    @include mediaquery("tablet-992"){
+        & p {
+            text-align:center;
+        }
+    }
+}

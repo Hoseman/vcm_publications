@@ -1,0 +1,40 @@
+.page-heading {
+    padding:5rem 0.4rem 5rem 0.4rem;
+    @include mediaquery("tablet-768"){
+        padding:3.5rem 0.4rem 5rem 0.4rem;
+    }
+    @include mediaquery("tablet-575"){
+        padding:3rem 0.4rem 5rem 0.4rem;
+    }
+    & h1 {
+        text-transform:uppercase;
+        text-align:center;
+        font-weight:600;
+    }
+    &__underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+}
+
+.content {
+    margin-bottom:2.5rem;
+    & a {
+        color:$black;
+        &:hover {
+            color:$blue;
+        }
+    }
+}
+
+@include mediaquery("tablet-992"){
+    .content p {
+        text-align:center;
+    }
+}

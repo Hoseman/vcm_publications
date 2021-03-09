@@ -1,0 +1,23 @@
+.breadcrumbs {
+    & .woocommerce-breadcrumbs {
+        margin-top: 3.9rem;
+        margin-bottom: 3rem;
+        padding:0;
+        font-size:1.4rem;
+        & a {
+            color:$black;
+            font-size:1.4rem;
+            padding:0 0.4rem;
+            &:first-child {
+                color:$blue;
+                font-weight:500;
+            }
+        }
+    }
+}
+@include mediaquery("tablet-768"){
+    .breadcrumbs .woocommerce-breadcrumbs {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

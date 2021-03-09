@@ -1,0 +1,396 @@
+# Copyright (C) 2019 WooCommerce Fly Cart
+# This file is distributed under the same license as the WooCommerce Fly Cart package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Fly Cart\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Language: pl_PL\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: woo-fly-cart-premium/index.php:129, woo-fly-cart-premium/index.php:129
+msgid "Fly Cart"
+msgstr ""
+
+#: woo-fly-cart-premium/index.php:141, woo-fly-cart-premium/index.php:185
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: woo-fly-cart-premium/index.php:155
+msgid "Premium support"
+msgstr ""
+
+#: woo-fly-cart-premium/index.php:169
+msgid "WPC Fly Cart"
+msgstr ""
+
+#: woo-fly-cart-premium/index.php:172
+msgid ""
+"Thank you for using our plugin! If you are satisfied, please reward it a "
+"full five-star %s rating."
+msgstr ""
+"Dziękujemy za korzystanie z naszej wtyczki! Jeśli jesteś zadowolony, zostaw "
+"pięciogwiazdkową oceną %s."
+
+#: woo-fly-cart-premium/index.php:175
+msgid "Reviews"
+msgstr ""
+
+#: woo-fly-cart-premium/index.php:177
+msgid "Changelogs"
+msgstr "Dziennik zmian"
+
+#: woo-fly-cart-premium/index.php:179
+msgid "Discussion"
+msgstr "Dyskusja"
+
+#: woo-fly-cart-premium/index.php:187
+msgid "Premium Support"
+msgstr ""
+
+#: woo-fly-cart-premium/index.php:197
+msgid "Main Cart"
+msgstr "Główny koszyk"
+
+#: woo-fly-cart-premium/index.php:198
+msgid "Settings for main fly cart"
+msgstr "Ustawienia głównego przypiętego koszyka"
+
+#: woo-fly-cart-premium/index.php:201
+msgid "Show on AJAX add to cart"
+msgstr "Pokarz dodawanie do koszyka w AJAX"
+
+#: woo-fly-cart-premium/index.php:206, woo-fly-cart-premium/index.php:224,
+#: woo-fly-cart-premium/index.php:253, woo-fly-cart-premium/index.php:359,
+#: woo-fly-cart-premium/index.php:376, woo-fly-cart-premium/index.php:394,
+#: woo-fly-cart-premium/index.php:409, woo-fly-cart-premium/index.php:424,
+#: woo-fly-cart-premium/index.php:458, woo-fly-cart-premium/index.php:486,
+#: woo-fly-cart-premium/index.php:532, woo-fly-cart-premium/index.php:588
+msgid "Yes"
+msgstr "Tak"
+
+#: woo-fly-cart-premium/index.php:210, woo-fly-cart-premium/index.php:228,
+#: woo-fly-cart-premium/index.php:257, woo-fly-cart-premium/index.php:363,
+#: woo-fly-cart-premium/index.php:380, woo-fly-cart-premium/index.php:398,
+#: woo-fly-cart-premium/index.php:413, woo-fly-cart-premium/index.php:428,
+#: woo-fly-cart-premium/index.php:462, woo-fly-cart-premium/index.php:490,
+#: woo-fly-cart-premium/index.php:536, woo-fly-cart-premium/index.php:592
+msgid "No"
+msgstr "Nie"
+
+#: woo-fly-cart-premium/index.php:214
+msgid ""
+"The mini cart will be show up immediately after whenever click to AJAX Add "
+"to cart buttons? See %s \"Add to cart behaviour\" setting %s"
+msgstr ""
+"Czy ma pokazać się AJAX zaraz po dodaniu do koszyka? „Dodaj do zachowania w "
+"koszyku” %s, zobacz ustawienie %s"
+
+#: woo-fly-cart-premium/index.php:219
+msgid "Show on normal add to cart"
+msgstr "Pokaż normalne dodawanie do koszyka"
+
+#: woo-fly-cart-premium/index.php:232
+msgid ""
+"The mini cart will be show up immediately after whenever click to normal Add "
+"to cart buttons (AJAX is not enable) or Add to cart button in single product "
+"page?"
+msgstr ""
+"Mini koszyk ma się pojawić natychmiast po kliknięciu przycisku \"Dodaj do "
+"koszyka\" (AJAX nie jest włączony) lub przycisku \"Dodaj do koszyka\" na "
+"stronie pojedynczego produktu?"
+
+#: woo-fly-cart-premium/index.php:237
+msgid "Manual show up button"
+msgstr "Wyświetlanie ręczne przycisku"
+
+#: woo-fly-cart-premium/index.php:241
+msgid "button class or id"
+msgstr "Klasa lub id przycisku"
+
+#: woo-fly-cart-premium/index.php:243
+msgid ""
+"The class or id of the button, when click to this button the mini cart will "
+"be show up. Example %s or %s"
+msgstr ""
+"Klasa lub id przycisku, po kliknięciu tego przycisku pojawi się mini koszyk. "
+"Przykład %s lub %s"
+
+#: woo-fly-cart-premium/index.php:248
+msgid "Show overlay layer"
+msgstr "Pokaż warstwę nakładki"
+
+#: woo-fly-cart-premium/index.php:261
+msgid ""
+"If you hide the overlay layer, the buyer still can work on your site when "
+"the fly cart is opening."
+msgstr ""
+"Jeśli ukryjesz warstwę nakładki, kupujący nadal może kupować w Twojej "
+"witrynie, gdy otwiera się wózek."
+
+#: woo-fly-cart-premium/index.php:266, woo-fly-cart-premium/index.php:542
+msgid "Position"
+msgstr "Pozycja"
+
+#: woo-fly-cart-premium/index.php:271
+msgid "Right"
+msgstr "Prawo"
+
+#: woo-fly-cart-premium/index.php:275
+msgid "Left"
+msgstr "Lewo"
+
+#: woo-fly-cart-premium/index.php:279
+msgid "Top"
+msgstr "Góra"
+
+#: woo-fly-cart-premium/index.php:283
+msgid "Bottom"
+msgstr "Dół"
+
+#: woo-fly-cart-premium/index.php:287
+msgid "Center"
+msgstr "Środek"
+
+#: woo-fly-cart-premium/index.php:293
+msgid "Style"
+msgstr "Styl"
+
+#: woo-fly-cart-premium/index.php:298
+msgid "Color background"
+msgstr "Kolor tła"
+
+#: woo-fly-cart-premium/index.php:302
+msgid "White background"
+msgstr "Białe tło"
+
+#: woo-fly-cart-premium/index.php:306
+msgid "Color background, no thumbnail"
+msgstr "Kolor tła, bez miniatury"
+
+#: woo-fly-cart-premium/index.php:310
+msgid "White background, no thumbnail"
+msgstr "Białe tło, bez miniatury"
+
+#: woo-fly-cart-premium/index.php:314, woo-fly-cart-premium/index.php:331
+msgid "Background image"
+msgstr "Zdjęcie tła"
+
+#: woo-fly-cart-premium/index.php:320
+msgid "Color"
+msgstr "Kolor"
+
+#: woo-fly-cart-premium/index.php:326
+msgid "Background & text color, default %s"
+msgstr "Kolor tła i tekstu, podstawowy %s"
+
+#: woo-fly-cart-premium/index.php:347
+msgid "The cart heading"
+msgstr "Nagłówek koszyka"
+
+#: woo-fly-cart-premium/index.php:350, woo-fly-cart-premium/index.php:671
+msgid "Shopping Cart"
+msgstr "Wózek sklepowy"
+
+#: woo-fly-cart-premium/index.php:354
+msgid "Show close button"
+msgstr "Pokaż przycisk zamykania"
+
+#: woo-fly-cart-premium/index.php:367
+msgid "Show the close button on the mini-cart?"
+msgstr "Czy pokazać przycisk zamykania w mini-cart?"
+
+#: woo-fly-cart-premium/index.php:371
+msgid "Show attributes"
+msgstr "Pokaż atrybuty"
+
+#: woo-fly-cart-premium/index.php:384
+msgid "Show attributes of variation product under product title on the list?"
+msgstr "Pokazać atrybuty produktu zmienionego pod tytułem produktu na liście?"
+
+#: woo-fly-cart-premium/index.php:389
+msgid "Show subtotal"
+msgstr "Pokaż koszt częściowy"
+
+#: woo-fly-cart-premium/index.php:404
+msgid "Show coupon"
+msgstr "Pokaż kupony"
+
+#: woo-fly-cart-premium/index.php:419
+msgid "Show total"
+msgstr "Pokaż cenę całkowitą"
+
+#: woo-fly-cart-premium/index.php:434
+msgid "Show action buttons"
+msgstr "Pokaż przyciski akcji"
+
+#: woo-fly-cart-premium/index.php:439
+msgid "Cart & Checkout"
+msgstr "Koszyk & Zamówienie"
+
+#: woo-fly-cart-premium/index.php:443
+msgid "Cart only"
+msgstr "Tylko koszyk"
+
+#: woo-fly-cart-premium/index.php:447
+msgid "Checkout only"
+msgstr "Tylko Zamówienie"
+
+#: woo-fly-cart-premium/index.php:453
+msgid "Show continue shopping"
+msgstr "Pokaż kontynuację zakupów"
+
+#: woo-fly-cart-premium/index.php:466
+msgid "Show the continue shopping button at the end of mini-cart?"
+msgstr "Pokazać przycisk kontynuacji zakupów na końcu w mini-cart?"
+
+#: woo-fly-cart-premium/index.php:471
+msgid "Continue shopping URL"
+msgstr "Kontynuacja zakupów URL"
+
+#: woo-fly-cart-premium/index.php:476
+msgid ""
+"Custom URL for \"continue shopping\" button. By default, only close the fly "
+"cart when clicking on this button."
+msgstr ""
+"Inny adres URL dla przycisku \"kontynuuj zakupy\". Podstawowo, zamyka okno "
+"fly cart."
+
+#: woo-fly-cart-premium/index.php:481
+msgid "Reload the cart"
+msgstr "Przeładuj koszyk"
+
+#: woo-fly-cart-premium/index.php:494
+msgid ""
+"The cart will be reloaded when opening the page? If you use the cache for "
+"your site, please turn on this option."
+msgstr ""
+"Koszyk ma zostać przeładowany gdy zostanie otworzona strona? Jeżeli używasz "
+"cache na swojej stronie, proszę o włączenie tej opcji."
+
+#: woo-fly-cart-premium/index.php:499
+msgid "Cart Menu"
+msgstr "Menu koszyka"
+
+#: woo-fly-cart-premium/index.php:500
+msgid "Settings for cart menu item"
+msgstr "Ustawienia menu koszyka"
+
+#: woo-fly-cart-premium/index.php:503
+msgid "Menu"
+msgstr "Menu"
+
+#: woo-fly-cart-premium/index.php:518
+msgid "Choose the menu(s) you want to add the \"cart menu\" at the end."
+msgstr "Wybierz menu, które chcesz dodać do \"cart menu\""
+
+#: woo-fly-cart-premium/index.php:523
+msgid "Cart Button"
+msgstr "Przycisk koszyka"
+
+#: woo-fly-cart-premium/index.php:524
+msgid "Settings for cart button with count"
+msgstr "Ustawienia dla przycisku koszyka z licznikiem"
+
+#: woo-fly-cart-premium/index.php:527
+msgid "Enable"
+msgstr "Włącz"
+
+#: woo-fly-cart-premium/index.php:547
+msgid "Top Left"
+msgstr "Górny lewy"
+
+#: woo-fly-cart-premium/index.php:551
+msgid "Top Right"
+msgstr "Górny prawy"
+
+#: woo-fly-cart-premium/index.php:555
+msgid "Bottom Left"
+msgstr "Dolny lewy"
+
+#: woo-fly-cart-premium/index.php:559
+msgid "Bottom Right"
+msgstr "Dolny prawy"
+
+#: woo-fly-cart-premium/index.php:565
+msgid "Icon"
+msgstr "Ikonka"
+
+#: woo-fly-cart-premium/index.php:583
+msgid "Hide if empty"
+msgstr "Schowaj jeśli pusty"
+
+#: woo-fly-cart-premium/index.php:596
+msgid "Hide the cart button if the cart empty?"
+msgstr "Schować przycisk koszyka jeśli jest pusty?"
+
+#: woo-fly-cart-premium/index.php:603
+msgid "Update Options"
+msgstr "Zaktualizuj opcje"
+
+#: woo-fly-cart-premium/index.php:619, woo-fly-cart-premium/index.php:631,
+#: woo-fly-cart-premium/index.php:643, woo-fly-cart-premium/index.php:657
+msgid "Permissions check failed!"
+msgstr "Kontrola uprawnień nie powiodła się!"
+
+#: woo-fly-cart-premium/index.php:719
+msgid "Edit"
+msgstr "Edytuj"
+
+#: woo-fly-cart-premium/index.php:735
+msgid "This is a special product, please go to the cart to edit"
+msgstr "To jest specjalny produkt, przejdź do koszyka, aby go edytować"
+
+#: woo-fly-cart-premium/index.php:737
+msgid "Remove"
+msgstr "Usuń"
+
+#: woo-fly-cart-premium/index.php:745
+msgid "There are no products in the cart!"
+msgstr "Brak produktów w koszyku!"
+
+#: woo-fly-cart-premium/index.php:751
+msgid "Subtotal"
+msgstr "Kwota częściowa"
+
+#: woo-fly-cart-premium/index.php:755
+msgid "Coupon code"
+msgstr "Kod kuponu"
+
+#: woo-fly-cart-premium/index.php:764
+msgid "Free shipping coupon"
+msgstr "Bezpłatny kupon wysyłkowy"
+
+#: woo-fly-cart-premium/index.php:772
+msgid "Total"
+msgstr "Całkowita kwota"
+
+#: woo-fly-cart-premium/index.php:775, woo-fly-cart-premium/index.php:778
+msgid "Cart"
+msgstr "Koszyk"
+
+#: woo-fly-cart-premium/index.php:775, woo-fly-cart-premium/index.php:781
+msgid "Checkout"
+msgstr "Sprawdź"
+
+#: woo-fly-cart-premium/index.php:785
+msgid "Continue Shopping"
+msgstr "Kontynuuj zakypy"
+
+#: woo-fly-cart-premium/index.php:867
+msgid "WPC Fly Cart require WooCommerce version 3.0.0 or greater."
+msgstr "WPC Fly Cart wymaga wersji WooCommerce 3.0.0 lub nowszej."

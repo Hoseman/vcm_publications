@@ -1,0 +1,23 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/utilities";
+@import "base/base";
+
+@import "layout/header";
+// @import "layout/mainmenu";
+@import "layout/yith-search-bar";
+@import "layout/max-mega-menu";
+@import "layout/need-some-advice";
+@import "layout/free-shipping";
+@import "layout/popular-categories";
+@import "layout/carousel-generic";
+@import "layout/related-products";
+@import "layout/breadcrumbs";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/category-page";
+@import "pages/single-page";
+@import "pages/contact-page";
+@import "pages/generic-pages";
+@import "pages/404";
