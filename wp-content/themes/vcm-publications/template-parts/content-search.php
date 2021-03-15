@@ -9,27 +9,35 @@
 
 ?>
 
+<div class="col-sm-4">
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<?php vcm_publications_post_thumbnail(); ?>
+	
+
+		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+
+		<span class="search-results-content__heading-underline"></span>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+		<!-- <div class="entry-meta">
 			<?php
-			vcm_publications_posted_on();
-			vcm_publications_posted_by();
+			//vcm_publications_posted_on();
+			//vcm_publications_posted_by();
 			?>
-		</div><!-- .entry-meta -->
+		</div> -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
 
-	<?php vcm_publications_post_thumbnail(); ?>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	
 
-	<footer class="entry-footer">
-		<?php vcm_publications_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<!-- <div class="entry-summary"> -->
+		<?php //the_excerpt(); ?>
+	<!-- </div> -->
+
+	<!-- <footer class="entry-footer"> -->
+		<?php //vcm_publications_entry_footer(); ?>
+	<!-- </footer> -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+</div>

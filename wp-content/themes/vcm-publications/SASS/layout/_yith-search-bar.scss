@@ -16,3 +16,16 @@
     width: 14%;
     border-radius:0;
 }
+@include mediaquery("tablet-992"){
+    .yith-s {
+        width: 75%;
+    }
+}
+@include mediaquery("tablet-575"){
+    .yith-s {
+        width: 65%;
+    }
+    #yith-searchsubmit {
+        width: 24%;
+    }
+}

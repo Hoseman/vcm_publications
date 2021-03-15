@@ -1,0 +1,101 @@
+.woocommerce-cart {
+    .page-heading h1 {
+        text-align: left;
+    }
+    .page-heading__underline {
+        margin-left: 0;
+        margin-bottom: 0rem;
+    }
+}
+.woocommerce-cart-form {
+    & img {
+        width:150px;
+        @include mediaquery("phone-400"){
+            width:100%;
+        }
+    }
+    & .shop_table {
+        & tr th {
+            background:$blue;
+            color:$white
+        }
+        @include mediaquery("tablet-767"){
+            & td {
+                border-right:0;
+            }
+            & .actions {
+                height:0;
+                @include mediaquery("tablet-575"){
+                    height:auto;
+                }
+                border:0;
+            }
+        }
+        & .coupon {
+            float:left;
+            @include mediaquery("tablet-575"){
+                width:100%;
+            }
+            & .button{
+                float:left;
+                @include mediaquery("phone-480"){
+                    margin-top:1rem;
+                }
+            }
+            & label {
+                margin-left:1rem;
+            }
+        }
+        @include mediaquery("phone-480"){
+            &.shop_table_responsive tr td {
+                text-align:left;
+            }
+        }
+    }
+    & .button {
+        background: $yellow;
+        border: 0;
+        float:right;
+        @include mediaquery("tablet-575"){
+            float:none;
+        }
+        @include mediaquery("tablet-767"){
+            margin-bottom:1rem;
+        }
+    }
+}
+.cart_totals {
+    & h2 {
+        font-size:3.3rem;
+        margin-top:4rem;
+    }
+    @include mediaquery("tablet-767"){
+        & td {
+            border-right:0;
+        }
+    }
+    & .wc-proceed-to-checkout {
+        margin-bottom:9rem;
+        & a {
+            padding:1rem 2rem;
+            color:$black;
+            &:hover {
+                color:$white;
+            }
+        }
+    }
+}
+.woocommerce-notices-wrapper {
+    & .woocommerce-message {
+        .button {
+            padding: 0.5rem 2rem;
+            margin: 0rem 0.7rem;
+            display: inline-block;
+            color:$white;
+            @include mediaquery("tablet-767"){
+                margin-bottom: 0.7rem;
+                display:block;
+            }
+        }
+    }
+}

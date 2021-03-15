@@ -1,0 +1,17 @@
+.about-content {
+    margin-bottom:2.5rem;
+    & a {
+        color:$black;
+        &:hover {
+            color:$blue;
+        }
+    }
+    & .col-lg-6 {
+        @include mediaquery("tablet-992"){
+            & p {
+                text-align:center;
+            }
+        }
+    }
+
+}

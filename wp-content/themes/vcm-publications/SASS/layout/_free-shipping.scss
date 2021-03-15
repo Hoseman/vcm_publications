@@ -34,6 +34,9 @@
         }
     }
 }
+.shipping-v2 {
+    margin-top:8.1rem;
+}
 @include mediaquery("tablet-575"){
     .free-shipping {
         display:none;
@@ -47,5 +50,8 @@
         width: 53px;
         height: 51px;
         line-height: 3.5rem;
+    }
+    .shipping-v2 {
+        margin-top: 6.6rem;
     }
 }

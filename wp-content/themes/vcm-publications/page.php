@@ -15,24 +15,78 @@
 get_header();
 ?>
 
-	<main id="primary aa" class="site-main">
+<section class="free-shipping shipping-v2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 display-flex free-shipping__column">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span class="free-shipping__container">
+                        <h5>FREE SHIPPING</h5>
+                        <p>All our products include FREE delivery</p>
+                    </span>
+                </div>
+                <div class="col-sm-4 display-flex free-shipping__column">
+                        <i class="far fa-handshake"></i>
+                        <span class="free-shipping__container">
+                        <h5>MONEY BACK GUARANTEE</h5>
+                        <p>Our goal is 100% customer satisfaction</p>
+                        </span>
+                </div>
+                <div class="col-sm-4 display-flex free-shipping__column">
+                        <i class="far fa-gem"></i>
+                        <span class="free-shipping__container">
+                        <h5>QUALITY OF SERVICE</h5>
+                        <p>We stand by the quality of the products we sell</p>
+                        </span>
+                </div>
+            </div>
+        </div>
+</section>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+<section class="breadcrumbs">
+	<div class="container">
+		<nav class="woocommerce-breadcrumbs">
+			<?php the_breadcrumb(); ?>
+		</nav>
+		<hr>
+	</div>
+</section>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
 
-		endwhile; // End of the loop.
-		?>
 
-	</main><!-- #main -->
+
+
+
 
 <?php
-get_sidebar();
+while ( have_posts() ) :
+	the_post();
+?>	
+
+<section class="page-heading pb-4">
+	<div class="container text-center">
+		<h1><?php the_title(); ?></h1>
+		<span class="page-heading__underline"></span>
+	</div>
+</section>			
+
+
+
+<section class="content">
+	<div class="container">				
+
+			<?php	
+				the_content();
+
+
+			endwhile; 
+			?>
+
+	</div>
+</section>
+
+
+<?php
+//get_sidebar();
 get_footer();

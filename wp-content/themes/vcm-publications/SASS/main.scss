@@ -13,11 +13,18 @@
 @import "layout/carousel-generic";
 @import "layout/related-products";
 @import "layout/breadcrumbs";
+@import "layout/shop-table";
+@import "layout/button";
+@import "layout/cookie-notice";
 @import "layout/footer";
 
 @import "pages/home";
+@import "pages/about-page";
 @import "pages/category-page";
 @import "pages/single-page";
 @import "pages/contact-page";
 @import "pages/generic-pages";
+@import "pages/checkout";
+@import "pages/account";
+@import "pages/cart";
 @import "pages/404";

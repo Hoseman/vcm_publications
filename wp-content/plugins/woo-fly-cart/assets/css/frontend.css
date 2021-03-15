@@ -587,6 +587,7 @@
     width: 30px;
     height: 30px;
     line-height: 30px;
+    min-height: 0;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -1095,6 +1096,7 @@
     width: 30px;
     height: 30px;
     line-height: 30px;
+    min-height: 0;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -1545,6 +1547,7 @@ body.rtl .woofc-area.woofc-style-03 .woofc-area-mid .woofc-item .woofc-item-inne
     width: 30px;
     height: 30px;
     line-height: 30px;
+    min-height: 0;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -2055,6 +2058,7 @@ body.rtl .woofc-area.woofc-style-04 .woofc-area-mid .woofc-item .woofc-item-inne
     width: 30px;
     height: 30px;
     line-height: 30px;
+    min-height: 0;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -2648,6 +2652,7 @@ body.rtl .woofc-area.woofc-style-04 .woofc-area-mid .woofc-item .woofc-item-inne
     width: 30px;
     height: 30px;
     line-height: 30px;
+    min-height: 0;
     padding: 0;
     margin: 0;
     text-align: center;

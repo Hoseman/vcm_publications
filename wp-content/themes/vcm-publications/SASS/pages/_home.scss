@@ -40,7 +40,7 @@
     }
 }
 .carousel-caption {
-    top: 33%;
+    top: 34.5%;
     bottom:unset;
 }
 .carousel-indicators {
@@ -54,7 +54,7 @@
 }
 @include mediaquery("desktop-1440"){
     .carousel-caption {
-        top: 19%;
+        top: 34%;
     }
     .carousel h1 {
         font-size: 8rem;
@@ -62,7 +62,7 @@
 }
 @include mediaquery("desktop-1240"){
     .carousel-caption {
-        top: 28%;
+        top: 30%;
     }
     .carousel h1 {
         font-size: 7rem;
@@ -75,6 +75,7 @@
     .carousel .carousel-item__image {
         height: 430px;
         object-fit: cover;
+        margin-top: 3rem;
     }
     .carousel-caption {
         top: 21%;
@@ -98,7 +99,7 @@
         font-size: 5.5rem;
     }
     .carousel .carousel-item__image {
-        height: 630px;
+        height: 540px;
         object-fit: cover;
     }
     .carousel-caption {

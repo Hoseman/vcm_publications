@@ -59,8 +59,10 @@
             top:0;
         }
         & .price {
+            margin-bottom:1rem;
+            display:block;
             & .woocommerce-Price-amount {
-                font-size: 2.6rem;
+                font-size: 2.9rem;
                 color: $white;
                 text-decoration:none;
                 &:hover {
@@ -80,7 +82,7 @@
                 background:transparent;
                 & .woocommerce-Price-amount {
                     color: $white;
-                    font-size: 2.6rem;
+                    font-size: 2.9rem;
                     &:hover {
                         text-decoration:none;
                     }
@@ -96,21 +98,30 @@
         }
         & .button {
             background:$white;
-            padding:0.6rem 2rem;
-            font-size:1.5rem;
+            padding:1.2rem 2rem;
+            @include mediaquery("tablet-768"){
+                padding:0.9rem 2rem;
+            }
+            font-size:1.7rem;
             text-align:center;
             margin-left:auto;
             margin-right:auto;
             display:block;
-            // box-shadow: inset 0 0 0 0 $yellow;
+            box-shadow: none;
             transition: background ease-out 0.15s;
             margin-bottom:0.8rem;
             border-radius:0;
             text-transform:uppercase;
             color:$black;
+            font-weight:400;
             &:hover {
                 background: $yellow;
                 text-decoration:none;
+            }
+        }
+        @include mediaquery("desktop-1100"){
+            & .button {
+                font-size:1.4rem;
             }
         }
         & .star-rating {
@@ -127,9 +138,6 @@
                 width: 100%;
                 content: "\53 \53 \53 \53 \53";
             }
-            // & span {
-            //     width: 100% !important;
-            // }
             & span::before {
                 top: 0;
                 position: absolute;
@@ -194,18 +202,27 @@
     }
     &__over {
         background:$blue;
-        padding:8.5rem 3rem 1rem 3rem;
+        padding:13rem 3rem 1rem 3rem;
         @include mediaquery("desktop-1440"){
-            padding:7rem 3rem 1rem 3rem;
+            padding:9rem 3rem 1rem 3rem;
         }
         @include mediaquery("desktop-1100"){
-            padding:6rem 3rem 1rem 3rem;
+            padding:8rem 3rem 1rem 3rem;
         }
         @include mediaquery("tablet-992"){
-            padding:7.7rem 3rem 1rem 3rem;
+            padding:4.7rem 1.5rem 1rem 1.5rem;
+        }
+        @include mediaquery("tablet-768"){
+            padding:4.5rem 1.5rem 1rem 1.5rem;
+        }
+        @include mediaquery("tablet-767"){
+            padding:7.5rem 1.5rem 1rem 1.5rem;
+        }
+        @include mediaquery("tablet-640"){
+            padding:6.5rem 1.5rem 1rem 1.5rem;
         }
         @include mediaquery("tablet-575"){
-            padding:18rem 3rem 1rem 3rem;
+            padding:5rem 3rem 1rem 3rem;
         }
         @include mediaquery("phone-480"){
             padding:14rem 3rem 1rem 3rem;

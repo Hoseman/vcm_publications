@@ -33,9 +33,14 @@
             font-size:3.5rem;
         }
     }
-    @include mediaquery("phone-400"){
+    @include mediaquery("phone-480"){
         & h1 {
             font-size:2.8rem;
+        }
+    }
+    @include mediaquery("phone-400"){
+        & h1 {
+            font-size:2.3rem;
         }
     }
     & .carousel-inner p {
@@ -69,7 +74,7 @@
         object-fit: cover;
     }
     .carousel-small .carousel-caption {
-        top: 30%;
+        top: 38%;
     }
 }
 
@@ -79,7 +84,13 @@
         object-fit: cover;
     }
     .carousel-small .carousel-caption {
-        top: 27%;
+        top: 40%;
+    }
+}
+
+@include mediaquery("phone-480"){
+    .carousel-small .carousel-caption {
+        top: 39%;
     }
 }
 
@@ -87,8 +98,9 @@
     .carousel-small .carousel-item__image {
         height: 140px;
         object-fit: cover;
+        margin-top:2rem;
     }
     .carousel-small .carousel-caption {
-        top: 25%;
+        top: 39%;
     }
 }

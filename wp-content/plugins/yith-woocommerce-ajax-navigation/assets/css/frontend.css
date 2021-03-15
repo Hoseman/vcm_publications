@@ -131,8 +131,6 @@ ul.yith-wcan-list {
     border: 1px solid #cecece;
     padding: 10px 0px;
     margin-top: -16px;
-    display: none;
-    opacity: 0;
 }
 
 .yith-wcan-select-wrapper ul.yith-wcan-select.yith-wcan li {

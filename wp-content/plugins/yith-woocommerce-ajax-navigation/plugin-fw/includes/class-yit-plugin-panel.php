@@ -1330,7 +1330,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 			?>
 			<?php if ( $this->is_free() && isset( $this->settings['plugin_slug'] ) ) : ?>
 				<?php
-				$rate_link = apply_filters( 'yith_plugin_fw_rate_url', 'https://wordpress.org/support/plugin/' . $this->settings['plugin_slug'] . '/reviews/?rate=5#new-post' );
+				$rate_link = apply_filters( 'yith_plugin_fw_rate_url', 'https://wordpress.org/support/plugin/' . $this->settings['plugin_slug'] . '/reviews/#new-post' );
 				?>
 				<h1 class="notice-container"></h1>
 				<div class="yith-plugin-fw-banner">
@@ -1343,7 +1343,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 						esc_html__( 'We need your support', 'yith-plugin-fw' ),
 						esc_html__( 'to keep updating and improving the plugin. Please,', 'yith-plugin-fw' ),
 						esc_url( $rate_link ),
-						esc_html__( 'help us by leaving a five-star rating', 'yith-plugin-fw' ),
+						esc_html__( 'help us by leaving a good review', 'yith-plugin-fw' ),
 						esc_html__( ':) Thanks!', 'yith-plugin-fw' )
 					);
 					?>

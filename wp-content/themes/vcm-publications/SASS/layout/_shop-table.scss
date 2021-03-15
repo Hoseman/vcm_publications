@@ -1,0 +1,20 @@
+.shop_table {
+    width:100%;
+    font-size:1.7rem;
+    border:1px solid $light-grey;
+    margin-top:2.2rem;
+    & td {
+        padding:1rem;
+        border-bottom:1px solid $light-grey;
+        border-right:1px solid $light-grey;
+        & #shipping_method {
+            margin:0;
+            list-style-type:none;
+        }
+    }
+    & th {
+        padding:1rem;
+        border-bottom:1px solid $light-grey;
+        border-right:1px solid $light-grey;
+    }
+}    

@@ -23,7 +23,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="top" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
 
@@ -41,32 +41,26 @@
                         )
                     );
                 ?>
-                <!-- <a href="contact-page.html">CONTACT US</a>
-                <a href="#">CHECKOUT</a>
-                <a href="#">VIEW ACCOUNT</a> -->
   
             <div class="header__email-tel">
-                <a href="mailto:vcmpublications@webchambers.co.uk"><i class="far fa-envelope-open"></i> <span class="header__email-text">E-MAIL</span></a>
-                <a href="tel:01143032424"><i class="fas fa-phone-volume"></i> <span class="header__email-text">0114 3032424</span></a>
+                <?php if( get_theme_mod( 'ah_email_handle' ) ){ ?><a href="mailto:<?php echo get_theme_mod( 'ah_email_handle' ); ?>"><i class="far fa-envelope-open"></i> <span class="header__email-text">EMAIL</span></a><?php } ?>
+                <?php 
+                    $telephone = get_theme_mod( 'ah_telephone_handle' );
+                    $telephone_link = str_replace(' ', '', $telephone);
+                ?>
+                <?php if( get_theme_mod( 'ah_telephone_handle' ) ){ ?> <a href="tel:<?php echo $telephone_link; ?>"><i class="fas fa-phone-volume"></i> <span class="header__email-text"><?php echo get_theme_mod( 'ah_telephone_handle' ); ?></span></a> <?php } ?>
+                
             </div>
         </div>
         <hr>
         <div class="header__logocontainer">
-            <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" class="header__logo" alt="VCM Publications"></a>
-            <div class="header__search-wrapper">
-            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+            <?php echo the_custom_logo(); ?>
+            <!-- <a href="<?php //echo home_url(); ?>"><img src="<?php //bloginfo('stylesheet_directory'); ?>/images/logo.png" class="header__logo" alt="VCM Publications"></a> -->
+            <div class="header__search-wrapper text-right">
 
-            <!-- <input class="header__search" type="text" name="search" placeholder="Search..."> -->
 			<?php echo do_shortcode('[yith_woocommerce_ajax_search]');?>
 
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> -->
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <!-- <a class="hamburger hamburger--elastic">
-                        <div class="hamburger-box">
-                          <div class="hamburger-inner"></div>
-                        </div>
-                    </a>
-                </button> -->
+
             </div>
         </div>
 

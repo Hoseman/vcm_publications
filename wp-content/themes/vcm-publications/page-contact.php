@@ -17,55 +17,21 @@ get_header();
 ?>
 
 
-<div id="myCarousel" class="carousel-small slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/carousel-contact.jpg" alt="xx" class="carousel-item__image">
-                    <div class="container">
-                        <div class="carousel-caption text-center">
-                            <h1>CONTACT US..</h1>
-                        </div>
-                    </div>
-            </div>
-        </div>
-      </div>
+<!-- Small Carousel -->        
+<?php include(locate_template ('./includes/small-carousel.php')); ?> 
+<!-- End Small Carousel -->
 
 
 
-    <section class="free-shipping">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-4 display-flex free-shipping__column">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span class="free-shipping__container">
-                        <h5>FREE SHIPPING</h5>
-                        <p>All our products include FREE delivery</p>
-                    </span>
-                </div>
-                <div class="col-sm-4 display-flex free-shipping__column">
-                        <i class="far fa-handshake"></i>
-                        <span class="free-shipping__container">
-                        <h5>MONEY BACK GUARANTEE</h5>
-                        <p>Our goal is 100% customer satisfaction</p>
-                        </span>
-                </div>
-                <div class="col-sm-4 display-flex free-shipping__column">
-                        <i class="far fa-gem"></i>
-                        <span class="free-shipping__container">
-                        <h5>QUALITY OF SERVICE</h5>
-                        <p>We stand by the quality of the products we sell</p>
-                        </span>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Free Shipping -->        
+<?php include(locate_template ('./includes/free-shipping.php')); ?> 
+<!-- End Free Shipping -->
 
 
     <section class="breadcrumbs">
         <div class="container">
             <nav class="woocommerce-breadcrumbs">
-                <a href="#">Home</a>/<a>Contact US</a>
+                <?php the_breadcrumb(); ?>
             </nav>
             <hr>
         </div>
@@ -74,10 +40,10 @@ get_header();
    
 
 
-    <section class="page-heading">
+    <section class="page-heading pb-0">
         <div class="container text-center">
-            <h1>Got a question? Why not get in touch!</h1>
-            <p>Fill in the form below and we will get back to you within 24 hours. Alternatively, why not give us a call?</p>
+            <h1><?php echo get_field('contact_us_title') ?></h1>
+            <p><?php echo get_field('contact_us_subtitle') ?></p>
             <span class="page-heading__underline"></span>
         </div>
     </section>
@@ -86,100 +52,66 @@ get_header();
 
     <section class="contact-form">
         <div class="container">
-            <form class="contact-form__form">
+            
                 <div class="row">
 
-                        <?php echo do_shortcode('[contact-form-7 id="143" title="Contact form 1"]'); ?>
+
+            <?php while ( have_posts() ) :
+			the_post(); ?>    
             
-                        <!-- <div class="col-sm-6">
-                            <input class="form-control contact-form__formcontrol" type="text" placeholder="Add your first name">
-                            <input class="form-control contact-form__formcontrol" type="text" placeholder="Add your last name">
-                            <input class="form-control contact-form__formcontrol" type="text" placeholder="Add your company name">
-                            <input class="form-control contact-form__formcontrol" type="text" placeholder="Add your email address">
-                            <input class="form-control contact-form__formcontrol" type="text" placeholder="Add your telephone number">
+                <?php the_content(); ?>
+
+            <?php endwhile; ?>
+                        <?php $form = get_field('contact_us_form') ?>
+                        
+                        <?php if(!empty(get_field('contact_us_form'))){
+                            echo do_shortcode($form);
+                        } ?>
+
+
+                        <div class="col-sm-12 text-center mb-5">
+                        
+                            <p>
+                            <?php if( get_theme_mod( 'ah_address_1_handle' ) ){ ?><?php echo get_theme_mod( 'ah_address_1_handle' ) ?>, <?php } ?> 
+                            <?php if( get_theme_mod( 'ah_address_2_handle' ) ){ ?><?php echo get_theme_mod( 'ah_address_2_handle' ) ?>, <?php } ?>
+                            <?php if( get_theme_mod( 'ah_address_3_handle' ) ){ ?><?php echo get_theme_mod( 'ah_address_3_handle' ) ?>, <?php } ?>
+                            <?php if( get_theme_mod( 'ah_address_4_handle' ) ){ ?><?php echo get_theme_mod( 'ah_address_4_handle' ) ?>, <?php } ?>
+                            <?php if( get_theme_mod( 'ah_address_5_handle' ) ){ ?><?php echo get_theme_mod( 'ah_address_5_handle' ) ?> <?php } ?>
+                            </p>
+                            <?php 
+                                $telephone = get_theme_mod( 'ah_telephone_handle' );
+                                $telephone_link = str_replace(' ', '', $telephone);
+                            ?>
+                            <p><?php if( get_theme_mod( 'ah_telephone_handle' ) ){?> Telephone: <a href="tel:<?php echo $telephone_link; ?>"><?php echo get_theme_mod( 'ah_telephone_handle' ) ?></a> <?php } ?> | <?php if( get_theme_mod( 'ah_email_handle' ) ){ ?>Email: <a href="mailto:<?php echo get_theme_mod( 'ah_email_handle' ); ?>"><?php echo get_theme_mod( 'ah_email_handle' ); ?></a><?php } ?></p>
+
+                            
+                            
                         </div>
-
-                        <div class="col-sm-6">
-                            <textarea class="form-control">Add your message here</textarea>
-                        </div> -->
-
-                        <!-- <div class="col-sm-12 text-center">
-                            <input type="submit" class="submit" value="submit">
-                            <p>VCM Publications, London music Press, 71 Queen Victoria Street, London EC4V 4AY</p>
-                            <p>Telephone: <a href="tel:01143032424">0114 3032424</a> | Email: <a href="mailto:vcmpublications@webchambers.co.uk">vcmpublications@webchambers.co.uk</a></p>
-                        </div> -->
             
                 </div>
-            </form>
+      
         </div>
     </section>
     
     
     <section class="map">
         <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0820150306386!2d-0.09646014823173277!3d51.51171131810824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604aa7f1d08af%3A0x7db1d6ad4fb847e6!2s71%20Queen%20Victoria%20St%2C%20London%20EC4V%204AY!5e0!3m2!1sen!2suk!4v1614881540294!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <?php $display_map = get_field('display_map'); ?>
+        <?php $map_width =  get_field('map_width'); ?>
+        <?php $map_height = get_field('map_height'); ?>
+        <?php if($display_map == 'yes'){ ?>
+            <iframe class="map__vcm-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0820150306386!2d-0.09646014823173277!3d51.51171131810824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604aa7f1d08af%3A0x7db1d6ad4fb847e6!2s71%20Queen%20Victoria%20St%2C%20London%20EC4V%204AY!5e0!3m2!1sen!2suk!4v1614881540294!5m2!1sen!2suk" width="<?php echo $map_width; ?>" height="<?php echo $map_height; ?>" style="border:0;" allowfullscreen="" loading="lazy"></iframe>       
+        <?php } ?>                 
         </div>
     </section>
 
 
-
-
-    <section class="popular-categories">
-        <h1>Popular Products</h1>
-        <span class="popular-categories__heading-underline"></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                    <a href="#" class="popular-categories__imgbg">
-                        <img id="imgcat1" class="popular-categories__img" alt="Piano" src="<?php bloginfo('stylesheet_directory'); ?>/images/popular-categories-1.jpg">
-                    </a>
-                    <h5 class="popular-categories__title">PIANO</h5>
-                    <span class="popular-categories__heading-underline-sml"></span>
-                    <a id="cat1" class="btn popular-categories__btn-vcm" href="#">SHOP NOW</a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                    <a href="#" class="popular-categories__imgbg">
-                    <img id="imgcat2" class="popular-categories__img" alt="Piano" src="<?php bloginfo('stylesheet_directory'); ?>/images/popular-categories-2.jpg">
-                    </a>
-                    <h5 class="popular-categories__title">MUSIC THEORY &amp; COMPOSITION</h5>
-                    <span class="popular-categories__heading-underline-sml"></span>
-                    <a id="cat2" class="btn popular-categories__btn-vcm" href="#">SHOP NOW</a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                    <a href="#" class="popular-categories__imgbg">
-                    <img id="imgcat3" class="popular-categories__img" alt="Piano" src="<?php bloginfo('stylesheet_directory'); ?>/images/popular-categories-3.jpg">
-                    </a>
-                    <h5 class="popular-categories__title">ELECTRONIC KEYBOARD</h5>
-                    <span class="popular-categories__heading-underline-sml"></span>
-                    <a id="cat3" class="btn popular-categories__btn-vcm" href="#">SHOP NOW</a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                    <a href="#" class="popular-categories__imgbg">
-                    <img id="imgcat4" class="popular-categories__img" alt="Piano" src="<?php bloginfo('stylesheet_directory'); ?>/images/popular-categories-4.jpg">
-                    </a>
-                    <h5 class="popular-categories__title">TUTOR BOOKS</h5>
-                    <span class="popular-categories__heading-underline-sml"></span>
-                    <a id="cat4" class="btn popular-categories__btn-vcm" href="#">SHOP NOW</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-		<?php
-		while ( have_posts() ) :
-			the_post();
-        ?>    
-            
-   
-        <?php    
-		endwhile; // End of the loop.
-		?>
+<!-- Popular Products -->        
+<?php include(locate_template ('./includes/popular-products.php')); ?> 
+<!-- End Popular Products -->
 
 
 
 <?php
-get_sidebar();
+
 get_footer();

@@ -3,20 +3,20 @@
 Plugin Name: WPC Fly Cart for WooCommerce
 Plugin URI: https://wpclever.net/
 Description: WooCommerce interaction mini cart with many styles and effects.
-Version: 2.4.4
+Version: 2.5.0
 Author: WPClever.net
 Author URI: https://wpclever.net
 Text Domain: woofc
 Domain Path: /languages/
 Requires at least: 4.0
-Tested up to: 5.6.1
+Tested up to: 5.7
 WC requires at least: 3.0
-WC tested up to: 5.0.0
+WC tested up to: 5.1
 */
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WOOFC_VERSION' ) && define( 'WOOFC_VERSION', '2.4.4' );
+! defined( 'WOOFC_VERSION' ) && define( 'WOOFC_VERSION', '2.5.0' );
 ! defined( 'WOOFC_URI' ) && define( 'WOOFC_URI', plugin_dir_url( __FILE__ ) );
 ! defined( 'WOOFC_SUPPORT' ) && define( 'WOOFC_SUPPORT', 'https://wpclever.net/support?utm_source=support&utm_medium=woofc&utm_campaign=wporg' );
 ! defined( 'WOOFC_REVIEWS' ) && define( 'WOOFC_REVIEWS', 'https://wordpress.org/support/plugin/woo-fly-cart/reviews/?filter=5' );
@@ -35,7 +35,7 @@ if ( ! function_exists( 'woofc_init' ) ) {
 		// load text-domain
 		load_plugin_textdomain( 'woofc', false, basename( __DIR__ ) . '/languages/' );
 
-		if ( ! function_exists( 'WC' ) || ! version_compare( WC()->version, '3.0.0', '>=' ) ) {
+		if ( ! function_exists( 'WC' ) || ! version_compare( WC()->version, '3.0', '>=' ) ) {
 			add_action( 'admin_notices', 'woofc_notice_wc' );
 
 			return;
@@ -1114,7 +1114,7 @@ if ( ! function_exists( 'woofc_notice_wc' ) ) {
 	function woofc_notice_wc() {
 		?>
         <div class="error">
-            <p><strong>WPC Fly Cart</strong> requires WooCommerce version 3.0.0 or greater.</p>
+            <p><strong>WPC Fly Cart</strong> requires WooCommerce version 3.0 or greater.</p>
         </div>
 		<?php
 	}

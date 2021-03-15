@@ -11,9 +11,14 @@
 
 ?>
 
-<section class="need-some-advice">
-        <h4 class="need-some-advice__heading">NEED SOME ADVICE? CALL US ON <a href="tel:01143032424">0114 303 2424</a></h4>
-    </section>
+<?php 
+        $telephone = get_theme_mod( 'ah_telephone_handle' );
+        $telephone_link = str_replace(' ', '', $telephone);
+?>
+
+<!-- Need Some Advice Panel -->
+<?php include(locate_template ('./includes/need-some-advice.php')); ?> 
+<!-- Need Some Advice Panel -->
 
 
     <footer class="footer">
@@ -21,11 +26,11 @@
             <span class="footer__links">
                 <p>COMPANY ADDRESS</p>
                 <ul>
-                    <li>VCM Publications</li>
-                    <li>London Music Press</li>
-                    <li>71 Queen Victoria Street</li>
-                    <li>London</li>
-                    <li>EC4V 4AY</li>
+                    <?php if( get_theme_mod( 'ah_address_1_handle' ) ){ ?><li><?php echo get_theme_mod( 'ah_address_1_handle' ) ?></li><?php } ?>
+                    <?php if( get_theme_mod( 'ah_address_2_handle' ) ){ ?><li><?php echo get_theme_mod( 'ah_address_2_handle' ) ?></li><?php } ?>
+                    <?php if( get_theme_mod( 'ah_address_3_handle' ) ){ ?><li><?php echo get_theme_mod( 'ah_address_3_handle' ) ?></li><?php } ?>
+                    <?php if( get_theme_mod( 'ah_address_4_handle' ) ){ ?><li><?php echo get_theme_mod( 'ah_address_4_handle' ) ?></li><?php } ?>
+                    <?php if( get_theme_mod( 'ah_address_5_handle' ) ){ ?><li><?php echo get_theme_mod( 'ah_address_5_handle' ) ?></li><?php } ?>
                 </ul>
             </span>
             <span class="footer__links">
@@ -38,14 +43,6 @@
                         )
                     );
                 ?>
-                <!-- <ul>
-                    <li><a href="#">Returns Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul> -->
             </span>
 
             <span class="footer__links">
@@ -58,16 +55,8 @@
                         )
                     );
                 ?>
-                <!-- <ul>
-                    <li><a href="#">Piano's & Keyboard</a></li>
-                    <li><a href="#">Woodwind</a></li>
-                    <li><a href="#">Stringed Instruments</a></li>
-                    <li><a href="#">Singing</a></li>
-                    <li><a href="#">Music Theory</a></li>
-                    <li><a href="#">Other</a></li>
-                </ul> -->
             </span>
-            <div class="scroll-to-top"><i class="fas fa-chevron-up"></i></div>
+            <a href="#top" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
         </div>
 
 
@@ -75,9 +64,14 @@
         <div class="container"><hr></div>
         
         <div class="container footer__signoff">
-            <p>Copyright Design 2021 VCM Publications</p>
-            <p>Telephone: <a href="tel:01143032424">0114 303 2424</a> | Email: <a href="mailto:vcmpublications@webchambers.co.uk">vcmpublications@webchambers.co.uk</a></p>
+            <p>Copyright Design <?php echo date("Y"); ?> VCM Publications</p>
+            <p><?php if( get_theme_mod( 'ah_telephone_handle' ) ){?> Telephone: <a href="tel:<?php echo $telephone_link; ?>"><?php echo get_theme_mod( 'ah_telephone_handle' ) ?></a> <?php } ?> | <?php if( get_theme_mod( 'ah_email_handle' ) ){?> Email: <a href="mailto:<?php echo get_theme_mod( 'ah_email_handle' ) ?>"><?php echo get_theme_mod( 'ah_email_handle' ) ?></a> <?php } ?></p>
+            
         </div>
+
+        
+                    
+
     </footer>
 
 

@@ -31,9 +31,9 @@
         margin-top:1.3rem;
     }
     & .menu-top-mini-menu-container {
-        width:50%;
+        width:65%;
         @include mediaquery("tablet-575"){
-            width:75%; 
+            width:100%; 
          }
         height:auto;
     }
@@ -43,6 +43,16 @@
         margin-bottom:0;
         & li {
             display:inline;
+            @include mediaquery("tablet-575"){
+                &:nth-child(2) {
+                    display:none;
+                }
+            }
+            @include mediaquery("phone-360"){
+                &:first-child {
+                    display:none;
+                }
+            }
         }
         & a {
             color:$black;
@@ -56,10 +66,6 @@
                 font-size: 1.15rem;
                 padding-right: 1.1rem;
             }
-            @include mediaquery("tablet-575"){
-                font-size: 1.2rem;
-                padding-right: 1rem;
-            }
             &:hover {
                 text-decoration:none;
                 color:$dark-grey;
@@ -67,12 +73,15 @@
         }
     }
     &__email-tel {
-        width:50%;
+        width:35%;
+        @include mediaquery("phone-480"){
+            width:22%;
+        }
+        @include mediaquery("phone-360"){
+            width:35%;
+        }
         height:auto;
         text-align:right;
-        @include mediaquery("tablet-575"){
-            width:25%; 
-         }
         & a {
             color:$black;
             font-size: 1.4rem;
@@ -81,6 +90,9 @@
             @include mediaquery("tablet-768"){
                 font-size: 1.3rem;
                 padding-left: 1.15rem;
+            }
+            @include mediaquery("phone-480"){
+                padding-left: 0.75rem;
             }
             &:hover {
                 text-decoration:none;
@@ -111,12 +123,12 @@
     &__logo {
         width:340px;
         margin-right:1.5rem;
-        height:60px;
+        height:auto;
     }
     @include mediaquery("tablet-768"){
         &__logo {
             width: 310px;
-            height:55px;
+            height:auto;
             margin-right: 1.5rem;
             margin-top: 0.55rem;
         }
@@ -124,25 +136,24 @@
     @include mediaquery("tablet-640"){
         &__logo {
             width: 260px;
-            height:46px;
+            height:auto;
         }
     }
     @include mediaquery("phone-400"){
         &__logo {
-            width: 205px;
-            height:36px;
+            width: 85%;
+            height:auto;
             margin-top:0.7rem;
-        }
-    }
-    @include mediaquery("phone-320"){
-        &__logo {
-            width: 175px;
-            height:31px;
-            margin-top:0.7rem;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
     }
     &__search-wrapper {
         width:370px;
+        @include mediaquery("phone-400"){
+            display:none;
+        }
         & button {
             border: 0;
             background: transparent;
@@ -165,6 +176,11 @@
     @include mediaquery("tablet-992"){
         &__search-wrapper {
             width:420px;
+        }
+    }
+    @include mediaquery("tablet-768"){
+        &__search-wrapper {
+            width:50%;
         }
     }
     &__search {

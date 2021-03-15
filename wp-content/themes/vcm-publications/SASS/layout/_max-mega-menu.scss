@@ -121,9 +121,26 @@
 
 /* Font size for top level menu */
 
+/* Border color for mobile menu*/
+@include mediaquery("tablet-992"){
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+        border: #333;
+    }
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
+        border: #333;
+    }
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+        border-bottom: 1px solid #333;
+    }
+}
+/* Border color for mobile menu*/
+
 /* hide triangle/arrows in top level menu */
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator {
     display:none;
+    @include mediaquery("tablet-992"){
+        display:block;
+    }
 }
 /* hide triangle/arrows in top level menu */
 
@@ -132,7 +149,12 @@
     background-image:none;
     background-repeat:no-repeat;
     background-position:center 75px !important;
-    transition: all 0.5s ease-in;
+    transition: background-position 0.5s ease-in;
+    @include mediaquery("tablet-992"){
+            height: 50px;
+            line-height: 50px;
+            padding-left: 2rem;
+    }
 }
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link:hover {
     background-image:url('/wp-content/themes/vcm-publications/images/blue-triangle.png');
@@ -140,3 +162,21 @@
     background-position:center 52px !important;
 }
 /* Add triangle to the blue hover overlay panel  */
+
+@include mediaquery("tablet-992"){
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu {
+        background: $dark-grey;
+        background: linear-gradient(to bottom, $dark-grey, $dark-grey);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$dark-grey, endColorstr=$dark-grey);
+    }
+}
+
+#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {
+    margin-right: 16px;
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1 p a {
+    color: $light-grey;
+    text-transform: uppercase;
+    padding-left: 0.7rem;
+}

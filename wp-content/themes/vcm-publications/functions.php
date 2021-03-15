@@ -212,7 +212,8 @@ function ah_enqueue(){
 	$uri = get_template_directory_uri();
 	wp_register_style('ah_google_fonts_1', 'https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
     wp_register_style('ah_bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css');
-    wp_register_style('ah_font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+    // wp_register_style('ah_font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+	wp_register_style('ah_font_awesome', 'https://pro.fontawesome.com/releases/v5.2.0/css/all.css');
     wp_register_style('ah_main', $uri . '/css/main.css?');
 	wp_register_style('ah_hamburger', $uri . '/css/hamburgers.css?');
 	
@@ -327,3 +328,68 @@ function woo_related_products_limit() {
 	  return $args;
   }
   /* Related Products on Product Detail Page - change to 4 columns */
+
+
+  /* Create Breadcrumbs Link */
+	function the_breadcrumb() {
+		global $post;
+		echo '<ul id="breadcrumbs" class="breadcrumb-list">';
+		if (!is_home()) {
+			echo '<li><a href="';
+			echo get_option('home');
+			echo '">';
+			echo 'Home';
+			echo '</a></li><li class="separator"> / </li>';
+			if (is_category() || is_single()) {
+				echo '<li><a href="/blog/">Blog</a></li><li class="separator"> / </li>';
+				echo '<li class="x">';
+				the_category(' </li><li class="separator"> / </li><li> ');
+				if (is_single()) {
+					echo '</li><li class="separator"> / </li><li>';
+					the_title();
+					echo '</li>';
+				}
+			} elseif (is_page()) {
+				if($post->post_parent){
+					$anc = get_post_ancestors( $post->ID );
+					$title = get_the_title();
+					foreach ( $anc as $ancestor ) {
+						$output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li> <li class="separator">/</li>';
+					}
+					echo $output;
+					echo '<li><strong title="'.$title.'"> '.$title.'</strong></li>';
+				} else {
+					echo '<li> '.get_the_title().'</li>';
+				}
+
+			}
+		}
+		elseif (is_tag()) {single_tag_title();}
+		elseif (is_day()) {echo"<li>Archive for "; the_time('F jS, Y'); echo'</li>';}
+		elseif (is_month()) {echo"<li>Archive for "; the_time('F, Y'); echo'</li>';}
+		elseif (is_year()) {echo"<li>Archive for "; the_time('Y'); echo'</li>';}
+		elseif (is_author()) {echo"<li>Author Archive"; echo'</li>';}
+		elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {echo "<li>Blog Archives"; echo'</li>';}
+		elseif (is_search()) {echo"<li>Search Results"; echo'</li>';}
+		echo '</ul>';
+	}
+/* Create Breadcrumbs Link */
+
+/* Customizer Additional Fields */
+	include( get_theme_file_path('/includes/theme-customizer.php') );
+	add_action('customize_register', 'ah_customize_register');
+/* Customizer Additional Fields */
+
+/* Customizer logo in header with added class */
+add_filter( 'get_custom_logo', 'add_custom_logo_url' );
+function add_custom_logo_url() {
+    $custom_logo_id = get_theme_mod( 'custom_logo' );
+    $html = sprintf( '<a href="%1$s" class="header__logolink" rel="home" itemprop="url">%2$s</a>',
+            esc_url( '/' ),
+            wp_get_attachment_image( $custom_logo_id, 'full', false, array(
+                'class'    => 'header__logo',
+            ) )
+        );
+    return $html;   
+}
+/* Customizer logo in header with added class */ 

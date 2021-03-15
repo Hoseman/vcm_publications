@@ -8,11 +8,47 @@
 .u-margin-top-huge { margin-top: 10rem !important; }
 
 .woocommerce-info {
-    background:transparent;
-    margin:4rem 0 7rem 0;
-    font-size: 2.8rem;
+    background:$pale-grey;
+    margin:0.8rem 0;
+    font-size: 1.7rem;
+    text-align:center;
+    padding:1.3rem 1.1rem;
+    width: 100%;
+    // @include mediaquery("tablet-992"){
+    //     width: 97%;
+    // }
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
     & i {
         color:$yellow;
+    }
+    & a {
+        color:$blue;
+    }
+}
+
+.woocommerce-error {
+    background:$pale-grey;
+    font-size: 1.7rem;
+    padding: 0.7rem 1.3rem;
+    margin:0.8rem 0;
+}
+
+.return-to-shop {
+    .button {
+        background:$yellow;
+        padding:1rem 3rem;
+        color:$white;
+        display:block;
+        margin:3rem auto;
+        width:200px;
+        text-align:center;
+        box-shadow: inset 0 0 0 0 $black;
+        transition:all 0.15s ease-in;
+        &:hover {
+            box-shadow: inset 400px 0 0 0 $black;
+        }
     }
 }
 

@@ -1,10 +1,10 @@
 === WPC Fly Cart for WooCommerce ===
 Contributors: wpclever
 Donate link: https://wpclever.net
-Tags: woocommerce, woo, fly, cart, mini-cart, wpc
+Tags: woocommerce, woo, wpc, fly, cart, mini-cart
 Requires at least: 4.0
-Tested up to: 5.6.1
-Stable tag: trunk
+Tested up to: 5.7
+Stable tag: 2.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,8 @@ Visit our [live demo](https://demo.wpclever.net/woofc/?utm_source=content&utm_me
 - Enable/disable the display of cross-selling products
 - Lifetime access to dedicated plugin updates & customization support
 
+In order to display the Fly Cart popup on single product pages without reloading the page, please install the [WPC AJAX Add to Cart](https://wordpress.org/plugins/wpc-ajax-add-to-cart/) plugin to assist with a nicer experience.
+
 = Translators =
 
 Available languages: English (Default), Spanish, Spanish Mexico, Norwegian, Vietnamese, Italian, French, Slovak, Russian, Greek, Czech, Swedish
@@ -69,6 +71,9 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 
 == Changelog ==
 
+= 2.5.0 =
+* Updated: Compatible with WordPress 5.7 & WooCommerce 5.1
+
 = 2.4.4 =
 * Added: RTL support
 
@@ -85,7 +90,7 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 * Fixed: The update checker URL
 
 = 2.3.4 =
-* Updated: Compatible with WordPress 5.6.0 & WooCommerce 4.8.0
+* Updated: Compatible with WordPress 5.6 & WooCommerce 4.8
 
 = 2.3.3 =
 * Fixed: Some minor CSS & JS issues
@@ -132,7 +137,7 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 * Fixed: Minor JS issues
 
 = 2.1.0 =
-* Updated: Compatible with WooCommerce 4.2.0
+* Updated: Compatible with WooCommerce 4.2
 
 = 2.0.9 =
 * Added: Spanish translation
@@ -166,7 +171,7 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 * Fixed: Hide cart bubble if empty
 
 = 2.0.0 =
-* Updated: Compatible with WooCommerce 4.0.0
+* Updated: Compatible with WooCommerce 4.0
 * Added: Option to enable fly cart on Cart & Checkout page
 
 = 1.7.7 =
@@ -193,10 +198,10 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 = 1.7.0 =
 * Added: Cross sells products (Premium Version)
 * Updated: Unlock cart menu for free version
-* Updated: Compatible with WordPress 5.3 & WooCommerce 3.8.0
+* Updated: Compatible with WordPress 5.3 & WooCommerce 3.8
 
 = 1.6.9 =
-* Updated: Compatible with WooCommerce 3.7.x
+* Updated: Compatible with WooCommerce 3.7
 
 = 1.6.8 =
 * Fixed: Special products e.g bundle or composite
@@ -212,7 +217,7 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 * Updated: Optimized the code
 
 = 1.6.4 =
-* Updated: Compatible with WooCommerce 3.6.x
+* Updated: Compatible with WooCommerce 3.6
 * Added: Spanish Mexico translation (Thanks to Michael Morales)
 
 = 1.6.3 =
@@ -256,7 +261,7 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 * Updated: Optimized for touch devices
 
 = 1.4.9 =
-* Updated: Compatible with WooCommerce 3.5.0
+* Updated: Compatible with WooCommerce 3.5
 
 = 1.4.8 =
 * Updated: Optimize the code to reduce the loading time
@@ -313,12 +318,12 @@ Visit [plugin documentation website](https://wpclever.net?utm_source=doc&utm_med
 = 1.2.1 =
 * Tested up to WordPress 4.8.2
 
-= 1.2 =
+= 1.2.0 =
 * Add the cart heading
 * Optimized code
 
-= 1.1 =
+= 1.1.0 =
 * Tested up to WordPress 4.8
 
-= 1.0 =
+= 1.0.0 =
 * Released

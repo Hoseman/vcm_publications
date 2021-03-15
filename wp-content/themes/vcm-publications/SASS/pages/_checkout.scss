@@ -1,0 +1,392 @@
+.form-row.woocommerce-validated input.input-text {
+    box-shadow: inset 3px 0 0 $yellow;
+}
+.woocommerce-checkout {
+    & .woocommerce-form {
+        padding: 1rem 1rem 1.8rem 1rem;
+        border: 1px solid $light-grey;
+        & input {
+            width:100%;
+            font-size: 1.7rem;
+            background: $pale-grey;
+            border: 0;
+            border-radius: 0;
+            padding: 0.95rem 1.1rem;
+            border:1px solid $white;
+            &:hover {
+                background:lighen($pale-grey, 3%);
+                border:1px solid $light-grey;
+            }
+            &:focus {
+                outline: 0 !important;
+            }
+        }
+        & .form-row {
+            margin-left:0;
+            margin-right:0;
+            width:48%;
+            @include mediaquery("tablet-575"){
+                width:100%;
+            }
+            margin-right:2%;
+            float:left;
+            & input {
+                width:100%;
+            }
+            & .woocommerce-form__input-checkbox {
+                width:auto;
+            }
+            & .woocommerce-button {
+                float: right;
+                display: inline-block;
+                text-align: center;
+                width: 100px;
+                margin-left: auto;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .woocommerce-form-coupon {
+        padding: 1rem 1rem 5.8rem 1rem;
+        @include mediaquery("tablet-575"){
+            padding: 1rem 1rem 9.8rem 1rem;
+        }
+        border: 1px solid $light-grey;
+        & .form-row {
+            margin-left:0;
+            width:48%;
+            float:left;
+            @include mediaquery("tablet-575"){
+                width:100%;
+            }
+            margin-right:2% !important;
+            & input {
+                width:100%;
+                font-size: 1.7rem;
+                background: $pale-grey;
+                border: 0;
+                border-radius: 0;
+                padding: 0.95rem 1.1rem;
+                border:1px solid $white;
+                &:hover {
+                    background:lighen($pale-grey, 3%);
+                    border:1px solid $light-grey;
+                }
+                &:focus {
+                    outline: 0 !important;
+                }
+            }
+            @include mediaquery("tablet-575"){
+                & .button {
+                    margin-top:1rem;
+                }
+            }
+        }    
+    }
+    & .page-heading {
+        & h1 {
+            text-align:left;
+        }
+        &__underline {
+            margin-left: 0;
+        }
+    }
+    & .woocommerce-info {
+        text-align: left;
+        padding: 0.7rem 1.1rem;
+    }
+    & .button {
+        padding:0.9rem 2rem;
+    }
+    & .woocommerce-error {
+        list-style-type: none;
+    }
+}
+.checkout_coupon {
+    & .form-row {
+        margin:0 !important;
+    }
+    & .input-text {
+        border-radius:0;
+        &:focus {
+            outline:0;
+        }
+    }
+}
+.checkout-wrapper {
+    display:block;
+    & #customer_details {
+        width:50%;
+        @include mediaquery("tablet-767"){
+            width:100%;
+        }
+        float:left;
+        margin-bottom:5rem;
+        @include mediaquery("tablet-767"){
+            margin-bottom:0rem;
+        }
+        & abbr[title] {
+            text-decoration:none;
+        }
+        & h3 {
+            color:$blue;
+            font-size:2.45rem;
+            margin-top: 3rem;
+        }
+        & .woocommerce-input-wrapper {
+            width:100%;
+        }
+        & label {
+            display:block;
+            margin-top: 1rem;
+        }
+        & input, textarea {
+            width:100%;
+            font-size: 1.7rem;
+            background: $pale-grey;
+            border: 0;
+            border-radius: 0;
+            padding: 1.25rem 1.1rem;
+            border:1px solid $white;
+            &:hover {
+                background:lighen($pale-grey, 3%);
+                border:1px solid $light-grey;
+            }
+            &:focus {
+                outline:0;
+            }
+        }
+        & .woocommerce-form__input-checkbox {
+            width:auto;
+            margin-left:5px;
+        }
+        & #ship-to-different-address-checkbox {
+            width:20px;
+            display:inline;
+            margin-left:3px
+        }
+        & .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #444;
+            line-height: 28px;
+            background: $pale-grey;
+            padding: 1.25rem 1.1rem;
+        }
+        & .select2-container--default .select2-selection--single {
+            background-color: $pale-grey;;
+            border: 0;
+            border-radius: 0;
+            height: 52px;
+        }
+        & .woocommerce-billing-fields__field-wrapper {
+            padding: 0 0.5rem;
+        }
+        & .woocommerce-additional-fields__field-wrapper {
+            padding: 0 0.5rem;
+        }
+        & .woocommerce-shipping-fields__field-wrapper {
+            padding: 0 0.5rem;
+        }
+    }
+
+    & .right-column {
+        width:50%;
+        @include mediaquery("tablet-767"){
+            width:100%;
+        }
+        float:right;
+        & #payment {
+            background:$pale-grey;
+            padding:2.1rem 1.6rem;
+            position:relative;
+            & ul {
+                list-style-type:none;
+                margin:80px 0 0 0;
+            }
+            & .woocommerce-privacy-policy-text {
+                padding:0.4rem;
+            }
+            & img {
+                width: 260px;
+                margin-top: -1rem;
+                display:block;
+                position:absolute;
+                margin: 0 0 0 -1.9rem;
+                padding: 0;
+                top:0.5rem;
+            }
+            & p {
+                font-size:1.59rem;
+                height:auto;
+            }
+        }
+    }
+
+    & .your-order {
+        width:100%;
+        & h3 {
+            color:$blue;
+            font-size:2.45rem;
+            margin-top: 3rem;
+        }
+    }
+
+    #order_review {
+        width:100%;
+        @include mediaquery("tablet-767"){
+            padding:0;
+        }
+        padding: 0 1.55rem;
+    }
+}
+
+.woocommerce-thankyou-order-details {
+    list-style-type:none;
+    margin-left: 0;
+    margin-top: 2.5rem;
+    & li {
+        font-size: 1.8rem;
+        @include mediaquery("phone-400"){
+            font-size: 1.6rem;
+        }
+        line-height: 2.4rem;
+        text-indent: -0.7em;
+        margin-left: 1.4em;
+    }
+    & li::before {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f00c";
+        color:$blue;
+        margin-right: 0px;
+        vertical-align: text-bottom;
+        width: 5px;
+        margin-top: 0px;
+        display: inline-block;
+    }
+}
+
+.woocommerce-order-details {
+    margin-top:3.8rem;
+    margin-bottom:4rem;
+    & .woocommerce-order-details__title {
+        color:$blue;
+        font-size:2.5rem;
+    }
+    & .woocommerce-table--order-details {
+        font-size:1.7rem;
+        border:1px solid $light-grey;
+        background:lighten($pale-grey, 5%);
+        & td {
+            padding:1rem;
+            border-bottom:1px solid $light-grey;
+            border-right:1px solid $light-grey;
+        }
+        & th {
+            padding:1rem;
+            border-bottom:1px solid $light-grey;
+            border-right:1px solid $light-grey;
+        }
+    }
+}
+.woocommerce-column--billing-address {
+    width:50%;
+    @include mediaquery("tablet-640"){
+        width:100%;
+    }
+    float:left;
+    & .woocommerce-column__title {
+        color:$blue;
+        font-size:2.5rem;
+    }
+    & address {
+        font-size:1.7rem;
+        margin-bottom: 9rem;
+        @include mediaquery("tablet-640"){
+            margin-bottom: 2rem;
+        }
+    }
+}
+.woocommerce-column--shipping-address {
+    width:50%;
+    @include mediaquery("tablet-640"){
+        width:100%;
+    }
+    float:left;
+    & .woocommerce-column__title {
+        color:$blue;
+        font-size:2.5rem;
+    }
+    & address {
+        font-size:1.7rem;
+        margin-bottom: 9rem;
+        @include mediaquery("tablet-640"){
+            margin-bottom: 2rem;
+        }
+    }
+}
+/* The container */
+.shipping-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .shipping-container .woocommerce-form__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 3.8px;
+    left: 0;
+    height: 1.9rem;
+    width: 1.9rem;
+    background-color: $pale-grey;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .shipping-container:hover .woocommerce-form__input ~ .checkmark {
+    background-color: lighten($light-grey, 3%);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .shipping-container .woocommerce-form__input:checked ~ .checkmark {
+    background-color: $blue;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .shipping-container .woocommerce-form__input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .shipping-container .checkmark:after {
+    left: 7px;
+    top: 3.5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

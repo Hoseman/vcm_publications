@@ -5,12 +5,11 @@
     padding: 0;
     box-sizing: inherit;
 }
-
 html {
     // This defines what 1rem is
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
-
 body {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
@@ -21,9 +20,22 @@ body {
 }
 a {
     text-decoration:none !important;
+    color:#3880d7;
+    &:active {
+        color:$blue;
+    }
+    &:focus {
+        color:$blue;
+    }
+    &:visited {
+        color:$blue;
+    }
 }
 p {
     font-size: 1.8rem;
+    @include mediaquery("phone-480"){
+        font-size: 1.6rem;
+    }
     line-height:2.4rem;
 }
 ul {
@@ -53,8 +65,27 @@ h2 {
 }
 
 
-// @include mediaquery("desktop-1700"){
-//     .container {
-//         max-width: 1200px;
-//     }
-// }
+// Overide Woocommerce Grid System
+@include mediaquery("tablet-767"){
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 48%;
+        float: left;
+        margin: 0 1% 0.5em;
+        min-height: 465px;
+    }
+}
+@include mediaquery("tablet-640"){
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        min-height: 425px;
+    }
+}
+@include mediaquery("tablet-575"){
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        min-height: 395px;
+    }
+}
+@include mediaquery("phone-480"){
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 100%;
+    }
+}
