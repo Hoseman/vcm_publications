@@ -46,7 +46,7 @@
             </span>
 
             <span class="footer__links">
-                <p>CATEGORIES</p>
+                <p>POPULAR CATEGORIES</p>
                 <?php
                     wp_nav_menu(
                         array(

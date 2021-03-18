@@ -21,10 +21,7 @@ class Multilingual {
 			return false;
 		}
 
-		if (
-			count( self::getLanguages() ) > 1
-			&& ( self::isWPML() || self::isPolylang() )
-		) {
+		if ( count( self::getLanguages() ) > 1 && self::getProvider() !== 'not set' ) {
 			$isMultilingual = true;
 		}
 
@@ -57,13 +54,15 @@ class Multilingual {
 	public static function getProvider() {
 		$provider = 'not set';
 
-		if(self::isWPML()){
+		if ( self::isWPML() ) {
 			$provider = 'WPML';
 		}
 
-		if(self::isPolylang()){
+		if ( self::isPolylang() ) {
 			$provider = 'Polylang';
 		}
+
+		$provider = apply_filters( 'dgwt/wcas/multilingual/provider', $provider );
 
 		return $provider;
 	}
@@ -101,6 +100,8 @@ class Multilingual {
 			$defaultLang = substr( $locale, 0, 2 );
 		}
 
+		$defaultLang = apply_filters( 'dgwt/wcas/multilingual/default-language', $defaultLang );
+
 		return $defaultLang;
 	}
 
@@ -129,6 +130,8 @@ class Multilingual {
 		if ( empty( $currentLang ) && ! empty( $_GET['lang'] ) && self::isLangCode( $_GET['lang'] ) ) {
 			$currentLang = strtolower($_GET['lang']);
 		}
+
+		$currentLang = apply_filters( 'dgwt/wcas/multilingual/current-language', $currentLang );
 
 		return $currentLang;
 	}
@@ -164,6 +167,8 @@ class Multilingual {
 		if ( self::isPolylang() ) {
 			$lang = pll_get_post_language( $postID, 'slug' );
 		}
+
+		$lang = apply_filters( 'dgwt/wcas/multilingual/post-language', $lang, $postID, $postType );
 
 		return $lang;
 	}
@@ -202,6 +207,9 @@ class Multilingual {
 			$lang = pll_get_term_language($termID, 'slug');
 		}
 
+		// TranslatePress has no language relationship with the post, so we always return the default
+		$lang = apply_filters( 'dgwt/wcas/multilingual/term-language', $lang, $termID, $taxonomy );
+
 		return $lang;
 	}
 
@@ -233,13 +241,15 @@ class Multilingual {
 
 		}
 
+		$permalink = apply_filters( 'dgwt/wcas/multilingual/post-permalink', $permalink, $lang, $postID );
+
 		return $permalink;
 	}
 
 	/**
 	 * Active languages
 	 *
-	 * @return langs
+	 * @return array
 	 */
 	public static function getLanguages() {
 
@@ -273,6 +283,8 @@ class Multilingual {
 		if ( empty( $langs ) ) {
 			$langs[] = self::getDefaultLanguage();
 		}
+
+		$langs = apply_filters( 'dgwt/wcas/multilingual/languages', $langs );
 
 		return $langs;
 
@@ -325,6 +337,8 @@ class Multilingual {
 			) );
 
 		}
+
+		$terms = apply_filters( 'dgwt/wcas/multilingual/terms-in-all-languages', $terms, $taxonomy );
 
 		return $terms;
 	}
@@ -379,6 +393,8 @@ class Multilingual {
 
 		}
 
+		$terms = apply_filters( 'dgwt/wcas/multilingual/terms-in-language', $terms, $args, $lang );
+
 		return $terms;
 	}
 
@@ -427,6 +443,8 @@ class Multilingual {
 			}
 
 		}
+
+		$term = apply_filters( 'dgwt/wcas/multilingual/term', $term, $termID, $taxonomy, $lang );
 
 		return $term;
 	}
@@ -499,6 +517,8 @@ class Multilingual {
 		if ( self::isWPML() && ! empty( $lang ) ) {
 			do_action( 'wpml_switch_language', $lang );
 		}
+
+		do_action( 'dgwt/wcas/multilingual/switch-language', $lang );
 	}
 
 }

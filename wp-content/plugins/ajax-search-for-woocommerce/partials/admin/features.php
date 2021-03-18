@@ -7,13 +7,13 @@ if ( ! defined( 'DGWT_WCAS_FILE' ) ) {
 	exit;
 }
 
-$utmLink = 'https://ajaxsearch.pro/?utm_source=wp-admin&utm_medium=referral&utm_campaign=settings&utm_content=features&utm_gen=utmdc#features-comparison';
+$utmLink = 'https://fibosearch.com/pro-vs-free/?utm_source=wp-admin&utm_medium=referral&utm_campaign=settings&utm_content=features&utm_gen=utmdc';
 ?>
 
 <div class="dgwt-wcas-upgrade-s">
-	<h2 class="dgwt-wcas-upgrade-s__title"><?php _e( 'If users can’t find the product they’re searching for, they can’t buy it. Help your customers to find the right products even <span>10x faster</span>.', 'ajax-search-for-woocommerce' ); ?></h2>
+	<h2 class="dgwt-wcas-upgrade-s__title"><?php _e( 'If users can’t find the product they’re searching for, they can’t buy it. Help your customers to find the right products even <span>10× faster</span>.', 'ajax-search-for-woocommerce' ); ?></h2>
 	<p class="dgwt-wcas-upgrade-s__subtitle">
-		<?php _e( 'Update now and boosts your sales. You will receive <b>14-day satisfaction guarantee</b>.  A return on investment will come very quickly.', 'ajax-search-for-woocommerce' ); ?>
+		<?php _e( 'Update now and boosts your sales. You will receive <b>30-day satisfaction guarantee</b>.  A return on investment will come very quickly.', 'ajax-search-for-woocommerce' ); ?>
 	</p>
 	<ul>
 		<li><strong>+ <?php _e( '<b>New Ultra-Fast Search Engine</b> – works very fast even with 100,000+ products ', 'ajax-search-for-woocommerce' ); ?></strong></li>

@@ -12,6 +12,7 @@ class Shortcode {
 	public static function register() {
 
 		add_shortcode( 'wcas-search-form', array( __CLASS__, 'addBody' ) );
+		add_shortcode( 'fibosearch', array( __CLASS__, 'addBody' ) );
 
 	}
 
@@ -20,8 +21,7 @@ class Shortcode {
 	 *
 	 * @param array $atts bool show_details_box
 	 */
-	public static function addBody( $atts = array() ) {
-
+	public static function addBody( $atts, $content, $tag ) {
 		$layout = Helpers::getLayoutSettings();
 
 		$searchArgs = shortcode_atts( array(
@@ -29,7 +29,7 @@ class Shortcode {
 			'layout'         => $layout->layout,
 			'mobile_overlay' => $layout->mobile_overlay,
 			'details_box'    => 'hide'
-		), $atts, 'wcas-search-form' );
+		), $atts, $tag );
 
 		$searchArgs['class'] .= empty( $search_args['class'] ) ? 'woocommerce' : ' woocommerce';
 

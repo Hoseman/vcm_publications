@@ -200,6 +200,9 @@
             position:relative;
             & ul {
                 list-style-type:none;
+                margin:0;
+            }
+            & ul:nth-child(1) {
                 margin:80px 0 0 0;
             }
             & .woocommerce-privacy-policy-text {
@@ -323,6 +326,21 @@
         }
     }
 }
+
+/* Stripe Payment Styling */
+.wc-stripe-elements-field {
+    width:100%;
+}
+.woocommerce-checkout #payment ul.payment_methods .stripe-card-group {
+    width: 100%;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li img.stripe-icon {
+    display: none;
+}
+
+/* Stripe Payment Styling */
+
 /* The container */
 .shipping-container {
     display: block;

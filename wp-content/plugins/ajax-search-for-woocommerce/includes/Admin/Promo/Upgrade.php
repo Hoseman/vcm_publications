@@ -41,31 +41,28 @@ class Upgrade {
 	 * @return void
 	 */
 	public function renderUpgradeModal() {
-		$utmLink = 'https://ajaxsearch.pro/?utm_source=wp-admin&utm_medium=referral&utm_campaign=upgrade-popup&utm_content=features&utm_gen=utmdc#features-comparsion';
+		$utmLink = 'https://fibosearch.com/pro-vs-free/?utm_source=wp-admin&utm_medium=referral&utm_campaign=upgrade-popup&utm_content=features&utm_gen=utmdc';
 
 		$features = array(
-			__( 'Speed up search! (even 10x faster) - users love it!', 'ajax-search-for-woocommerce' ),
-			__( 'New modern search engine based on bm25 ranking algorithm', 'ajax-search-for-woocommerce' ),
+			__( 'Speed up search! (even 10× faster) - users love it!', 'ajax-search-for-woocommerce' ),
+			__( 'Modern search engine based on an inverted index and advanced matching algorithms', 'ajax-search-for-woocommerce' ),
 			__( 'Fuzzy search', 'ajax-search-for-woocommerce' ),
+			__( 'Synonyms', 'ajax-search-for-woocommerce' ),
 			__( 'Search in attributes and variation products SKUs (option)', 'ajax-search-for-woocommerce' ),
-			__( 'Individual customization of the search form (simple CSS improvements)', 'ajax-search-for-woocommerce' ),
-			__( 'Individual tips and support by Damian Góra - the author of the plugin', 'ajax-search-for-woocommerce' )
+			__( 'Individual tips and support by FiboSearch team', 'ajax-search-for-woocommerce' )
 		);
-		echo '<a style="display:none;" class="thickbox js-dgwt-wcas-modal-pro-handler" href="#TB_inline?width=600&height=380&inlineId=dgwt-wcas-modal" title="' . __( 'Ajax Search for WooCommerce PRO - Upgrade Now', 'ajax-search-for-woocommerce' ) . '"></a>';
+		echo '<a style="display:none;" class="thickbox js-dgwt-wcas-modal-pro-handler" href="#TB_inline?width=600&height=380&inlineId=dgwt-wcas-modal" title="' . __( 'FiboSearch Pro - Upgrade Now', 'ajax-search-for-woocommerce' ) . '"></a>';
 		echo '<div id="dgwt-wcas-modal" class="dgwt-wcas-modal-upgrade" style="display:none;">';
 		echo '<img class="dgwt-wcas-modal-logo" src="' . DGWT_WCAS_URL . 'assets/img/logo-128.png" width="128" height="128" />';
 		echo '
-		<h2 class="dgwt-wcas-modal-title">' . __( 'Update now and increase your sales. You will receive 14-day satisfaction guarantee.  A return on investment will come very quickly.', 'ajax-search-for-woocommerce' ) . '</h2>';
+		<h2 class="dgwt-wcas-modal-title">' . __( 'Update now and increase your sales. You will receive 30-day satisfaction guarantee.  A return on investment will come very quickly.', 'ajax-search-for-woocommerce' ) . '</h2>';
 		echo '<ul>';
 		foreach ( $features as $feature ) {
 			echo '<li><strong>+ ' . $feature . '</strong></li>';
 		}
 		echo '<li><strong>+ ' . __( 'and more...', 'ajax-search-for-woocommerce' ) . ' <a target="_blank" href="' . $utmLink . '">' . __( 'See a comparison of all free and premium features!', 'ajax-search-for-woocommerce' ) . '</a></strong></li>';
 		echo '</ul>';
-		echo '<p>' . __( 'You can upgrade without leaving the admin panel by clicking below.', 'ajax-search-for-woocommerce' );
-		echo '<br />' . __( 'Free updates and email support included.', 'ajax-search-for-woocommerce' ) . '</p>';
 		echo '<p><a class="button-primary" target="_blank" href="' . self::getUpgradeUrl() . '">' . __( 'Upgrade Now', 'ajax-search-for-woocommerce' ) . '</a>';
-		//echo '<a href="" class="button-secondary js-cas-pro-read-more" target="_blank" href="">'.__('Read More','ajax-search-for-woocommerce').'</a>';
 		echo '</p>';
 		echo '</div>';
 	}
@@ -108,7 +105,7 @@ class Upgrade {
 	 */
 	public static function getUpgradeUrl( $type = 'external' ) {
 
-		$url = "https://ajaxsearch.pro/pricing/?utm_source=wp-admin&utm_medium=referral&utm_campaign=upgrade-link&utm_content=upgrade-now-btn";
+		$url = "https://fibosearch.com/pricing/?utm_source=wp-admin&utm_medium=referral&utm_campaign=upgrade-link&utm_content=upgrade-now-btn";
 
 		if ( $type === 'internal' ) {
 			$url = esc_url( dgoraAsfwFs()->get_upgrade_url() );

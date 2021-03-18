@@ -43,7 +43,7 @@ $labelSeeAll    = Helpers::getLabel( 'show_more' );
 					/>
 					<div class="dgwt-wcas-preloader"></div>
 
-					<button type="submit" name="dgwt-wcas-search-submit" class="js-dgwt-wcas-search-submit dgwt-wcas-search-submit"><?php
+					<button type="submit" class="js-dgwt-wcas-search-submit dgwt-wcas-search-submit"><?php
 						echo '<span class="js-dgwt-wcas-search-submit-l">' . esc_html( $submitText ) . '</span>';
 						echo '<span class="js-dgwt-wcas-search-submit-m">' . Helpers::getMagnifierIco() . '</span>';
 						?>

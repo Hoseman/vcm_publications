@@ -1,10 +1,10 @@
-=== Ajax Search for WooCommerce  ===
+=== FiboSearch - Ajax Search for WooCommerce  ===
 Contributors: damian-gora, matczar
 Tags: woocommerce search, ajax search, search by sku, product search, woocommerce
 Requires at least: 5.0
-Tested up to: 5.6
-Requires PHP: 5.5
-Stable tag: 1.8.2
+Tested up to: 5.7
+Requires PHP: 7.0
+Stable tag: 1.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +12,11 @@ The most popular WooCommerce product search plugin. Gives your users a well-desi
 
 == Description ==
 
-The most popular **WooCommerce product search plugin**. Gives your users a well-designed advanced AJAX search bar with live search suggestions.
+The most popular **WooCommerce product search plugin**. It gives your users a well-designed advanced AJAX search bar with live search suggestions.
 
-By default, WooCommerce provides a very simple search solution, without live product search or even SKU search. Ajax Search for WooCommerce provides advanced search with live suggestions.
+By default, WooCommerce provides a very simple search solution, without live product search or even SKU search. FiboSearch (Ajax Search for WooCommerce) provides advanced search with live suggestions.
 
-Who doesn’t love instant, as-you-type suggestions? In 2020, customers simply expect smart product search. Baymard Institute’s latest UX research reveals that search autocomplete, auto-suggest, or instant search feature **is now offered at 96% of major e-commerce sites**. It's a must-have feature for every online business that can’t afford to lose customers. Why? AJAX search helps users save time and makes shopping easier. As a result, it really boosts sales.
+Who doesn’t love instant, as-you-type suggestions? In 2021, customers expect smart product search. Baymard Institute’s latest UX research reveals that search autocomplete, auto-suggest, or an instant search feature **is now offered on 96% of major e-commerce sites**. It's a must-have feature for every online business that can’t afford to lose customers. Why? FiboSearch helps users save time and makes shopping easier. As a result, it really boosts sales.
 
 = Features =
 &#9989; **Search by product title, long and short description**
@@ -25,14 +25,14 @@ Who doesn’t love instant, as-you-type suggestions? In 2020, customers simply e
 &#9989; Show **product price** in live search results
 &#9989; Show **product description** in live search results
 &#9989; Show **SKU** in live search results
-&#9989; **Mobile First** – special mobile search mode for better UX
-&#9989; **Details panels** with extended information – **"add to cart" button** with a **quantity field** and **extended product** data displayed on hovering over the live suggestion
+&#9989; **Mobile first** – special mobile search mode for better UX
+&#9989; **Details panels** with extended information – **“add to cart” button** with a **quantity field** and **extended product** data displayed on hovering over the live suggestion
 &#9989; **Easy implementation** in your theme - embed the plugin using a **shortcode**, as a **menu item** or as a **widget**
 &#9989; **Terms search** – search for product categories and tags
 &#9989; **Limit** displayed suggestions – the number is customizable
 &#9989; **The minimum number of characters** required to display suggestions – the number is customizable
 &#9989; **Better ordering** – a smart algorithm ensures that the displayed results are as accurate as possible
-&#9989; **Support for the results page** - after type enter users got the same results as in ajax search bar
+&#9989; **Support for WooCommerce search results page** - after typing enter, users get the same results as in FiboSearch bar
 &#9989; **Grouping instant search results by type** – displaying e.g. first matching categories, then matching products
 &#9989; **Google Analytics** support
 &#9989; **WPML** compatible
@@ -40,13 +40,13 @@ Who doesn’t love instant, as-you-type suggestions? In 2020, customers simply e
 &#9989; **Personalization** of search bar and autocomplete suggestions - labels, colors, preloader, image and more
 
 = Try the PRO version =
-Ajax search comes also in the Pro version, with a modern, inverted index based search engine. Ajax Search Pro works **even 10x faster** than its Free version or other popular search solutions for WooCommerce.
+FiboSearch also comes in a Pro version, with a modern, inverted index-based search engine. FiboSearch Pro works up to **10× faster** than the Free version or other popular search solutions for WooCommerce.
 
-[Upgrade to PRO and boost your sales!](https://ajaxsearch.pro/pricing/?utm_source=readme&utm_medium=referral&utm_content=pricing&utm_campaign=asfw)
+[Upgrade to PRO and boost your sales!](https://fibosearch.com/pricing/?utm_source=readme&utm_medium=referral&utm_content=pricing&utm_campaign=asfw)
 
 = PRO features =
 
-&#9989; **Ultra-Fast Search Engine** based on the inverted index – works very fast even with 100,000+ products
+&#9989; **Ultra-fast search engine** based on the inverted index – works very fast, even with 100,000+ products
 &#9989; **Fuzzy search** – works even with minor typos
 &#9989; **Search in custom fields**
 &#9989; **Search in attributes**
@@ -54,91 +54,110 @@ Ajax search comes also in the Pro version, with a modern, inverted index based s
 &#9989; **Search in tags**
 &#9989; **Search in brands** (WooCommerce Brands or YITH WooCommerce Brands)
 &#9989; **Search by variation product SKU** – also shows variable products in live search after typing in the exact matching SKU
-&#9989; **Search for posts** – shows also matching posts in live search
-&#9989; **Search for pages** – shows also matching posts in live search
+&#9989; **Search for posts** – also shows matching posts in live search
+&#9989; **Search for pages** – also shows matching posts in live search
 &#9989; **Synonyms**
+&#9989; **Conditional exclusion of products**
+&#9989; **TranslatePress** compatible
 &#9989; Professional and fast **help with embedding** or replacing the search bar in your theme
 &#9989; and more...
-&#9989; SEE ALL PRO [FEATURES](https://ajaxsearch.pro?utm_source=readme&utm_medium=referral&utm_content=features&utm_campaign=asfw#features-comparison)!
+&#9989; SEE ALL PRO [FEATURES](https://fibosearch.com/pro-vs-free/?utm_source=readme&utm_medium=referral&utm_content=features&utm_campaign=asfw)!
 
 = Showcase =
-See how it works for others: [Showcase](https://ajaxsearch.pro/showcase/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=showcase&utm_gen=utmdc).
+See how it works for others: [Showcase](https://fibosearch.com/showcase/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=showcase&utm_gen=utmdc).
 
 = Feedback =
-Any suggestions or comments are welcome. Feel free to contact me via the [contact form](https://ajaxsearch.pro/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc).
+Any suggestions or comments are welcome. Feel free to contact us via the [contact form](https://fibosearch.com/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc).
 
 == Installation ==
 
 1. Install the plugin from within the Dashboard or upload the directory `ajax-search-for-woocommerce` and all its contents to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to `WooCommerce -> AJAX Search bar` and set your preferences.
-4. Use a shortcode `[wcas-search-form]` or go to the `Appearance -> Menu` and add menu item `AJAX Search bar` or go to the `Appearance -> Widgets` and choose `AJAX Search bar`
+3. Go to `WooCommerce → FiboSearch` and set your preferences.
+4. Use a shortcode `[fibosearch]` or go to the `Appearance → Menu` and add menu item `FiboSearch` or go to the `Appearance → Widgets` and choose `FiboSearch`
 
 == Frequently Asked Questions ==
 
 = How do I embed the search bar in my theme? =
-There are five easy ways to display the AJAX search box in your theme:
+There are five easy ways to display the FiboSearch bar in your theme:
 
-– **As a menu item** - in your WordPress admin panel, go to `Appearance -> Menu` and add `AJAX Search bar` as a menu item
+– **As a menu item** - in your WordPress admin panel, go to `Appearance → Menu` and add `FiboSearch bar` as a menu item
 – **Using a shortcode**
 
-`[wcas-search-form]`
+`[fibosearch]`
 
-– **As a widget** - in your WordPress admin panel, go to `Appearance -> Widgets` and choose `AJAX Search bar`
+– **As a widget** - in your WordPress admin panel, go to `Appearance → Widgets` and choose `FiboSearch`
 
 – **Using PHP**
 
-`<?php echo do_shortcode('[wcas-search-form]'); ?>`
+`<?php echo do_shortcode('[fibosearch]'); ?>`
 
-– **We will do it for you!** - we offer free of charge search bar implementation for Pro users. Become one now!
+– **We will do it for you!** - we offer free search bar implementation for Pro users. Become one now!
 
-Or insert this function inside php file ( often it used to insert form inside page templates files ):
+Or insert this function inside a PHP file (often, it is used to insert a form inside page template files):
 
-= How do I replace the existing search bar in my theme with AJAX Search? =
-We have prepared a one-click replacement of search bar for the following themes:
+= How do I replace the existing search bar in my theme with FiboSearch? =
+We have prepared a one-click replacement of the search bar for the following themes:
 
 *  Storefront
+*  Divi
 *  Flatsome
 *  OceanWP
 *  Astra
 *  Avada
-*  and 24 more... See complete list of integrated themes on [our docs](https://ajaxsearch.pro/docs/integrations/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=theme-integrations).
+*  Sailent
+*  and 30 more... See a complete list of integrated themes on [our documentation](https://fibosearch.com/documentation/themes-integrations/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=theme-integrations).
 
 
-If you want to replace your search bar in some other theme, please [contact our support team](https://ajaxsearch.pro/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc)
-Also, we have developed snippets to replace the search bar in Porto, Autusin, Avada, Hestia, Electro and more themes. We will share the code soon.
-We offer replacing the search bar in your theme for free after you upgrade to the Pro version.
+If you want to replace your search bar in another theme, please [contact our support team](https://fibosearch.com/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc).
+We will assist with replacing the search bar in your theme for free after you upgrade to the Pro version.
 
 = Can I add the search bar as a WordPress menu item? =
-**Yes, you can!** Go to `Appearance -> Menu`. You will see a new menu item called "AJAX Search bar". Select it and click "Add to menu". Done!
+**Yes, you can!** Go to `Appearance → Menu`. You will see a new menu item called "FiboSearch". Select it and click “Add to menu”. Done!
 
-= I have a question, where do I ask? =
-You can submit a ticket on the plugin [website](https://ajaxsearch.pro/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc) and the support team will get in touch with you shortly. We also answer questions on the [WordPress Support Forum](https://wordpress.org/support/plugin/ajax-search-for-woocommerce/).
+= How can I ask a question? =
+You can submit a ticket on the plugin [website](https://fibosearch.com/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc) and the support team will get in touch with you shortly. We also answer questions on the [WordPress Support Forum](https://wordpress.org/support/plugin/ajax-search-for-woocommerce/).
 
 = Do you offer customization support? =
-Depending on the them you use, sometimes the search bar requires minor improvements in appearance. We guarantee fast CSS corrections for all Pro plugin users, but we also help Free plugin users.
+Depending on the theme you use, sometimes the search bar requires minor improvements in appearance. We guarantee fast CSS corrections for all Pro plugin users, but we also help Free plugin users.
 
 = Where can I find plugin settings? =
-In your WordPress admin panel, go to `WooCommerce -> AJAX Search bar`. The AJAX search settings page is a submenu of the WooCommerce menu.
+In your WordPress dashboard, go to `WooCommerce → FiboSearch`. The FiboSearch settings page is a submenu of the WooCommerce menu.
 
 = Who is the Pro plugin version for? =
-The Pro plugin version is for all online sellers looking to **increase sales** by providing an ultra-fast and smart search engine to their clients.
+The Pro plugin version is for all online sellers looking to **increase sales** by providing an ultra-fast smart search engine to their clients.
 
-The main difference between the Pro and Free versions is search speed and search scope. The Pro version has a new fast and smart search engine. For some online stores that offer a lot of products for sale, search speed can be increased **up to 10x**, providing a whole new experience to end users.
+The main difference between the Pro and Free versions is search speed and search scope. The Pro version has a new fast smart search engine. For some online stores that offer a lot of products for sale, search speed can be increased **up to 10×**, providing a whole new experience to end users.
 
-All in all, the Pro version is dedicated to all WooCommerce shops where autocomplete suggestions work too slow.
+All in all, the Pro version is dedicated to all WooCommerce shops where autocomplete suggestions work too slowly.
 
-You can read more and compare Pro and Free features here: [feature comparison](https://ajaxsearch.pro/#features-comparison).
+You can read more and compare Pro and Free features here: [Full comparison - Pro vs Free](https://fibosearch.com/pro-vs-free/).
 
 == Screenshots ==
 
-1. Search suggestions with the details panel
+1. Search suggestions with a details panel
 2. Search suggestions
-3. Search bar options
-4. Autocomplete options
-5. Search config
+3. Search suggestions with a details panel
+4. Settings page
+5. Settings page
 
 == Changelog ==
+
+= 1.9.0, March 15, 2021 =
+* ADD: Support for WooCommerce Private Store plugin
+* CHANGE: Plugin rebranding -  Replace the plugin name AJAX Search for WooCommerce with new name FiboSearch
+* CHANGE: Plugin rebranding -  Replace the old domain ajaxsearch.pro with new fibosearch.com
+* CHANGE: Plugin rebranding -  Update visual assets 
+* CHANGE: Updated Freemius SDK to v2.4.2
+* CHANGE: New alternate shortcode [fibosearch] instead of [wcas-search-form]
+* CHANGE: Min supported version of PHP is 7.0
+* FIX: Fixed Chrome lighthouse insights
+* FIX: Missing of dgwt-wcas-active class when the search was focused too early
+* FIX: Grammar and spelling errors in texts
+* FIX: Not firing jQuery onLoad event for some browsers
+* REMOVE: Removed useless dgwt-wcas-search-submit name attribute
+* REMOVE: Removed unused search forms from a Avada theme
+
 
 = 1.8.2, February 06, 2021 =
 * ADD: Support for Astra theme
@@ -259,8 +278,6 @@ You can read more and compare Pro and Free features here: [feature comparison](h
 = 1.6.2, February 18, 2020 =
 * ADD: Details Panel - new layout for product overview and other UX improvements
 * ADD: Automatically regenerates images after first plugin activation
-
-
 * FIX: Highlighted no results suggestion
 * FIX: Better security
 
@@ -271,7 +288,6 @@ You can read more and compare Pro and Free features here: [feature comparison](h
 * ADD: Details panel - show "more products..." link for taxonomy type suggestion
 * ADD: Add &lt;form&gt; to quantity elements in a details panel
 * ADD: New filters and actions hook
-
 * FIX: Issue related to colors in plugin settings
 * FIX: Suggestions groups - improved limits
 * FIX: Pricing for taxonomy term in a details panel
@@ -282,7 +298,6 @@ You can read more and compare Pro and Free features here: [feature comparison](h
 * FIX: Storefront mobile search - more time for input autofocus
 * FIX: Disable quantity for Astra Pro theme - there were broken buttons
 * FIX: Minor CSS improvements
-
 * CHANGE:  Decrease debounce time for better speed effect
 * CHANGE: Updated Freemius SDK v2.3.2
 

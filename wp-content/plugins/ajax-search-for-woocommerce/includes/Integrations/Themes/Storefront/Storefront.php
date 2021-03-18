@@ -55,7 +55,7 @@ class Storefront {
 		$settings[ $key ][55] = array(
 			'name'    => 'storefront_replace_search',
 			'label'   => __( 'Replace', 'ajax-search-for-woocommerce' ),
-			'desc'    => __( 'Replace the Storefront default product search to the Ajax Search for WooCommerce form.', 'ajax-search-for-woocommerce' ),
+			'desc'    => sprintf( __( 'Replace all %s search bars with the %s.', 'ajax-search-for-woocommerce' ), $this->themeName, DGWT_WCAS_NAME ),
 			'type'    => 'checkbox',
 			'default' => 'off',
 		);
@@ -71,8 +71,7 @@ class Storefront {
 	}
 
 	/**
-	 * Check if can replace the native Storefront search form
-	 * by the Ajax Search for WooCommerce form.
+	 * Check if can replace the native Storefront search form with the FiboSearch form.
 	 *
 	 * @return bool
 	 */

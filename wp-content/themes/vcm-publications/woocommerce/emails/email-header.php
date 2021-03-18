@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="template_header">
 										<tr>
 											<td style="padding:0 !important;" id="header_wrapper">
-												<img src="https://dev-vcmpublications.achcreative.info/wp-content/themes/vcm-publications/images/email-header.png" alt="VCM Publications">
+												<img src="http://dev-vcmpublications.achcreative.info/wp-content/themes/vcm-publications/images/email-header-new.png" alt="VCM Publications">
 												<h1 style="font-size:20px; color:white; font-weight:bold; padding-top:8px; padding-bottom:8px; text-align:center;"><?php echo $email_heading; ?></h1>
 											</td>
 										</tr>

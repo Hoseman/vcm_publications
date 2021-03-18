@@ -22,6 +22,126 @@
         margin-bottom: 3.8rem;
     }
 }
+.page-id-123 .page-heading {
+    padding:5rem 0.4rem 5rem 0.4rem;
+    @include mediaquery("tablet-768"){
+        padding:3.5rem 0.4rem 5rem 0.4rem;
+    }
+    @include mediaquery("tablet-575"){
+        padding:3rem 0.4rem 5rem 0.4rem;
+    }
+    & h1 {
+        text-transform:uppercase;
+        text-align:left;
+        font-weight:600;
+    }
+    &__underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+}
+.page-id-121 .page-heading {
+    padding:5rem 0.4rem 5rem 0.4rem;
+    @include mediaquery("tablet-768"){
+        padding:3.5rem 0.4rem 5rem 0.4rem;
+    }
+    @include mediaquery("tablet-575"){
+        padding:3rem 0.4rem 5rem 0.4rem;
+    }
+    & h1 {
+        text-transform:uppercase;
+        text-align:left;
+        font-weight:600;
+    }
+    &__underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+}
+.page-id-125 .page-heading {
+    padding:5rem 0.4rem 5rem 0.4rem;
+    @include mediaquery("tablet-768"){
+        padding:3.5rem 0.4rem 5rem 0.4rem;
+    }
+    @include mediaquery("tablet-575"){
+        padding:3rem 0.4rem 5rem 0.4rem;
+    }
+    & h1 {
+        text-transform:uppercase;
+        text-align:left;
+        font-weight:600;
+    }
+    &__underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+}
+.page-id-127 .page-heading {
+    padding:5rem 0.4rem 5rem 0.4rem;
+    @include mediaquery("tablet-768"){
+        padding:3.5rem 0.4rem 5rem 0.4rem;
+    }
+    @include mediaquery("tablet-575"){
+        padding:3rem 0.4rem 5rem 0.4rem;
+    }
+    & h1 {
+        text-transform:uppercase;
+        text-align:left;
+        font-weight:600;
+    }
+    &__underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+}
+.page-id-129 .page-heading {
+    padding:5rem 0.4rem 5rem 0.4rem;
+    @include mediaquery("tablet-768"){
+        padding:3.5rem 0.4rem 5rem 0.4rem;
+    }
+    @include mediaquery("tablet-575"){
+        padding:3rem 0.4rem 5rem 0.4rem;
+    }
+    & h1 {
+        text-transform:uppercase;
+        text-align:left;
+        font-weight:600;
+    }
+    &__underline {
+        background:$blue;
+        width: 150px;
+        height: 4px;
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+    }
+}
 .search-form {
     text-align:center;
     & .search-field {

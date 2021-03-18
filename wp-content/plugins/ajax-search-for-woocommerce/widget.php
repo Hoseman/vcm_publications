@@ -24,7 +24,7 @@ if ( class_exists( 'WC_Widget' ) ) {
 			$this->widget_cssclass    = 'woocommerce dgwt-wcas-widget';
 			$this->widget_description = __( 'AJAX (live) search form for WooCommerce', 'ajax-search-for-woocommerce' );
 			$this->widget_id          = 'dgwt_wcas_ajax_search';
-			$this->widget_name        = __( 'AJAX Search bar', 'ajax-search-for-woocommerce' );
+			$this->widget_name        = __( 'FiboSearch bar', 'ajax-search-for-woocommerce' );
 			$this->settings           = array(
 				'title' => array(
 					'type'  => 'text',

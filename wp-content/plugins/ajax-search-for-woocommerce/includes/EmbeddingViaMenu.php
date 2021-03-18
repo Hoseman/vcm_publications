@@ -52,7 +52,7 @@ class EmbeddingViaMenu {
 	 * @return void
 	 */
 	public function addNavMenuMetaBoxes() {
-		add_meta_box( 'dgwt_wcas_endpoints_nav_link', __( 'AJAX Search bar', 'ajax-search-for-woocommerce' ), array( $this, 'navMenuLinks' ), 'nav-menus', 'side',
+		add_meta_box( 'dgwt_wcas_endpoints_nav_link', __( 'FiboSearch bar', 'ajax-search-for-woocommerce' ), array( $this, 'navMenuLinks' ), 'nav-menus', 'side',
 			'low' );
 	}
 
@@ -147,13 +147,13 @@ class EmbeddingViaMenu {
 	public function navMenuLinks() {
 		?>
 		<div id="posttype-dgwt-wcas-endpoints" class="posttypediv">
-			<p><?php _e( 'Add AJAX search bar as a menu item.', 'ajax-search-for-woocommerce' ) ?></p>
+			<p><?php _e( 'Add FiboSearch as a menu item.', 'ajax-search-for-woocommerce' ) ?></p>
 			<div id="tabs-panel-dgwt-wcas-endpoints" class="tabs-panel tabs-panel-active">
 				<ul id="dgwt-wcas-endpoints-checklist" class="categorychecklist form-no-clear">
 					<li>
 						<label class="menu-item-title">
 							<input type="checkbox" class="menu-item-checkbox" name="menu-item[-1][menu-item-object-id]"
-							       value="-1"/> <?php echo __( 'AJAX Search bar', 'ajax-search-for-woocommerce' ); ?>
+							       value="-1"/> <?php echo __( 'FiboSearch bar', 'ajax-search-for-woocommerce' ); ?>
 						</label>
 						<input type="hidden" class="menu-item-type" name="menu-item[-1][menu-item-type]" value="custom"/>
 						<input type="hidden" class="menu-item-title" name="menu-item[-1][menu-item-title]" value="<?php echo self::SEARCH_PLACEHOLDER; ?>"/>
@@ -174,8 +174,8 @@ class EmbeddingViaMenu {
 
 	public function getDescription() {
 		$html = '<div class="dgwt-wcas-admin-menu-item-desc js-dgwt-wcas-admin-menu-item-desc">';
-		$html .= '<img class="" src="' . DGWT_WCAS_URL . 'assets/img/logo-for-review.jpg" width="32" height="32" />';
-		$html .= '<span>' . __( 'AJAX search bar will be displayed here.', 'ajax-search-for-woocommerce' ) . '</span>';
+		$html .= '<img class="" src="' . DGWT_WCAS_URL . 'assets/img/logo-for-review.png" width="32" height="32" />';
+		$html .= '<span>' . __( 'FiboSearch bar will be displayed here.', 'ajax-search-for-woocommerce' ) . '</span>';
 		$html .= '</div>';
 
 		return $html;
@@ -243,7 +243,7 @@ class EmbeddingViaMenu {
 
 								var $menuItem = $(this).closest('.menu-item');
 
-								$menuItem.find('.menu-item-title').text('AJAX Search bar');
+								$menuItem.find('.menu-item-title').text('FiboSearch bar');
 								$menuItem.find('.item-type').text('<?php _e( 'Search bar', 'ajax-search-for-woocommerce' ); ?>');
 								$menuItem.find('.menu-item-settings .edit-menu-item-title').closest('label').hide();
 								$menuItem.find('.field-url').hide();

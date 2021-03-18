@@ -153,13 +153,13 @@
 }
 
 .dgwt-wcas-settings__advanced {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 20px;
-    margin-top: 2px;
-    cursor: pointer;
-    transition: 0.2s;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 40px;
+	margin-top: 6px;
+	cursor: pointer;
+	transition: 0.2s;
 }
 
 .dgwt-wcas-settings__logo {
@@ -169,8 +169,58 @@
 }
 
 .dgwt-wcas-settings__title {
-    line-height: 50px;
+	line-height: 50px;
+	border-right: 1px solid #eaeaea;
+	padding-right: 45px;
 }
+.dgwt-wcas-settings__title-top {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.dgwt-wcas-settings-logo-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+}
+.dgwt-wcas-settings-logo-pro {
+	display: none;
+}
+.dgwt-wcas-settings-pro .dgwt-wcas-settings-logo-pro {
+	display: block;
+	position: absolute;
+	right: 11px;
+	top: 1px;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: normal;
+	height: 17px;
+	line-height: 17px;
+	padding: 0px 5px;
+}
+.dgwt-wcas-settings-pro .dgwt-wcas-settings-logo {
+	margin-right: 40px;
+}
+
+.dgwt-wcas-settings-logo {
+	max-height: 30px;
+	margin-right: 25px;
+}
+
+.dgwt-wcas-settings__title-core {
+	display: block;
+	line-height: 46px;
+}
+
+.dgwt-wcas-settings__title-sub {
+	font-size: 13px;
+	line-height: 13px;
+	display: block;
+	margin-top: -6px;
+}
+
 
 .dgwt-wcas-opt-highlight:not(.dgwt-wcas-sgs-header) th label {
     box-shadow: 0 0 25px 5px rgb(255, 243, 205);
@@ -200,8 +250,8 @@
 .dgwt-wcas-settings .woocommerce-input-toggle {
     height: 12px;
     width: 24px;
-    border: 2px solid #935687;
-    background-color: #935687;
+    border: 2px solid #7c3b7d;
+    background-color: #7c3b7d;
     display: inline-block;
     text-indent: -9999px;
     border-radius: 10em;
@@ -592,10 +642,12 @@
 }
 
 .dgwt-wcas-review-notice .dgwt-wcas-review-notice-logo {
-    background: url('../img/logo-for-review.jpg') no-repeat;
+    background: url('../img/logo-for-review.png') no-repeat;
     background-size: 68px;
     float: left;
     margin-top: 5px;
+	margin-right: 15px;
+	margin-left: 12px;
     font-size: 14px;
     height: 80px;
     text-align: center;
@@ -732,10 +784,10 @@
 .dgwt-wcas-pro-header__subtitle--text {
     position: absolute;
     left: 1px;
-    top: 12px;
+    top: 13px;
     font-size: 10px;
-    letter-spacing: 2px;
-    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .dgwt-wcas-toggler, .dgwt-wcas-toggle {

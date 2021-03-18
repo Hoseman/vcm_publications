@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @dgwt_wcas_premium_only
+ */
 namespace DgoraWcas\Integrations\Plugins\XforWooCommerceFilter;
 
 use  DgoraWcas\Helpers ;

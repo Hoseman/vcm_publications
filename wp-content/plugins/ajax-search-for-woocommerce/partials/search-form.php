@@ -28,7 +28,7 @@ $customParams = apply_filters( 'dgwt/wcas/search_bar/custom_params', array(), DG
 			<?php echo $hasSubmit !== 'on' ? Helpers::getMagnifierIco() : ''; ?>
 			<label class="screen-reader-text"
 			       for="dgwt-wcas-search-input-<?php echo $uniqueID; ?>"><?php _e( 'Products search',
-					'ajax-search-for-woocommerce' ) ?></label>
+					'ajax-search-for-woocommerce' ); ?></label>
 
 			<input id="dgwt-wcas-search-input-<?php echo $uniqueID; ?>"
 			       type="search"
@@ -42,7 +42,8 @@ $customParams = apply_filters( 'dgwt/wcas/search_bar/custom_params', array(), DG
 			<div class="dgwt-wcas-preloader"></div>
 
 			<?php if ( $hasSubmit === 'on' ): ?>
-				<button type="submit" name="dgwt-wcas-search-submit"
+				<button type="submit"
+				        aria-label="<?php echo empty( $submitText ) ? __( 'Search','ajax-search-for-woocommerce' ) : esc_html( $submitText ); ?>"
 				        class="dgwt-wcas-search-submit"><?php echo empty( $submitText ) ? Helpers::getMagnifierIco() : esc_html( $submitText ); ?></button>
 			<?php endif; ?>
 

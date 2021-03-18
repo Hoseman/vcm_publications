@@ -23,16 +23,16 @@ class AdminMenu
     {
         add_submenu_page(
             'woocommerce',
-            __( 'Ajax Search for WooCommerce', 'ajax-search-for-woocommerce' ),
-            __( 'AJAX search bar', 'ajax-search-for-woocommerce' ),
+            __( 'FiboSearch', 'ajax-search-for-woocommerce' ),
+            __( 'FiboSearch', 'ajax-search-for-woocommerce' ),
             'manage_options',
             'dgwt_wcas_settings',
             array( $this, 'settingsPage' )
         );
         add_submenu_page(
             'dgwt_wcas_settings',
-            'Ajax Search for WooCommerce Debug',
-            'Ajax Search for WooCommerce [Hidden]',
+            'FiboSearch Debug',
+            'FiboSearch [Hidden]',
             'manage_options',
             'dgwt_wcas_debug',
             array( $this, 'debugPage' )

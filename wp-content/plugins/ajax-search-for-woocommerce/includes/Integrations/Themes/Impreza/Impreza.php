@@ -31,7 +31,7 @@ class Impreza {
 	public function registerSettings( $settings ) {
 		$key = 'dgwt_wcas_basic';
 
-		$articleLink = 'https://ajaxsearch.pro/docs/integrations/impreza-theme/';
+		$articleLink = 'https://fibosearch.com/documentation/themes-integrations/impreza-theme/';
 		$articleText = sprintf(__( 'Here is <a href="%s" target="_blank">article</a> about how to do it using Impreza child-theme.', 'ajax-search-for-woocommerce' ), $articleLink);
 
 		$settings[ $key ][10] = array(

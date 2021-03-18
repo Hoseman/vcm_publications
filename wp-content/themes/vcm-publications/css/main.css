@@ -155,6 +155,10 @@ h2 {
     max-width: 1140px;
   }
 }
+.page {
+  margin: 0;
+}
+
 @media only screen and (max-width: 767px) {
   .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
     width: 48%;
@@ -498,16 +502,27 @@ h2 {
   margin-top: -1rem;
   margin-bottom: -1rem;
 }
-
+@media only screen and (max-width: 1100px) {
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 p {
+    font-size: 1.5rem;
+  }
+}
 @media only screen and (max-width: 992px) {
   #mega-menu-wrap-menu-1 #mega-menu-menu-1 p {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
 }
+
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 p a {
-  color: #fff;
+  color: #ccc;
   text-transform: uppercase;
+  padding-left: 0rem;
+}
+@media only screen and (max-width: 992px) {
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 p a {
+    padding-left: 0.7rem;
+  }
 }
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 p a:hover {
   text-decoration: none;
@@ -526,12 +541,14 @@ h2 {
 
 @media only screen and (max-width: 992px) {
   #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect=fade_up] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect=fade_up] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    width: 100%;
+    padding-top: 0.9rem;
+    padding-bottom: 0.6rem;
   }
   #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect=fade_up] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu p, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect=fade_up] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu p {
     font-size: 1.4rem;
     padding-left: 0.4rem;
+    line-height: 3.2rem;
   }
 }
 /* Add padding to and bottom to the blue hover overlay panel */
@@ -621,6 +638,7 @@ h2 {
     height: 50px;
     line-height: 50px;
     padding-left: 2rem;
+    padding-right: 1.8rem;
   }
 }
 
@@ -639,13 +657,7 @@ h2 {
   }
 }
 #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {
-  margin-right: 16px;
-}
-
-#mega-menu-wrap-menu-1 #mega-menu-menu-1 p a {
-  color: #ccc;
-  text-transform: uppercase;
-  padding-left: 0.7rem;
+  margin-right: 15px;
 }
 
 .need-some-advice {
@@ -1996,6 +2008,151 @@ h2 {
   margin-bottom: 3.8rem;
 }
 
+.page-id-123 .page-heading {
+  padding: 5rem 0.4rem 5rem 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .page-id-123 .page-heading {
+    padding: 3.5rem 0.4rem 5rem 0.4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .page-id-123 .page-heading {
+    padding: 3rem 0.4rem 5rem 0.4rem;
+  }
+}
+.page-id-123 .page-heading h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+}
+.page-id-123 .page-heading__underline {
+  background: #3880d7;
+  width: 150px;
+  height: 4px;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 3.8rem;
+}
+
+.page-id-121 .page-heading {
+  padding: 5rem 0.4rem 5rem 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .page-id-121 .page-heading {
+    padding: 3.5rem 0.4rem 5rem 0.4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .page-id-121 .page-heading {
+    padding: 3rem 0.4rem 5rem 0.4rem;
+  }
+}
+.page-id-121 .page-heading h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+}
+.page-id-121 .page-heading__underline {
+  background: #3880d7;
+  width: 150px;
+  height: 4px;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 3.8rem;
+}
+
+.page-id-125 .page-heading {
+  padding: 5rem 0.4rem 5rem 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .page-id-125 .page-heading {
+    padding: 3.5rem 0.4rem 5rem 0.4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .page-id-125 .page-heading {
+    padding: 3rem 0.4rem 5rem 0.4rem;
+  }
+}
+.page-id-125 .page-heading h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+}
+.page-id-125 .page-heading__underline {
+  background: #3880d7;
+  width: 150px;
+  height: 4px;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 3.8rem;
+}
+
+.page-id-127 .page-heading {
+  padding: 5rem 0.4rem 5rem 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .page-id-127 .page-heading {
+    padding: 3.5rem 0.4rem 5rem 0.4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .page-id-127 .page-heading {
+    padding: 3rem 0.4rem 5rem 0.4rem;
+  }
+}
+.page-id-127 .page-heading h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+}
+.page-id-127 .page-heading__underline {
+  background: #3880d7;
+  width: 150px;
+  height: 4px;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 3.8rem;
+}
+
+.page-id-129 .page-heading {
+  padding: 5rem 0.4rem 5rem 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .page-id-129 .page-heading {
+    padding: 3.5rem 0.4rem 5rem 0.4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .page-id-129 .page-heading {
+    padding: 3rem 0.4rem 5rem 0.4rem;
+  }
+}
+.page-id-129 .page-heading h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+}
+.page-id-129 .page-heading__underline {
+  background: #3880d7;
+  width: 150px;
+  height: 4px;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 3.8rem;
+}
+
 .search-form {
   text-align: center;
 }
@@ -2273,6 +2430,9 @@ h2 {
 }
 .checkout-wrapper .right-column #payment ul {
   list-style-type: none;
+  margin: 0;
+}
+.checkout-wrapper .right-column #payment ul:nth-child(1) {
   margin: 80px 0 0 0;
 }
 .checkout-wrapper .right-column #payment .woocommerce-privacy-policy-text {
@@ -2406,6 +2566,20 @@ h2 {
   }
 }
 
+/* Stripe Payment Styling */
+.wc-stripe-elements-field {
+  width: 100%;
+}
+
+.woocommerce-checkout #payment ul.payment_methods .stripe-card-group {
+  width: 100%;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li img.stripe-icon {
+  display: none;
+}
+
+/* Stripe Payment Styling */
 /* The container */
 .shipping-container {
   display: block;

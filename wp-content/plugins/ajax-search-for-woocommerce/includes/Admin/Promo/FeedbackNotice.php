@@ -65,7 +65,7 @@ class FeedbackNotice {
 	public function displayNotice() {
 		global $current_user;
 
-		if ( $this->allowDisplay() ) {
+		if ( $this->allowDisplay() && ! dgoraAsfwFs()->is_premium() ) {
 			?>
 
 			<div class="notice-info notice dgwt-wcas-notice dgwt-wcas-review-notice">
@@ -75,7 +75,7 @@ class FeedbackNotice {
 					'<strong>' . DGWT_WCAS_NAME . '</strong>'
 				); ?>
 				<br/>
-				<?php printf( __( "I have spent countless hours developing it, and it would mean a lot to me if you %ssupport it with a quick review on WordPress.org.%s", 'ajax-search-for-woocommerce' ),
+				<?php printf( __( "The FiboSearch team have spent countless hours developing it, and it would mean a lot to me if you %ssupport it with a quick review on WordPress.org.%s", 'ajax-search-for-woocommerce' ),
 					'<strong><a target="_blank" href="' . self::REVIEW_URL . '">', '</a></strong>'
 				); ?>
 				<div class="button-container">

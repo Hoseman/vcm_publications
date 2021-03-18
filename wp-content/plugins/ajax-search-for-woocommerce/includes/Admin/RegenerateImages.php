@@ -92,8 +92,8 @@ class RegenerateImages {
 				<?php
 				$button     = '<a href="#" class="button button-small js-dgwt-wcas-start-regenerate-images">' . __( 'Regenerate WooCommerce images' ) . '</a>';
 				$pluginLink = '<a target="_blank" href="https://wordpress.org/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a>';
-				printf( __( '<b>AJAX Search for WooCommerce</b>: It is recommended to generate a special small image size for existing products to ensure a better user experience. This is a one-time action. <br /><br />You can do it by clicking %s or use external plugin e.g. %s.',
-					'ajax-search-for-woocommerce' ), $button, $pluginLink );
+				printf( __( '%: it is recommended to generate a special small image size for existing products to ensure a better user experience. This is a one-time action. <br /><br />You can do it by clicking %s or use an external plugin such as %s.',
+					'ajax-search-for-woocommerce' ), '<b>' . DGWT_WCAS_FULL_NAME . '</b>', $button, $pluginLink );
 				?>
 			</p>
 		</div>
@@ -160,7 +160,7 @@ class RegenerateImages {
 
 				$(document).on('click', '.js-dgwt-wcas-start-regenerate-images', function () {
 
-					$('.js-dgwt-wcas-notice-regenerate-images p').html('<b>AJAX Search for WooCommerce</b>: (...)');
+					$('.js-dgwt-wcas-notice-regenerate-images p').html('<?php echo '<b>' . DGWT_WCAS_FULL_NAME . '</b>' ?>: (...)');
 
 					$.ajax({
 						url: ajaxurl,
@@ -170,7 +170,7 @@ class RegenerateImages {
 					}).done(function (data) {
 
 						setTimeout(function () {
-							$('.js-dgwt-wcas-notice-regenerate-images p').html('<b>AJAX Search for WooCommerce</b>: <?php _e( 'Regeneration of images started. The process will continue in the background.' ); ?>');
+							$('.js-dgwt-wcas-notice-regenerate-images p').html('<?php echo '<b>' . DGWT_WCAS_FULL_NAME . '</b>' ?>: <?php _e( 'Regeneration of images started. The process will continue in the background.' ); ?>');
 						}, 700);
 
 					});

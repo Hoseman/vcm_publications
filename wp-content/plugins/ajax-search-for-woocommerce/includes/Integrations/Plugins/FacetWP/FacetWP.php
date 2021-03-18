@@ -100,7 +100,7 @@ class FacetWP
      */
     public function search_engines( $engines )
     {
-        $engines[self::$engine] = DGWT_WCAS_NAME;
+        $engines[self::$engine] = DGWT_WCAS_FULL_NAME;
         return $engines;
     }
     

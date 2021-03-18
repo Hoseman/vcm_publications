@@ -18,18 +18,19 @@ if ( DGWT_WCAS()->themeCompatibility->isCurrentThemeSupported() ) {
 
 
 	<h2 class="dgwt-wcas-settings__head">
-		<img class="dgwt-wcas-settings__logo" src="<?php echo DGWT_WCAS_URL; ?>assets/img/logo-nobg-50.png"/>
-		<span class="dgwt-wcas-settings__title">
-        <?php
-        if ( dgoraAsfwFs()->is_premium() ) {
-	        _e( 'AJAX Search for WooCommerce (PRO) Settings', 'ajax-search-for-woocommerce' );
-        } else {
-	        _e( 'AJAX Search for WooCommerce Settings', 'ajax-search-for-woocommerce' );
-        }
-        ?>
-        </span>
+		<div class="dgwt-wcas-settings__title">
+			<div class="dgwt-wcas-settings__title-top">
+				<div class="dgwt-wcas-settings-logo-wrapper">
+					<img class="dgwt-wcas-settings-logo" src="<?php echo DGWT_WCAS_URL . 'assets/img/logo-30.png'; ?>"/>
+					<span class="dgwt-wcas-settings-logo-pro">Pro</span>
+				</div>
+				<span class="dgwt-wcas-settings__title-core"><?php _e( 'Settings', 'ajax-search-for-woocommerce' ); ?></span>
+			</div>
+		</div>
 		<span class="dgwt-wcas-settings__advanced js-dgwt-wcas-settings__advanced">
-            <span class="js-dgwt-wcas-adv-settings-toggle woocommerce-input-toggle woocommerce-input-toggle--<?php echo $advSettings ? 'enabled' : 'disabled'; ?>"><?php _e( 'Show advanced settings', 'ajax-search-for-woocommerce' ); ?></span>
+            <span
+				class="js-dgwt-wcas-adv-settings-toggle woocommerce-input-toggle woocommerce-input-toggle--<?php echo $advSettings ? 'enabled' : 'disabled'; ?>"><?php _e( 'Show advanced settings',
+					'ajax-search-for-woocommerce' ); ?></span>
             <span class="dgwt-wcas-adv-settings-label"><?php _e( 'Show advanced settings', 'ajax-search-for-woocommerce' ); ?></span>
          </span>
 	</h2>

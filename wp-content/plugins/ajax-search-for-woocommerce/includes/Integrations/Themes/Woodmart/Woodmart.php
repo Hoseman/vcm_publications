@@ -48,7 +48,7 @@ class Woodmart {
 	 */
 	public function registerSettings( $settings ) {
 		$key = 'dgwt_wcas_basic';
-		
+
 		$settings[ $key ][10] = array(
 			'name'  => $this->themeSlug . '_main_head',
 			'label' => sprintf( __( 'Replace %s search bar', 'ajax-search-for-woocommerce' ), $this->themeName ),
@@ -72,7 +72,7 @@ class Woodmart {
 		$settings[ $key ][55] = array(
 			'name'    => 'woodmart_replace_search',
 			'label'   => __( 'Replace', 'ajax-search-for-woocommerce' ),
-			'desc'    => sprintf( __( 'Replace all %s search bars with the Ajax Search for WooCommerce.', 'ajax-search-for-woocommerce' ), $this->themeName ),
+			'desc'    => sprintf( __( 'Replace all %s search bars with the %s.', 'ajax-search-for-woocommerce' ), $this->themeName, DGWT_WCAS_NAME ),
 			'type'    => 'checkbox',
 			'default' => 'off',
 		);
@@ -88,8 +88,7 @@ class Woodmart {
 	}
 
 	/**
-	 * Check if can replace the native Woodmart search form
-	 * by the Ajax Search for WooCommerce form.
+	 * Check if can replace the native Woodmart search form with the FiboSearch form.
 	 *
 	 * @return bool
 	 */

@@ -518,9 +518,13 @@ class Search
                     $term = esc_sql( $wpdb->esc_like( $term ) );
                     $search .= "{$searchand} (";
                     // Search in title
+                    
                     if ( in_array( 'title', $this->searchIn ) ) {
                         $search .= "({$wpdb->posts}.post_title LIKE '{$n}{$term}{$n}')";
+                    } else {
+                        $search .= "(0 = 1)";
                     }
+                    
                     // Search in content
                     if ( DGWT_WCAS()->settings->getOption( 'search_in_product_content' ) === 'on' && in_array( 'content', $this->searchIn ) ) {
                         $search .= " OR ({$wpdb->posts}.post_content LIKE '{$n}{$term}{$n}')";

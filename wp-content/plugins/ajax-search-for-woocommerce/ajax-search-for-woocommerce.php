@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Plugin Name: AJAX Search for WooCommerce
- * Plugin URI: https://ajaxsearch.pro?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc
+ * Plugin Name: FiboSearch - AJAX Search for WooCommerce
+ * Plugin URI: https://fibosearch.com?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc
  * Description: The most popular WooCommerce product search. Gives your users a well-designed advanced AJAX search bar with live search suggestions.
- * Version: 1.8.2
+ * Version: 1.9.0
  * Author: Damian Góra
- * Author URI: https://ajaxsearch.pro?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc
+ * Author URI: https://fibosearch.com?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc
  * Text Domain: ajax-search-for-woocommerce
  * Domain Path: /languages
  * WC requires at least: 3.3
- * WC tested up to: 5.0
+ * WC tested up to: 5.1
  *
  */
 // Exit if accessed directly
@@ -67,6 +67,7 @@ if ( !class_exists( 'DGWT_WC_Ajax_Search' ) && !function_exists( 'dgoraAsfwFs' )
                 $setup->init();
                 self::$instance->settings = new \DgoraWcas\Settings();
                 self::$instance->hooks();
+                new \DgoraWcas\Integrations\Plugins\PluginsCompatibility();
                 self::$instance->multilingual = new \DgoraWcas\Multilingual();
                 self::$instance->nativeSearch = new \DgoraWcas\Engines\WordPressNative\Search();
                 // @TODO Temporary always use native WordPress DetailsBox engine.
@@ -77,7 +78,6 @@ if ( !class_exists( 'DGWT_WC_Ajax_Search' ) && !function_exists( 'dgoraAsfwFs' )
                 $embeddingViaMenu = new \DgoraWcas\EmbeddingViaMenu();
                 $embeddingViaMenu->init();
                 self::$instance->themeCompatibility = new \DgoraWcas\Integrations\Themes\ThemesCompatibility();
-                new \DgoraWcas\Integrations\Plugins\PluginsCompatibility();
                 self::$instance->brands = new \DgoraWcas\Integrations\Brands();
                 self::$instance->brands->init();
                 \DgoraWcas\Shortcode::register();
@@ -125,19 +125,15 @@ if ( !class_exists( 'DGWT_WC_Ajax_Search' ) && !function_exists( 'dgoraAsfwFs' )
          */
         private function checkRequirements()
         {
-            if ( version_compare( PHP_VERSION, '5.5.0' ) < 0 ) {
-                
-                if ( version_compare( PHP_VERSION, '5.3.0' ) < 0 ) {
-                    add_action( 'admin_notices', array( $this, 'adminNoticeReqPhp53' ) );
-                    return false;
-                } else {
-                    add_action( 'admin_notices', array( $this, 'adminNoticeReqPhp55' ) );
-                }
             
+            if ( version_compare( PHP_VERSION, '7.0' ) < 0 ) {
+                add_action( 'admin_notices', array( $this, 'adminNoticeReqPhp70' ) );
+                return false;
             }
             
+            
             if ( !class_exists( 'WooCommerce' ) || !class_exists( 'WC_AJAX' ) ) {
-                add_action( 'admin_notices', array( $this, 'admin_notice_no_woocommerce' ) );
+                add_action( 'admin_notices', array( $this, 'adminNoticeNoWoocommerce' ) );
                 return false;
             }
             
@@ -145,63 +141,26 @@ if ( !class_exists( 'DGWT_WC_Ajax_Search' ) && !function_exists( 'dgoraAsfwFs' )
         }
         
         /**
-         * Notice: PHP version less than 5.3
-         * @return void
-         */
-        public function adminNoticeReqPhp53()
-        {
-            ?>
-            <div class="notice notice-error dgwt-wcas-notice">
-                <p>
-                    <?php 
-            _e( '<b>AJAX Search for WooCommerce</b>: You need PHP version at least 5.3 to run this plugin. You are currently using PHP version ', 'ajax-search-for-woocommerce' );
-            echo  PHP_VERSION . '.' ;
-            ?>
-                </p>
-            </div>
-            <?php 
-        }
-        
-        /**
-         * Notice: PHP version less than 5.5
+         * Notice: Minimum required PHP version is 7.0
          *
          * @return void
          */
-        public function adminNoticeReqPhp55()
+        public function adminNoticeReqPhp70()
         {
             if ( defined( 'DISABLE_NAG_NOTICES' ) && DISABLE_NAG_NOTICES ) {
                 return;
             }
-            $screen = get_current_screen();
-            if ( empty($screen->id) || $screen->id !== 'dashboard' && $screen->id !== 'plugins' ) {
-                return;
-            }
-            if ( !empty($_GET['dgwt-wcas-php55-notice']) && $_GET['dgwt-wcas-php55-notice'] === 'dismiss' ) {
-                set_transient( 'dgwt-wcas-php55-notice-dismiss', '1', 60 * 60 * 24 * 7 );
-            }
-            
-            if ( !get_transient( 'dgwt-wcas-php55-notice-dismiss' ) ) {
-                ?>
-                <div class="notice notice-error dgwt-wcas-notice">
-                    <p>
-                        <?php 
-                printf( __( "<b>AJAX Search for WooCommerce</b>:<br /> Your PHP version <b><i>%s</i></b> will not longer supported in the next plugin releases.", 'ajax-search-for-woocommerce' ), PHP_VERSION );
-                _e( ' You have to update your PHP version to least 5.5 (recommended 7.2 or greater).', 'ajax-search-for-woocommerce' );
-                echo  '<br />' ;
-                _e( "If you cannot upgrade your PHP version yourself, you can send an email to your host.", 'ajax-search-for-woocommerce' );
-                echo  '<br /><br />' ;
-                echo  '<span style="font-weight:bold; color: #dc3232">' . __( 'If you do not upgrade the php version, the next plugin release will not work!', 'ajax-search-for-woocommerce' ) . '</span>' ;
-                echo  '<br />' ;
-                echo  '<br />' ;
-                echo  '<a href="' . esc_url( add_query_arg( array(
-                    'dgwt-wcas-php55-notice' => 'dismiss',
-                ), $_SERVER['REQUEST_URI'] ) ) . '">' . __( 'Remind me again in week.', 'ajax-search-for-woocommerce' ) . '</a>' ;
-                ?>
-                    </p>
-                </div>
-                <?php 
-            }
-        
+            ?>
+		    <div class="notice notice-error dgwt-wcas-notice">
+			    <p>
+				    <?php 
+            printf( __( '%: You need PHP version at least 7.0 to run this plugin. You are currently using PHP version ', 'ajax-search-for-woocommerce' ), '<b>' . DGWT_WCAS_FULL_NAME . '</b>' );
+            echo  PHP_VERSION . '.' ;
+            ?>
+			    </p>
+		    </div>
+		    <?php 
+            return;
         }
         
         /**
@@ -209,17 +168,17 @@ if ( !class_exists( 'DGWT_WC_Ajax_Search' ) && !function_exists( 'dgoraAsfwFs' )
          *
          * @return void
          */
-        public function admin_notice_no_woocommerce()
+        public function adminNoticeNoWoocommerce()
         {
             ?>
-            <div class="notice notice-error dgwt-wcas-notice">
-                <p>
-                    <?php 
-            printf( __( '<b>AJAX Search for WooCommerce</b> is enabled but not effective. It requires %s in order to work.', 'ajax-search-for-woocommerce' ), '<a href="https://pl.wordpress.org/plugins/woocommerce/"  target="_blank">WooCommerce</a>' );
+		    <div class="notice notice-error dgwt-wcas-notice">
+			    <p>
+				    <?php 
+            printf( __( '%s is enabled but not effective. It requires %s in order to work.', 'ajax-search-for-woocommerce' ), '<b>' . DGWT_WCAS_FULL_NAME . '</b>', '<a href="https://wordpress.org/plugins/woocommerce/"  target="_blank">WooCommerce</a>' );
             ?>
-                </p>
-            </div>
-            <?php 
+			    </p>
+		    </div>
+		    <?php 
         }
         
         /**
@@ -232,8 +191,9 @@ if ( !class_exists( 'DGWT_WC_Ajax_Search' ) && !function_exists( 'dgoraAsfwFs' )
             $v = get_file_data( __FILE__, array(
                 'Version' => 'Version',
             ), 'plugin' );
+            $this->define( 'DGWT_WCAS_NAME', 'FiboSearch' );
+            $this->define( 'DGWT_WCAS_FULL_NAME', 'FiboSearch - AJAX Search for WooCommerce' );
             $this->define( 'DGWT_WCAS_VERSION', $v['Version'] );
-            $this->define( 'DGWT_WCAS_NAME', 'AJAX Search for WooCommerce' );
             $this->define( 'DGWT_WCAS_FILE', __FILE__ );
             $this->define( 'DGWT_WCAS_DIR', plugin_dir_path( __FILE__ ) );
             $this->define( 'DGWT_WCAS_URL', plugin_dir_url( __FILE__ ) );

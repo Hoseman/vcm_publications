@@ -57,7 +57,7 @@ class The7 {
 		$settings[ $key ][55] = array(
 			'name'    => $this->themeSlug . '_replace_search',
 			'label'   => __( 'Replace', 'ajax-search-for-woocommerce' ),
-			'desc'    => sprintf( __( 'Replace all %s search bars with the Ajax Search for WooCommerce.', 'ajax-search-for-woocommerce' ), $this->themeName ),
+			'desc'    => sprintf( __( 'Replace all %s search bars with the %s.', 'ajax-search-for-woocommerce' ), $this->themeName, DGWT_WCAS_NAME ),
 			'type'    => 'checkbox',
 			'default' => 'off',
 		);
@@ -73,8 +73,7 @@ class The7 {
 	}
 
 	/**
-	 * Check if can replace the native Woodmart search form
-	 * by the Ajax Search for WooCommerce form.
+	 * Check if can replace the native Woodmart search form with the FiboSearch form.
 	 *
 	 * @return bool
 	 */

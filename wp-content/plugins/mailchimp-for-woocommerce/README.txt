@@ -3,11 +3,11 @@ Contributors: ryanhungate, Mailchimp
 Tags: ecommerce,email,workflows,mailchimp
 Donate link: https://mailchimp.com
 Requires at least: 4.9
-Tested up to: 5.6
-Stable tag: 2.5.0
+Tested up to: 5.7
+Stable tag: 2.5.1
 Requires PHP: 7.0
 WC requires at least: 3.5
-WC tested up to: 4.9
+WC tested up to: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Connect your store to your Mailchimp audience to track sales, create targeted emails, send abandoned cart emails, and more.
@@ -80,7 +80,6 @@ If you are unable to sync or connect with Mailchimp, you can open a ticket on ou
 = 2.5 =
 * interface reskin
 * fix for fatal error on disabled WoooCommerce admin
-* tested up to 4.9
 
 [Historical Changelog](https://raw.githubusercontent.com/mailchimp/mc-woocommerce/master/CHANGELOG.txt)
 

@@ -51,10 +51,13 @@ class DFDRonneby {
 			$settings[ $key ][52]['label'] = '<img src="' . $img . '">';
 		}
 
+		$desc = sprintf( __( 'Replace all %s search bars with the %s.', 'ajax-search-for-woocommerce' ), $this->themeName, DGWT_WCAS_NAME );
+		$desc .= '<br><span style="color: red;">' . __( 'Note: We currently only support the header type: "Header 10"', 'ajax-search-for-woocommerce' ) . '</span>';
+
 		$settings[ $key ][55] = array(
 			'name'    => $this->themeSlug . '_replace_search',
 			'label'   => __( 'Replace', 'ajax-search-for-woocommerce' ),
-			'desc'    => sprintf( __( 'Replace all %s search bars with the Ajax Search for WooCommerce.<br><span style="color: red;">Note: We currently only support the header type: "Header 10".</span>', 'ajax-search-for-woocommerce' ), $this->themeName ),
+			'desc'    => $desc,
 			'type'    => 'checkbox',
 			'default' => 'off',
 		);
@@ -70,8 +73,7 @@ class DFDRonneby {
 	}
 
 	/**
-	 * Check if can replace the native search form
-	 * by the Ajax Search for WooCommerce form.
+	 * Check if can replace the native search form with the FiboSearch form.
 	 *
 	 * @return bool
 	 */

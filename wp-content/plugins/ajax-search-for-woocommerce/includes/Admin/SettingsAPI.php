@@ -143,7 +143,9 @@ class SettingsAPI
             
             if ( isset( $section['desc'] ) && !empty($section['desc']) ) {
                 $section['desc'] = '<div class="inside">' . $section['desc'] . '</div>';
-                $callback = create_function( '', 'echo "' . str_replace( '"', '\\"', $section['desc'] ) . '";' );
+                $callback = function () use( $section ) {
+                    echo  $section['desc'] ;
+                };
             } elseif ( isset( $section['callback'] ) ) {
                 $callback = $section['callback'];
             } else {
@@ -703,7 +705,7 @@ class SettingsAPI
         }
         $html .= '<a target="_blank" href="' . dgoraAsfwFs()->contact_url() . '" class="js-nav-tab-minor nav-tab-minor nav-tab-minor-contact" >' . __( 'Contact', 'ajax-search-for-woocommerce' ) . '</a>';
         if ( !dgoraAsfwFs()->is_premium() ) {
-            $html .= '<a target="_blank" href="https://ajaxsearch.pro/showcase/?utm_source=wp-admin&utm_medium=referral&utm_campaign=settings&utm_content=showcase&utm_gen=utmdc" class="js-nav-tab-minor nav-tab-minor nav-tab-minor-showcase" >' . __( 'Showcase', 'ajax-search-for-woocommerce' ) . '</a>';
+            $html .= '<a target="_blank" href="https://fibosearch.com/showcase/?utm_source=wp-admin&utm_medium=referral&utm_campaign=settings&utm_content=showcase&utm_gen=utmdc" class="js-nav-tab-minor nav-tab-minor nav-tab-minor-showcase" >' . __( 'Showcase', 'ajax-search-for-woocommerce' ) . '</a>';
         }
         $html .= '</h2>';
         echo  $html ;

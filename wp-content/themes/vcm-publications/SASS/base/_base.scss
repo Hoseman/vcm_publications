@@ -64,6 +64,9 @@ h2 {
     }
 }
 
+.page {
+    margin:0;
+}
 
 // Overide Woocommerce Grid System
 @include mediaquery("tablet-767"){

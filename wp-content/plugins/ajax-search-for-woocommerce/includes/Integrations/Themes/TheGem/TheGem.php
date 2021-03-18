@@ -120,8 +120,7 @@ class TheGem {
 	}
 
 	/**
-	 * Check if can replace the native TheGem search form
-	 * by the Ajax Search for WooCommerce form.
+	 * Check if can replace the native TheGem search form with the FiboSearch form.
 	 *
 	 * @return bool
 	 */

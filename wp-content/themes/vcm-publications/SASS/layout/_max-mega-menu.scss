@@ -29,22 +29,29 @@
     }
 }
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 p {
+    @include mediaquery("desktop-1100"){
+        font-size:1.5rem;
+    }
     margin-top:-1rem;
     margin-bottom:-1rem;
-}
-@include mediaquery("tablet-992"){
-    #mega-menu-wrap-menu-1 #mega-menu-menu-1 p {
+    @include mediaquery("tablet-992"){
         margin-top:0.5rem;
         margin-bottom:0.5rem;
-    }  
 }
+}
+
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 p a {
-    color: $white;
-    text-transform:uppercase;
+    color: $light-grey;
+    text-transform: uppercase;
+    padding-left: 0.0rem;
+    @include mediaquery("tablet-992"){
+        padding-left: 0.7rem;
+    }
     &:hover {
         text-decoration:none;
     }
 }
+
 /* Style up the thumbnail images and the heading in the blue dropdown panel */
 
 #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu::after {
@@ -58,11 +65,13 @@
 }
 @include mediaquery("tablet-992"){
     #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
+        width:100%;
+        padding-top: 0.9rem;
+        padding-bottom: 0.6rem;
         & p {
             font-size:1.4rem;
             padding-left:0.4rem;
+            line-height: 3.2rem;
         }
     }
 }
@@ -154,6 +163,7 @@
             height: 50px;
             line-height: 50px;
             padding-left: 2rem;
+            padding-right: 1.8rem;
     }
 }
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link:hover {
@@ -172,11 +182,5 @@
 }
 
 #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {
-    margin-right: 16px;
-}
-
-#mega-menu-wrap-menu-1 #mega-menu-menu-1 p a {
-    color: $light-grey;
-    text-transform: uppercase;
-    padding-left: 0.7rem;
+    margin-right: 15px;
 }

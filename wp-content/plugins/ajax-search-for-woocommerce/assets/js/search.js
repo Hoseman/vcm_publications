@@ -436,9 +436,13 @@
 			});
 
 			// Position preloader
-			$(window).on('load', function () {
+			if (document.readyState === 'complete') {
 				that.positionPreloader();
-			});
+			} else {
+				$(window).on('load', function () {
+					that.positionPreloader();
+				});
+			}
 
 
             that.el.on('keydown.autocomplete', function (e) {
@@ -2662,6 +2666,41 @@
 
         });
 
+		/*-----------------------------------------------------------------
+        /* Fix broken search bars after click browser's back arrow.
+        /* Not worked for some browsers especially Safari and FF
+        /* Add dgwt-wcas-active class if wasn't added for some reason
+		/*
+        /*------------ -----------------------------------------------------*/
+		$(window).on('load', function () {
+			var i = 0;
+			var interval = setInterval(function () {
+
+				var activeEl = document.activeElement;
+
+				if (
+					typeof activeEl == 'object'
+					&& $(activeEl).length
+					&& $(activeEl).hasClass('dgwt-wcas-search-input')
+				) {
+
+					var $search = $(activeEl).closest('.dgwt-wcas-search-wrapp');
+
+					if ($search.length && !$search.hasClass('dgwt-wcas-active')) {
+						$search.addClass('dgwt-wcas-active');
+						clearInterval(interval);
+					}
+				}
+
+				// Stop after 5 seconds
+				if (i > 10) {
+					clearInterval(interval);
+				}
+
+				i++;
+
+			}, 500);
+		});
 
         /*-----------------------------------------------------------------
         /* Fix broken search bars by 3rd party plugins

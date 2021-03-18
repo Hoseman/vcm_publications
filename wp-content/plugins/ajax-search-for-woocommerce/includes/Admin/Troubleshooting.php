@@ -2,6 +2,7 @@
 
 namespace DgoraWcas\Admin;
 
+use  DgoraWcas\Admin\Promo\Upgrade ;
 use  DgoraWcas\Helpers ;
 use  DgoraWcas\Engines\TNTSearchMySQL\Indexer\Builder ;
 use  DgoraWcas\Multilingual ;
@@ -190,11 +191,11 @@ class Troubleshooting
         $errors = array();
         // GTranslate
         if ( class_exists( 'GTranslate' ) ) {
-            $errors[] = sprintf( __( 'You use the %s plugin. The Ajax Search for WooCommerce does not support this plugin.', 'ajax-search-for-woocommerce' ), 'GTranslate' );
+            $errors[] = sprintf( __( 'You use the %s plugin. The %s does not support this plugin.', 'ajax-search-for-woocommerce' ), 'GTranslate', DGWT_WCAS_NAME );
         }
         // WooCommerce Product Sort and Display
         if ( defined( 'WC_PSAD_VERSION' ) ) {
-            $errors[] = sprintf( __( 'You use the %s plugin. The Ajax Search for WooCommerce does not support this plugin.', 'ajax-search-for-woocommerce' ), 'WooCommerce Product Sort and Display' );
+            $errors[] = sprintf( __( 'You use the %s plugin. The %s does not support this plugin.', 'ajax-search-for-woocommerce' ), 'WooCommerce Product Sort and Display', DGWT_WCAS_NAME );
         }
         
         if ( !empty($errors) ) {
@@ -202,6 +203,28 @@ class Troubleshooting
             $result['status'] = 'critical';
         }
         
+        return $result;
+    }
+    
+    /**
+     * Test for incompatible plugins
+     *
+     * @return array The test result.
+     */
+    public function getTestTranslatePress()
+    {
+        $result = array(
+            'label'       => __( 'You are using TranslatePress with Free version of our plugin', 'ajax-search-for-woocommerce' ),
+            'status'      => 'good',
+            'description' => '',
+            'actions'     => '',
+            'test'        => 'TranslatePress',
+        );
+        if ( !defined( 'TRP_PLUGIN_VERSION' ) && !class_exists( 'TRP_Translate_Press' ) ) {
+            return $result;
+        }
+        $result['description'] = sprintf( __( 'Due to the way the TranslatePress - Multilingual plugin works, we can only provide support for it in the <a href="%s" target="_blank">Pro version</a>.', 'ajax-search-for-woocommerce' ), Upgrade::getUpgradeUrl() );
+        $result['status'] = 'critical';
         return $result;
     }
     
@@ -438,6 +461,10 @@ class Troubleshooting
         );
         if ( !dgoraAsfwFs()->is_premium() ) {
             // List of tests only for free plugin version
+            $tests['direct'][] = array(
+                'label' => __( 'TranslatePress', 'ajax-search-for-woocommerce' ),
+                'test'  => 'TranslatePress',
+            );
         }
         $tests = apply_filters( 'dgwt/wcas/troubleshooting/tests', $tests );
         return $tests;
